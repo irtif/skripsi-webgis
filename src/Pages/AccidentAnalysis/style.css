@@ -1,0 +1,32 @@
+.maps-body .border{
+  border: 0.0625rem dashed #e9ecef !important;
+}
+
+.maps-body .jumbotron{
+  padding: 3rem 5rem !important;
+}
+
+.maps-body input{
+  opacity: 0 !important;
+  font-size: 2rem !important;
+  margin-left: -6rem !important;
+}
+
+.card-body .btn span, .navbar .navbar-nav>a.btn span{
+  display: none !important;
+}
+
+.card-body .btn.dropdown-toggle[data-toggle="dropdown"]:after{
+  margin-left: 3px !important;
+}
+
+
+.pagination,
+.search-label{
+  float: right !important;
+}
+.search-label{
+  border-bottom: 1px solid white !important;
+  border-radius: 5px !important;
+
+}
