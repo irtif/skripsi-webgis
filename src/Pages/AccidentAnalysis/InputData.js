@@ -14,21 +14,18 @@ function Maps(props) {
       let form_data = new FormData();
       form_data.append("file", e.target.files[0]);
       axios
-          .post("http://127.0.0.1:5000/file/3", form_data, { headers })
+          .post("/file", form_data, { headers })
           .then((res) => {
-            console.log(res)
-            // let id = res.data.data.id
-            // let file_path = res.data.data.file_path.split("/")[2]
-
-            // swal({
-            //     title: "Success",
-            //     text: "Data Uploaded Successfully",
-            //     icon: "success",
-            //     button: "Next",
-            // }).then((value) => {
-            //     window.location.href = `/view?id=${id}&path=${file_path}`;
-            // });
-
+            let id = res.data.id
+            let path = res.data.file
+            swal({
+                title: "Success",
+                text: "Data Uploaded Successfully",
+                icon: "success",
+                button: "Next",
+            }).then((value) => {
+                window.location.href = `/view?id=${id}&path=${path}`;
+            })
           })
           .catch((err) => console.log(err));
   };

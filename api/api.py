@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask.helpers import send_from_directory
 import werkzeug, os, time
 from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
@@ -50,6 +51,7 @@ def get(id):
   return res
 
 @app.route('/file', methods=['POST'])
+@marshal_with(resource_fields)
 def post():
     arg = file_add_arg.parse_args()
     file = arg['file']
@@ -63,7 +65,7 @@ def post():
     file.save(f"{UPLOAD_DIR}/{file_name}")
     db.session.add(data)
     db.session.commit()
-    return {"message": "Data Created Successfully"}
+    return data
 
 @app.route('/file/<int:id>', methods=['PATCH'])
 @marshal_with(resource_fields)
@@ -91,6 +93,10 @@ def delete(id):
   db.session.delete(res)
   db.session.commit()
   return {'message' : 'Successfully deleted'}, 200
+
+@app.route('/download/<string:name>', methods=['GET'])
+def get_file(name):
+  return send_from_directory(directory=UPLOAD_DIR, path=name)
 
 if __name__ == "__main__":
   app.run(debug=True)
