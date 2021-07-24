@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 
+import geopy
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
@@ -124,22 +125,9 @@ def data_mining_process(file_name):
   df2 = df[["address", "district", "day", "time", "accident_types", "suspect_vehicle", "victim_vehicle"]].copy()
   my_df = pd.concat([df1, df2], axis=1, join="inner")
 
-  time_clustering = time_db_clustering(my_df)
-  cl_result = json.loads(time_clustering)
+  return time_db_clustering(my_df, d_label)
 
-  # REMOVE NOISE FROM OUR DATA
-  # df_db_time = my_df[["lat", "long", "address", "district", "day", "time"]].copy()
-  # df_db_time["Cluster"] = cl_result.labels
-
-  # df_db_time = df_db_time.loc[df_db_time["Cluster"] != -1]
-  # df_db_time["day"] = d_label.inverse_transform(df_db_time["day"])
-  # df_db_time["time"] = df_db_time["time"].map(lambda x: str(x)+":00")
-
-  print(str(type(cl_result)))
-  # print(str(df_db_time.head()))
-  # return 
-
-def time_db_clustering(my_df):
+def time_db_clustering(my_df, d_label):
 
   # 1. MinMaxScaler - Find optimal hyperparameters by iterating through a range of eps and minpts 
   df_time = my_df[["day", "time"]].copy()
@@ -185,7 +173,7 @@ def time_db_clustering(my_df):
   score = time_sil_score[index]
 
 
-  res = {
+  choosen_params = {
     "eps": choosen_eps,
     "minPts": choosen_pts,
     "cluster": cluster_result,
@@ -194,5 +182,73 @@ def time_db_clustering(my_df):
     "silhouette_score": score
   }
 
-  return res
+  # REMOVE NOISE FROM OUR DATA
+  df_db_time = my_df[["lat", "long", "address", "district", "day", "time"]].copy()
+  df_db_time["Cluster"] = choosen_labels
+
+  df_db_time = df_db_time.loc[df_db_time["Cluster"] != -1]
+  df_db_time["day"] = d_label.inverse_transform(df_db_time["day"])
+  df_db_time["time"] = df_db_time["time"].map(lambda x: str(x)+":00")
+
+  return visualization(df_db_time, choosen_params)
+
+def visualization(df, params):
+  # get location
+  city = "Makassar"
+  locator = geopy.geocoders.Nominatim(user_agent="MyCoder")
+  location = locator.geocode(city)
+  location = [location.latitude, location.longitude]
+
+  x, y = "lat", "long"
+  color = "Cluster"
+  data = df.copy()
+  list_colors = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
+             for i in range(params['cluster'])]
+
+  # create color for each clusters
+  list_clusters = np.unique(params['labels'])
+
+  data["Color"] = data["Cluster"].apply(lambda x: 
+                  list_colors[list_clusters[x]])
+
+  result = []
+  for i in np.unique(params['labels']):
+    result.append({
+      "cluster": i,
+      "total": len(data.loc[data["Cluster"]==i]),
+      "days": np.unique(data.loc[data["Cluster"]==i]["day"].values),
+      "time": np.unique(data.loc[data["Cluster"]==i]["time"].values),
+      "address": np.unique(data.loc[data["Cluster"]==i]["address"].values + ", " + data.loc[data["Cluster"]==i]["district"].values)
+    })
+  
+  with open(f"{RESULT_DIR}/data.json", 'w') as my_file:
+    json.dump(str(result), my_file)
+
+  # CREATE MAP VISUALIZATION
+
+  ## initialize the map with the starting location
+  map_ = folium.Map(location=location, tiles="cartodbpositron",
+                    zoom_start=15)
+
+  ## add points
+  data.apply(lambda row: folium.CircleMarker(
+            location=[row[x],row[y]], 
+            popup="[Cluster {}] \n{}, {}".format(row["Cluster"], row["address"], row["district"]),
+            max_width=1000,
+            color=row["Color"], fill=True,
+            radius=7).add_to(map_), axis=1)
+
+  ## add html legend
+  legend_html = """<div style="position:fixed; bottom:10px; left:10px; border:2px solid black; z-index:9999; font-size:14px;">&nbsp;<b>"""+color+""":</b><br>"""
+  for i in list_clusters:
+      legend_html = legend_html+"""&nbsp;<i class="fa fa-circle 
+      fa-1x" style="color:"""+list_colors[list_clusters[i]]+"""">
+      </i>&nbsp;"""+str(i)+"""<br>"""
+  legend_html = legend_html+"""</div>"""
+  map_.get_root().html.add_child(folium.Element(legend_html))
+
+  ## plot the map
+  map_.save(f"{RESULT_DIR}/map.html")
+  return "done"
+
 data_mining_process("data_1627039630.071007.csv")
