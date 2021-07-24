@@ -25,10 +25,10 @@ def data_mining_process(file_name):
 
   # --- IMPORT DATASET --- #
   # 1. READ DATA FROM FILE FOLDER #
-  df = pd.read_csv(f"{DATASET_DIR}/{file_name}")
+  df = pd.read_csv(f"{DATASET_DIR}/{file_name}.csv")
   df.drop(["no", "date", "suspect_age", "victim_age", "material_loss"], axis="columns", inplace=True)
   df.columns = ["day", "time", "address", "district", "accident_types", "suspect_vehicle", "victim_vehicle", "MD", "LB", "LR"]
-
+  
   # 2. GET ALL UNIQUE VALUE FROM FEATURES (DAY, ACCIDENT_TYPES, SUSPECT_VEHICLE, VICTIM_VEHICLE) #
   days = df["day"].unique()
   accident_types = df["accident_types"].unique()
@@ -37,15 +37,13 @@ def data_mining_process(file_name):
 
   # --- DATA PREPROCESSING --- #
   # 1. DATA CLEANING #
-
   # If NaN value exist, we will remove it from our dataset
-  df = df.replace('NaN', np.nan)  
-  df = df.dropna()
-
+  df = df.replace('NaN', np.nan) 
+  df = df.dropna() 
+  
   # remove white space in address & district
-  df["address"] = df["address"].str.strip()
-  df["district"] = df["district"].str.strip()
-
+  df["address"] = df["address"].map(lambda x: str(x).strip().lower())
+  df["district"] = df["district"].map(lambda x: str(x).strip().lower())
   # 2. DATA TRANSFORMATION #
   # change time by simply taking only hour value and labeling days value
   d_label = LabelEncoder()
@@ -54,7 +52,7 @@ def data_mining_process(file_name):
 
   df["day"] = day_label
   df["time"] = pd.to_datetime(df['time'], format = '%H:%M').dt.hour
-  
+
 
   # transform vehicle types
   exception = ["TR", "TX", "Rro", "NOV"]
@@ -64,6 +62,7 @@ def data_mining_process(file_name):
 
   df["suspect_vehicle"] = df["suspect_vehicle"].replace("T", "TX").replace("-", "NOV")
   df["victim_vehicle"] = df["victim_vehicle"].replace("T", "TX").replace("-", "NOV")
+
 
   # transform victim and suspect vehicle to LabelEncoder
   victim_label = LabelEncoder()
@@ -76,58 +75,56 @@ def data_mining_process(file_name):
 
   df["victim_vehicle"] = victim_vehicle_label
   df["suspect_vehicle"] = suspect_vehicle_label
-
+  
   # accident_types labeling
   label = LabelEncoder()
   accident_label = label.fit_transform(df["accident_types"])
   accident_mapping = {index: label for index, label in enumerate(label.classes_)}
   df["accident_types"] = accident_label
+  
+  # REDUCE DUPLICATE ADDRESS & DISTRICT BEFORE TRANSFORM INTO COORDINATE
+  df_map = df.copy()
+  df_map = df_map.drop_duplicates(subset=['address', 'district'])
+  df_map.reset_index(drop=True, inplace=True)
 
   # transform physical address to coodinate
-  # location_df = df[["address", "district"]].copy()
-  # location_df['lat'] = ''
-  # location_df['long'] = ''
-  # locator = Nominatim(user_agent="my_app3")
-  # count = 0
-
-  # here we'll loop through our new_df dataset, get the address and district name and change it 
-  #into lat and long
-
-  # for i in range(len(location_df)):
-  #   try:
-  #     count=count+1
-  #     address = "Jalan "+ (location_df["address"][i]+', '+ location_df["district"][i]).strip()
-  #     location = locator.geocode(address, timeout=8)
+  location_df = df_map[["address", "district"]].copy()
+  location_df['lat'] = ''
+  location_df['long'] = ''
+  locator = Nominatim(user_agent="skripsi_app")
+  count = 0
+  for i in range(len(location_df)):
+    try:
+      count=count+1
+      address = "jalan "+ (location_df["address"][i]+', '+ location_df["district"][i]).strip()
+      location = locator.geocode(address, timeout=None)
       
-  #     if location != None:
-  #       location_df['lat'][i] = location.latitude
-  #       location_df['long'][i] = location.longitude
+      if location != None:
+        location_df['lat'][i] = location.latitude
+        location_df['long'][i] = location.longitude
           
-  #     else:
-  #       print(f"[{count}]. {address}")
-  #       location_df['lat'][i] = '0'
-  #       location_df['long'][i] = '0'  
+      else:
+        print(f"[{count}]. {address}")
+        location_df['lat'][i] = '0'
+        location_df['long'][i] = '0'  
             
-  #   except GeocoderTimedOut as e:
-  #     print("Error: geocode failed on input %s with message %s"%(address, e.message))
-  # if not os.path.isdir(RESULT_DIR):
-  #   os.mkdir(RESULT_DIR)
-  address_file = f"{RESULT_DIR}/{file_name}"
-  # location_df.to_csv(address_file, index=False)  
-  # return "done"
+    except GeocoderTimedOut as e:
+      print("Error: geocode failed on input %s with message %s"%(address, e.message))
+
+  if not os.path.isdir(RESULT_DIR):
+    os.mkdir(RESULT_DIR)
+
+  loc_result = df.merge(location_df,how='left', left_on=['address', 'district'], right_on=['address', 'district'])
+  print(loc_result.shape)
+  print(loc_result.head(20))
+  loc_result.to_csv(f"{RESULT_DIR}/{file_name}_coordinates.csv", index=False)  
 
   # READ CONVERTED ADDRESS FILE
-  address = pd.read_csv(f"{RESULT_DIR}/addresses.csv")
-  
+  my_df = loc_result.copy()
+  my_df = my_df.dropna()
+  return time_db_clustering(my_df, d_label, RESULT_DIR, file_name)
 
-  # MERGE DATAFRAME
-  df1 = address[["lat", "long"]].copy()
-  df2 = df[["address", "district", "day", "time", "accident_types", "suspect_vehicle", "victim_vehicle"]].copy()
-  my_df = pd.concat([df1, df2], axis=1, join="inner")
-
-  return time_db_clustering(my_df, d_label)
-
-def time_db_clustering(my_df, d_label):
+def time_db_clustering(my_df, d_label, dir, file_name):
 
   # 1. MinMaxScaler - Find optimal hyperparameters by iterating through a range of eps and minpts 
   df_time = my_df[["day", "time"]].copy()
@@ -172,7 +169,6 @@ def time_db_clustering(my_df, d_label):
   cluster_noise = list(choosen_labels).count(-1)
   score = time_sil_score[index]
 
-
   choosen_params = {
     "eps": choosen_eps,
     "minPts": choosen_pts,
@@ -182,6 +178,7 @@ def time_db_clustering(my_df, d_label):
     "silhouette_score": score
   }
 
+  print(choosen_params)
   # REMOVE NOISE FROM OUR DATA
   df_db_time = my_df[["lat", "long", "address", "district", "day", "time"]].copy()
   df_db_time["Cluster"] = choosen_labels
@@ -189,10 +186,10 @@ def time_db_clustering(my_df, d_label):
   df_db_time = df_db_time.loc[df_db_time["Cluster"] != -1]
   df_db_time["day"] = d_label.inverse_transform(df_db_time["day"])
   df_db_time["time"] = df_db_time["time"].map(lambda x: str(x)+":00")
+  print(df_db_time.head())
+  return visualization(df_db_time, choosen_params, dir, file_name)
 
-  return visualization(df_db_time, choosen_params)
-
-def visualization(df, params):
+def visualization(df, params, dir, file_name):
   # get location
   city = "Makassar"
   locator = geopy.geocoders.Nominatim(user_agent="MyCoder")
@@ -221,7 +218,7 @@ def visualization(df, params):
       "address": np.unique(data.loc[data["Cluster"]==i]["address"].values + ", " + data.loc[data["Cluster"]==i]["district"].values)
     })
   
-  with open(f"{RESULT_DIR}/data.json", 'w') as my_file:
+  with open(f"{dir}/{file_name}.json", 'w') as my_file:
     json.dump(str(result), my_file)
 
   # CREATE MAP VISUALIZATION
@@ -248,7 +245,7 @@ def visualization(df, params):
   map_.get_root().html.add_child(folium.Element(legend_html))
 
   ## plot the map
-  map_.save(f"{RESULT_DIR}/map.html")
+  map_.save(f"{dir}/{file_name}.html")
   return "done"
 
-data_mining_process("data_1627039630.071007.csv")
+data_mining_process("data")

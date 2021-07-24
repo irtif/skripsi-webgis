@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 from flask.helpers import send_from_directory
-import werkzeug, os, time
+import werkzeug, os
 from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
 
@@ -58,7 +58,7 @@ def get(id):
 def post():
     arg = file_add_arg.parse_args()
     file = arg['file']
-    file_name = file.filename.replace('.csv', f"_{str(time.time())}.csv")
+    file_name = file.filename
     
     data = FileModel(file=file_name)
 
@@ -75,7 +75,7 @@ def post():
 def patch(id):
   arg = file_upt_arg.parse_args()
   file = arg['file']
-  file_name = file.filename.replace('.csv', f'_{str(time.time())}.csv')
+  file_name = file.filename
 
   res = FileModel.query.filter_by(id=id).first()  
   if not res:
