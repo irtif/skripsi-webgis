@@ -4,6 +4,9 @@ import werkzeug, os, time
 from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
 
+from app import data_mining_process
+
+
 app = Flask(__name__)
 UPLOAD_DIR = "E:/_PROJECT/flask_reactjs/api/files"
 ALLOWED_EXTENSIONS = {'csv'}
@@ -97,6 +100,12 @@ def delete(id):
 @app.route('/download/<string:name>', methods=['GET'])
 def get_file(name):
   return send_from_directory(directory=UPLOAD_DIR, path=name)
+
+
+@app.route('/execute/<string:file_name>', methods=['GET'])
+def execute(file_name):
+  return data_mining_process(file_name)
+
 
 if __name__ == "__main__":
   app.run(debug=True)

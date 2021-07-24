@@ -11,38 +11,38 @@ const headers = {
 };
 
 function Result(props) {
-    // useEffect(() => {
-    //   const { id, path } = queryString.parse(props.location.search);
-    //   axios
-    //     .post("/api/file/run", { path: path }, { headers })
-    //     .then((res) => {
-    //         console.log(res);
-    //     })
-    //     .catch((err) => console.log(err));
-    // }, []);
+  useEffect(() => {
+    const { id, path } = queryString.parse(props.location.search);
+    axios
+      .get(`execute/${path}`, { headers })
+      .then((res) => {
+          console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
-    return (
-        <div className="wrapper">
-            <Sidebar />
-            <div className="main-panel">
-                <Navbar />
-                <div className="content">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="card">
-                                <div className="card-header pt-4">
-                                    <h3 className="card-title float-left font-weight-bold">
-                                        Result
-                                    </h3>
-                                </div>
-                                <div className="card-body"></div>
-                            </div>
-                        </div>
-                    </div>
+  return (
+    <div className="wrapper">
+      <Sidebar />
+      <div className="main-panel">
+        <Navbar />
+        <div className="content">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="card">
+                <div className="card-header pt-4">
+                  <h3 className="card-title float-left font-weight-bold">
+                    Result
+                  </h3>
                 </div>
+                <div className="card-body"></div>
+              </div>
             </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Result;
