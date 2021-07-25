@@ -1,10 +1,10 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request, make_response
 from flask.helpers import send_from_directory
-import werkzeug, os
+import werkzeug, os, jwt, uuid, datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
-
+from functools import wraps
 from app import data_mining_process
 
 
@@ -12,6 +12,7 @@ app = Flask(__name__)
 UPLOAD_DIR = "E:/_PROJECT/flask_reactjs/api/files"
 ALLOWED_EXTENSIONS = {'csv'}
 
+app.config['SECRET_KEY']='Th1s1ss3cr3t'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 
@@ -28,7 +29,7 @@ class FileModel(db.Model):
   def __repr__(self):
     return f"File(file={self.file}"
 
-# db.create_all()
+db.create_all()
 
 signup_args = reqparse.RequestParser()
 signup_args.add_argument("email")
@@ -40,8 +41,26 @@ login_args.add_argument("email")
 login_args.add_argument("password")
 
 
-
 # --- AUTH CONTROLLER --- #
+
+def token_required(f):
+  @wraps(f)
+  def decorator(*args, **kwargs):
+    token = None
+
+    if 'x-access-token' in request.headers:
+        token = request.headers['x-access-token']
+    if not token:
+        return jsonify({'message': 'a valid token is missing'})
+    try:
+        data = jwt.decode(token, app.config['SECRET_KEY'], algorithms="HS256")
+        current_user = User.query.filter_by(id=data['id']).first()
+    except:
+        return jsonify({'message': 'token is invalid'})
+
+    return f(current_user, *args, **kwargs)
+  return decorator
+
 @app.route('/signup', methods=['POST'])
 def signup():
   # code to validate and add user to database goes here
@@ -63,9 +82,10 @@ def login():
   
   if not user or not check_password_hash(user.password, args["password"]):
     return "Please check your login details and try again."
-  
-  return "login successfully"
-  
+
+  token =  jwt.encode({'id': user.id, 'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=30)}, app.config['SECRET_KEY'])
+  return jsonify({'message': 'Login Successfully', 'token' : token})
+
 # --- FILE CONTROLLER --- #
 file_add_arg = reqparse.RequestParser()
 file_add_arg.add_argument("file", type=werkzeug.datastructures.FileStorage, location="files", help="File is required", required=True)
@@ -90,6 +110,7 @@ def getAll():
   return jsonify([*map(file_serializer, res)])
 
 @app.route('/file/<int:id>', methods=['GET'])
+@token_required
 @marshal_with(resource_fields)
 def get(id):
   res = FileModel.query.filter_by(id=id).first()
@@ -98,8 +119,9 @@ def get(id):
   return res
 
 @app.route('/file', methods=['POST'])
+@token_required
 @marshal_with(resource_fields)
-def post():
+def post(user):
     arg = file_add_arg.parse_args()
     file = arg['file']
     file_name = file.filename
@@ -115,8 +137,9 @@ def post():
     return data
 
 @app.route('/file/<int:id>', methods=['PATCH'])
+@token_required
 @marshal_with(resource_fields)
-def patch(id):
+def patch(user, id):
   arg = file_upt_arg.parse_args()
   file = arg['file']
   file_name = file.filename
@@ -132,7 +155,8 @@ def patch(id):
   return res
 
 @app.route('/file/<int:id>', methods=['DELETE'])
-def delete(id):
+@token_required
+def delete(user, id):
   res = FileModel.query.filter_by(id=id).first()
   if not res:
     abort(404, message="File doesn't exist")
@@ -142,13 +166,15 @@ def delete(id):
   return {'message' : 'Successfully deleted'}, 200
 
 @app.route('/download/<string:name>', methods=['GET'])
-def get_file(name):
+@token_required
+def get_file(user, name):
   return send_from_directory(directory=UPLOAD_DIR, path=name)
 
 
-# @app.route('/execute/<string:file_name>', methods=['GET'])
-# def execute(file_name):
-#   return data_mining_process(file_name)
+@app.route('/execute/<string:file_name>', methods=['GET'])
+@token_required
+def execute(user, file_name):
+  return data_mining_process(file_name)
 
 
 if __name__ == "__main__":
