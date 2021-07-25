@@ -1,6 +1,7 @@
 from flask import Flask, jsonify
 from flask.helpers import send_from_directory
 import werkzeug, os
+from werkzeug.security import generate_password_hash, check_password_hash
 from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
 
@@ -14,6 +15,12 @@ ALLOWED_EXTENSIONS = {'csv'}
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 
+class User(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  email = db.Column(db.String(100), unique=True)
+  name = db.Column(db.String(100))
+  password = db.Column(db.String(100))
+
 class FileModel(db.Model):
   id = db.Column(db.Integer, primary_key=True)
   file = db.Column(db.String(50), nullable=False)
@@ -21,8 +28,45 @@ class FileModel(db.Model):
   def __repr__(self):
     return f"File(file={self.file}"
 
-db.create_all()
+# db.create_all()
 
+signup_args = reqparse.RequestParser()
+signup_args.add_argument("email")
+signup_args.add_argument("name")
+signup_args.add_argument("password")
+
+login_args = reqparse.RequestParser()
+login_args.add_argument("email")
+login_args.add_argument("password")
+
+
+
+# --- AUTH CONTROLLER --- #
+@app.route('/signup', methods=['POST'])
+def signup():
+  # code to validate and add user to database goes here
+  args = signup_args.parse_args()
+  user = User.query.filter_by(email=args['email']).first()
+  if user:
+    return "email address already registered"
+  # create a new user with the form data. Hash the password so the plaintext version isn't saved.
+  new_user = User(email=args["email"], name=args["name"], password=generate_password_hash(args["password"], method='sha256'))
+  db.session.add(new_user)
+  db.session.commit()
+  return 'successfully registered'
+
+@app.route('/login', methods=['POST'])
+def login():
+  args = login_args.parse_args()
+
+  user = User.query.filter_by(email=args["email"]).first()
+  
+  if not user or not check_password_hash(user.password, args["password"]):
+    return "Please check your login details and try again."
+  
+  return "login successfully"
+  
+# --- FILE CONTROLLER --- #
 file_add_arg = reqparse.RequestParser()
 file_add_arg.add_argument("file", type=werkzeug.datastructures.FileStorage, location="files", help="File is required", required=True)
 
@@ -102,9 +146,9 @@ def get_file(name):
   return send_from_directory(directory=UPLOAD_DIR, path=name)
 
 
-@app.route('/execute/<string:file_name>', methods=['GET'])
-def execute(file_name):
-  return data_mining_process(file_name)
+# @app.route('/execute/<string:file_name>', methods=['GET'])
+# def execute(file_name):
+#   return data_mining_process(file_name)
 
 
 if __name__ == "__main__":
