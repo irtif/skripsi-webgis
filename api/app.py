@@ -8,6 +8,7 @@ import itertools
 import numpy as np              
 import pandas as pd
 from datetime import datetime
+from matplotlib import pyplot as plt
 
 import geopy
 from geopy.geocoders import Nominatim
@@ -77,9 +78,9 @@ def data_mining_process(file_name):
   df["suspect_vehicle"] = suspect_vehicle_label
   
   # accident_types labeling
-  label = LabelEncoder()
-  accident_label = label.fit_transform(df["accident_types"])
-  accident_mapping = {index: label for index, label in enumerate(label.classes_)}
+  types_label = LabelEncoder()
+  accident_label = types_label.fit_transform(df["accident_types"])
+  accident_mapping = {index: label for index, label in enumerate(types_label.classes_)}
   df["accident_types"] = accident_label
   
   # REDUCE DUPLICATE ADDRESS & DISTRICT BEFORE TRANSFORM INTO COORDINATE
@@ -105,8 +106,8 @@ def data_mining_process(file_name):
           
       else:
         print(f"[{count}]. {address}")
-        location_df['lat'][i] = '0'
-        location_df['long'][i] = '0'  
+        location_df['lat'][i] = np.nan
+        location_df['long'][i] = np.nan  
             
     except GeocoderTimedOut as e:
       print("Error: geocode failed on input %s with message %s"%(address, e.message))
@@ -122,74 +123,108 @@ def data_mining_process(file_name):
   # READ CONVERTED ADDRESS FILE
   my_df = loc_result.copy()
   my_df = my_df.dropna()
-  return time_db_clustering(my_df, d_label, RESULT_DIR, file_name)
 
-def time_db_clustering(my_df, d_label, dir, file_name):
+  decoders = {
+    "d_label": d_label,
+    "types_label": types_label,
+    "victim_label": victim_label,
+    "suspect_label": suspect_label
+  }
+  return dbscan_clustering(my_df, decoders, RESULT_DIR, file_name)
 
+def dbscan_clustering(my_df, decoders, dir, file_name):
+  
   # 1. MinMaxScaler - Find optimal hyperparameters by iterating through a range of eps and minpts 
-  df_time = my_df[["day", "time"]].copy()
-  time_minmax = MinMaxScaler(feature_range=(0,1)).fit(df_time)
-  time_minmax_scaled = time_minmax.transform(df_time)
-  df_time_minmax = pd.DataFrame(time_minmax_scaled, columns=df_time.columns)
+  df_features = my_df[["day", "time", "accident_types", "suspect_vehicle", "victim_vehicle"]].copy()
+  ft_minmax = MinMaxScaler(feature_range=(0,1)).fit(df_features)
+  ft_minmax_scaled = ft_minmax.transform(df_features)
 
-  t_eps = np.arange(2, 10)
-  t_minPts = np.arange(3,13)
+  df_ft_minmax = pd.DataFrame(ft_minmax_scaled, columns=df_features.columns)
+  
+  ft_eps = np.arange(2, 10)
+  ft_minPts = np.arange(3,13)
+  ft_params = list(itertools.product(ft_eps, ft_minPts))
 
-  t_params = list(itertools.product(t_eps, t_minPts))
+  # DBSCAN CLUSTERING START #
+  ft_clusters = []
+  ft_sil_score = []
+  ft_eps = []
+  ft_minPts = []
+  ft_labels = []
 
-  # DBSCAN CLUSTERING PROCESS
-  time_clusters = []
-  time_sil_score = []
-  time_eps = []
-  time_minPts = []
-  labels = []
-
-  for p in t_params:
-      time_dbc = dbscan(eps=p[0]/100, min_samples=p[1]).fit(df_time_minmax)
-      time_labels = time_dbc.labels_
-      time_eps.append(p[0]/100)
-      time_minPts.append(p[1])
-      time_clusters.append(len(np.unique(time_labels)))
-      time_sil_score.append(metrics.silhouette_score(df_time_minmax,time_labels)) if len(np.unique(time_labels)) > 1 else "Null"
-      labels.append(time_labels)
-
-  params = list(zip(time_clusters, time_sil_score, time_eps, time_minPts, ))
+  for p in ft_params:
+      ft_dbc = dbscan(eps=p[0]/100, min_samples=p[1]).fit(df_ft_minmax)
+      labels = ft_dbc.labels_
+      ft_eps.append(p[0]/100)
+      ft_minPts.append(p[1])
+      ft_clusters.append(len(np.unique(labels)))
+      ft_sil_score.append(metrics.silhouette_score(df_ft_minmax,labels)) if len(np.unique(labels)) > 1 else "Null"
+      ft_labels.append(labels)
+      
+  params = list(zip(ft_clusters, ft_sil_score, ft_eps, ft_minPts))
   params_df = pd.DataFrame(params, columns=['clusters', 'silhouette_score', 'eps', 'min_pts'])
 
-  # FIND OPTIMAL CLUSTER
-  filter_df = params_df[params_df.silhouette_score == params_df.silhouette_score.max()]
-  filter_df2 = filter_df[filter_df.min_pts == filter_df.min_pts.max()]
-  filter_df3 = filter_df2[filter_df2.eps == filter_df2.eps.max()]
+  # Plot the resulting Silhouette scores on a graph
+  plt.figure(figsize=(16,8), dpi=300)
+  plt.plot(ft_sil_score, 'bo-', color='black')
+  plt.xlabel('Epsilon/100 | MinPts')
+  plt.ylabel('Silhouette Score')
+  plt.title('Silhouette Score based on different combnation of Hyperparameters')
+  plt.savefig(f"{dir}/{file_name}.png")
 
+  # FIND OPTIMAL CLUSTER
+  c1_cls = params_df.clusters > 5
+  c2_score = params_df.silhouette_score > 0
+  c3_pts = params_df.min_pts > 5
+  filter_df = params_df[c1_cls & c2_score & c3_pts]
+
+  if filter_df.shape[0] == 0:
+      print("can't find optimal cluster")
+      
+  filter_df2 = filter_df[filter_df.silhouette_score == filter_df.silhouette_score.max()]
+  filter_df3 = filter_df2[filter_df2.min_pts == filter_df2.min_pts.max()]
+  filter_df3
+
+  # SELECT CHOOSEN PARAMETERS
   index = filter_df3.index[0]
-  choosen_eps = filter_df3["eps"].iloc[0]
-  choosen_pts = filter_df3["min_pts"].iloc[0]
-  choosen_labels = labels[index]
-  cluster_result = len(set(choosen_labels)) - (1 if -1 in choosen_labels else 0)
-  cluster_noise = list(choosen_labels).count(-1)
-  score = time_sil_score[index]
+  eps = filter_df3["eps"].iloc[0]
+  pts = filter_df3["min_pts"].iloc[0]
+  labels = ft_labels[index]
+  sil_score = filter_df3["silhouette_score"].iloc[0]
+  no_clusters = ft_clusters[index]
+  no_noise = list(labels).count(-1)
+
+  print("labels     : ", labels)
+  print("choosen_eps: ", eps)
+  print("choosen_pts: ", pts)
+  print("sil_score  : ", sil_score)
+  print("no_clusters: ", no_clusters)
+  print("no_noise   : ", no_noise)
 
   choosen_params = {
-    "eps": choosen_eps,
-    "minPts": choosen_pts,
-    "cluster": cluster_result,
-    "noise": cluster_noise,
-    "labels": choosen_labels,
-    "silhouette_score": score
+    "eps": eps,
+    "minPts": pts,
+    "clusters": no_clusters,
+    "noise": no_noise,
+    "labels": labels,
+    "silhouette_score": sil_score
   }
 
-  print(choosen_params)
-  # REMOVE NOISE FROM OUR DATA
-  df_db_time = my_df[["lat", "long", "address", "district", "day", "time"]].copy()
-  df_db_time["Cluster"] = choosen_labels
+ # REMOVE NOISE FROM OUR DATA
+  result_df = my_df.copy()
+  result_df["Cluster"] = labels
+  result_df = result_df.loc[result_df["Cluster"] != -1]
 
-  df_db_time = df_db_time.loc[df_db_time["Cluster"] != -1]
-  df_db_time["day"] = d_label.inverse_transform(df_db_time["day"])
-  df_db_time["time"] = df_db_time["time"].map(lambda x: str(x)+":00")
-  print(df_db_time.head())
-  return visualization(df_db_time, choosen_params, dir, file_name)
+  result_df["day"] = decoders["d_label"].inverse_transform(result_df["day"])
+  result_df["time"] = result_df["time"].map(lambda x: str(x)+":00")
+  result_df["accident_types"] = decoders["types_label"].inverse_transform(result_df["accident_types"])
+  result_df["suspect_vehicle"] = decoders["suspect_label"].inverse_transform(result_df["suspect_vehicle"])
+  result_df["victim_vehicle"] = decoders["victim_label"].inverse_transform(result_df["victim_vehicle"])
+
+  return visualization(result_df, choosen_params, dir, file_name)
 
 def visualization(df, params, dir, file_name):
+
   # get location
   city = "Makassar"
   locator = geopy.geocoders.Nominatim(user_agent="MyCoder")
@@ -200,7 +235,7 @@ def visualization(df, params, dir, file_name):
   color = "Cluster"
   data = df.copy()
   list_colors = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
-             for i in range(params['cluster'])]
+             for i in range(params['clusters'])]
 
   # create color for each clusters
   list_clusters = np.unique(params['labels'])
@@ -248,4 +283,4 @@ def visualization(df, params, dir, file_name):
   map_.save(f"{dir}/{file_name}.html")
   return "done"
 
-data_mining_process("data")
+# data_mining_process("data")
