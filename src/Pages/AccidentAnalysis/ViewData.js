@@ -14,6 +14,11 @@ import axios from "axios";
 
 const { SearchBar } = Search;
 
+const headers = {
+  "Content-Type": "application/json",
+  "x-access-token": localStorage.getItem("satlatic_token")
+};
+
 function ViewData(props) {
   const [params, setParams] = useState({});
   const [data, setData] = useState([]);
@@ -23,7 +28,7 @@ function ViewData(props) {
     const { id, path } = queryString.parse(props.location.search);
     setParams({ id, path });
     axios
-      .get("/download/" + path)
+      .get("/download/" + path, { headers })
       .then((res) => {
         let data = [];
         let cells = res.data.split("\n").map(function (el) {

@@ -8,6 +8,7 @@ import "./style.css";
 
 const headers = {
   "Content-Type": "application/json",
+  "x-access-token": localStorage.getItem("satlatic_token")
 };
 function Maps(props) {
   const inputFile = (e) => {
@@ -27,7 +28,11 @@ function Maps(props) {
                 window.location.href = `/view?id=${id}&path=${path}`;
             })
           })
-          .catch((err) => console.log(err));
+          .catch((err) => {
+            console.log(err)
+            swal("Failed", "Network Errors", "error")
+          });
+      console.log(headers)
   };
 
   return (
