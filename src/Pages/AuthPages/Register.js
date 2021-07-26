@@ -1,14 +1,22 @@
-import React from "react";
-import background from "../../assets/login.jpg";
-import "./style.css";
+import React, {useState} from "react";
+import axios from 'axios'
+import swal from 'sweetalert'
 
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import background from "../../assets/login.jpg";
+import "./style.css";
+
 
 function Register(props) {
+  const [data, setData] = useState({})
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.currentTarget);
+    axios.post('/signup', data).then(res => {
+      console.log(res)
+      swal("Success", "Successfully registered, please login first", "success").then(r => window.location.href = '/login')
+      
+    }).catch(err => swal("Failed", "Email address already registered", "error"))
   };
 
   return (
@@ -55,6 +63,7 @@ function Register(props) {
                   type="email"
                   placeholder="Email"
                   className="input"
+                  onChange={e => setData({...data, "email": e.target.value})}
                 />
                 <span className="underline"></span>
               </Form.Group>
@@ -69,7 +78,7 @@ function Register(props) {
                 >
                   <title>profile</title>
                   <g
-                   strokeWidth="1"
+                    strokeWidth="1"
                     fill="none"
                     stroke="#212121"
                     strokeLinecap="round"
@@ -83,6 +92,7 @@ function Register(props) {
                   type="text"
                   placeholder="Full Name"
                   className="input"
+                  onChange={e => setData({...data, "name": e.target.value})}
                 />
                 <span className="underline"></span>
               </Form.Group>
@@ -114,19 +124,23 @@ function Register(props) {
                   type="password"
                   placeholder="Password"
                   className="input"
+                  onChange={e => setData({...data, "password": e.target.value})}
                 />
                 <span className="underline"></span>
               </Form.Group>
               <center>
-                <Link to="/dashboard">
-                  <Button className="" variant="primary" type="submit">
-                    Sign Up
-                  </Button>
-                </Link>
+                <Button className="" variant="primary" type="submit">
+                  Sign Up
+                </Button>
               </center>
             </Form>
             <div>
-              <p className="text-dark text-center mt-4" style={{fontSize:'12px'}}>Have an Account? <Link to="/login">Sign In</Link></p>
+              <p
+                className="text-dark text-center mt-4"
+                style={{ fontSize: "12px" }}
+              >
+                Have an Account? <Link to="/login">Sign In</Link>
+              </p>
             </div>
           </div>
         </div>

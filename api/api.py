@@ -1,6 +1,6 @@
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, request
 from flask.helpers import send_from_directory
-import werkzeug, os, jwt, uuid, datetime
+import werkzeug, os, jwt, datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
@@ -29,7 +29,7 @@ class FileModel(db.Model):
   def __repr__(self):
     return f"File(file={self.file}"
 
-db.create_all()
+# db.create_all()
 
 signup_args = reqparse.RequestParser()
 signup_args.add_argument("email")
@@ -67,21 +67,20 @@ def signup():
   args = signup_args.parse_args()
   user = User.query.filter_by(email=args['email']).first()
   if user:
-    return "email address already registered"
+    return "email address already registered", 422
   # create a new user with the form data. Hash the password so the plaintext version isn't saved.
   new_user = User(email=args["email"], name=args["name"], password=generate_password_hash(args["password"], method='sha256'))
   db.session.add(new_user)
   db.session.commit()
-  return 'successfully registered'
+  return 'successfully registered', 200
 
 @app.route('/login', methods=['POST'])
 def login():
   args = login_args.parse_args()
-
   user = User.query.filter_by(email=args["email"]).first()
   
   if not user or not check_password_hash(user.password, args["password"]):
-    return "Please check your login details and try again."
+    return "Please check your login details and try again.", 401
 
   token =  jwt.encode({'id': user.id, 'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=30)}, app.config['SECRET_KEY'])
   return jsonify({'message': 'Login Successfully', 'token' : token})

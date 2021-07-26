@@ -1,16 +1,28 @@
-import React from "react";
-import background from "../../assets/login.jpg";
-import "./style.css";
+import React, { useState } from "react";
+import axios from "axios";
+import swal from "sweetalert";
 
 import { Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import background from "../../assets/login.jpg";
+import "./style.css";
 
 function Login(props) {
+  const [data, setData] = useState({});
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.currentTarget);
+    axios
+      .post("/login", data)
+      .then((res) => {
+        localStorage.setItem("satlatic_token", res.data.token);
+        window.location.href = "/dashboard";
+      })
+      .catch((err) =>
+        swal("Failed", "Please check your login details and try again", "error")
+      );
   };
-  
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -55,11 +67,15 @@ function Login(props) {
                   type="email"
                   placeholder="Enter email"
                   className="input"
+                  onChange={(e) => setData({ ...data, email: e.target.value })}
                 />
                 <span className="underline"></span>
               </Form.Group>
 
-              <Form.Group controlId="formBasicPassword" style={{outline:'none'}}>
+              <Form.Group
+                controlId="formBasicPassword"
+                style={{ outline: "none" }}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="12"
@@ -86,22 +102,28 @@ function Login(props) {
                   type="password"
                   placeholder="Password"
                   className="input"
+                  onChange={(e) =>
+                    setData({ ...data, password: e.target.value })
+                  }
                 />
                 <span className="underline"></span>
               </Form.Group>
-              <Form.Group className="mb-5" controlId="formBasicCheckbox">
+              {/* <Form.Group className="mb-5" controlId="formBasicCheckbox">
                 <p className="text-primary forgot-pw">Forgot Password?</p>
-              </Form.Group>
+              </Form.Group> */}
               <center>
-                <Link to="/dashboard">
-                  <Button className="" variant="primary" type="submit">
-                    Log In
-                  </Button>
-                </Link>
+                <Button className="" variant="primary" type="submit">
+                  Log In
+                </Button>
               </center>
             </Form>
             <div>
-              <p className="text-dark text-center mt-4" style={{fontSize:'12px'}}>Don't Have an Account? <Link to="/register">Sign Up</Link></p>
+              <p
+                className="text-dark text-center mt-4"
+                style={{ fontSize: "12px" }}
+              >
+                Don't Have an Account? <Link to="/register">Sign Up</Link>
+              </p>
             </div>
           </div>
         </div>
