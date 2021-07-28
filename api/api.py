@@ -10,6 +10,7 @@ from app import data_mining_process
 
 app = Flask(__name__)
 UPLOAD_DIR = "E:/_PROJECT/flask_reactjs/api/files"
+RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
 ALLOWED_EXTENSIONS = {'csv'}
 
 app.config['SECRET_KEY']='Th1s1ss3cr3t'
@@ -175,6 +176,10 @@ def get_file(user, name):
 def execute(user, file_name):
   return data_mining_process(file_name)
 
+@app.route('/show/<string:file_name>', methods=['GET'])
+@token_required
+def get_result(user, file_name):
+  return send_from_directory(directory=RESULT_DIR, path="result.csv")
 
 if __name__ == "__main__":
   app.run(debug=True)
