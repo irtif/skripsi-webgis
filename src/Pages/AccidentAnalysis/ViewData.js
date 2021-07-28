@@ -7,6 +7,7 @@ import paginationFactory, {
 import ToolkitProvider, {
   Search,
 } from "react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit";
+import LoadingOverlay from "react-loading-overlay-ts";
 
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
@@ -16,15 +17,17 @@ const { SearchBar } = Search;
 
 const headers = {
   "Content-Type": "application/json",
-  "x-access-token": localStorage.getItem("satlatic_token")
+  "x-access-token": localStorage.getItem("satlatic_token"),
 };
 
 function ViewData(props) {
+  const [loading, setLoading] = useState(false);
   const [params, setParams] = useState({});
   const [data, setData] = useState([]);
   const [columnData, setColumn] = useState([]);
 
   useEffect(() => {
+    setLoading(true);
     const { id, path } = queryString.parse(props.location.search);
     setParams({ id, path });
     axios
@@ -93,8 +96,12 @@ function ViewData(props) {
             style: { textAlign: "center", color: "black" },
           },
         ]);
+        setLoading(false);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        setLoading(true);
+      });
   }, []);
 
   const customTotal = (from, to, size) => (
@@ -162,40 +169,44 @@ function ViewData(props) {
   };
 
   return (
-    <div className="wrapper">
-      <Sidebar />
-      <div className="main-panel">
-        <Navbar />
-        <div className="content">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="card">
-                <div className="card-header pt-4">
-                  <h3 className="card-title float-left font-weight-bold">
-                    View Imported Data
-                  </h3>
-                  <button
-                    className="btn btn-primary float-right"
-                    onClick={executeData}
-                  >
-                    Execute
-                  </button>
-                </div>
-                <div className="card-body">
-                  {data.length && columnData.length > 0 ? (
-                    <PaginationProvider pagination={paginationFactory(options)}>
-                      {contentTable}
-                    </PaginationProvider>
-                  ) : (
-                    ""
-                  )}
+    <LoadingOverlay active={loading} spinner text="Loading your content...">
+      <div className="wrapper">
+        <Sidebar />
+        <div className="main-panel">
+          <Navbar />
+          <div className="content">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="card">
+                  <div className="card-header pt-4">
+                    <h3 className="card-title float-left font-weight-bold">
+                      View Imported Data
+                    </h3>
+                    <button
+                      className="btn btn-primary float-right"
+                      onClick={executeData}
+                    >
+                      Execute
+                    </button>
+                  </div>
+                  <div className="card-body">
+                    {data.length && columnData.length > 0 ? (
+                      <PaginationProvider
+                        pagination={paginationFactory(options)}
+                      >
+                        {contentTable}
+                      </PaginationProvider>
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </LoadingOverlay>
   );
 }
 
