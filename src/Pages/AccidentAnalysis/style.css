@@ -31,3 +31,16 @@
 
 }
 
+.cluster-content{
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+}
+.leaflet-popup-content p{
+  margin: 0px !important;
+}

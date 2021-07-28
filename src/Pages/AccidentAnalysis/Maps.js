@@ -6,12 +6,8 @@ import LoadingOverlay from "react-loading-overlay-ts";
 import {
   MapContainer,
   TileLayer,
-  Marker,
   Popup,
-  LayersControl,
   Circle,
-  LayerGroup,
-  Rectangle,
   FeatureGroup,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -35,10 +31,11 @@ const headers = {
 };
 
 function Result(props) {
-  const zoom = 10;
-  const center = [-5.1342962, 119.4124282];
+  const zoom = 14;
+  const center = [-5.147975911780761, 119.43789672442817];
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
+  const [cluster, setCluster] = useState([]);
   const rectangle = [
     [51.49, -0.08],
     [51.5, -0.06],
@@ -73,7 +70,15 @@ function Result(props) {
                 )
               );
             });
-            console.log(data);
+            let clusterData = [];
+            data.map((i) => {
+              let temp = {
+                cluster: i.Cluster,
+                color: i.Color,
+              };
+              clusterData.push(temp);
+            });
+            setCluster(getUnique(clusterData, "cluster"));
             setData(data);
             setLoading(false);
           })
@@ -87,10 +92,21 @@ function Result(props) {
         setLoading(false);
       });
   }, []);
-  const fillBlueOptions = { fillColor: "blue" };
-  const fillRedOptions = { fillColor: "red" };
-  const greenOptions = { color: "green", fillColor: "green" };
-  const purpleOptions = { color: "purple" };
+
+  function getUnique(arr, comp) {
+    // store the comparison  values in array
+    const unique = arr
+      .map((e) => e[comp])
+
+      // store the indexes of the unique objects
+      .map((e, i, final) => final.indexOf(e) === i && i)
+
+      // eliminate the false indexes & return unique objects
+      .filter((e) => arr[e])
+      .map((e) => arr[e]);
+
+    return unique;
+  }
   return (
     <LoadingOverlay active={loading} spinner text="Loading your content...">
       <div className="wrapper">
@@ -107,21 +123,20 @@ function Result(props) {
                     </h3>
                   </div>
                   <div className="card-body">
-                    {/* <MapContainer
-                      center={center}
-                      zoom={zoom}
-                      style={{ height: "350px" }}
-                    >
-                      <TileLayer
-                        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
-                      />
-                      <Marker position={center}>
-                        <Popup>
-                          A pretty CSS3 popup. <br /> Easily customizable.
-                        </Popup>
-                      </Marker>
-                    </MapContainer> */}
+                    <div className="row ml-1">
+                      {cluster.map((i) =>
+                        i.cluster !== undefined ? (
+                          <div
+                            className="cluster-content mb-3 mr-2"
+                            style={{ backgroundColor: i.color }}
+                          >
+                            CLUSTER {i.cluster}
+                          </div>
+                        ) : (
+                          ""
+                        )
+                      )}
+                    </div>
                     <MapContainer
                       center={center}
                       zoom={zoom}
@@ -133,21 +148,65 @@ function Result(props) {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                       />
 
-                      {data.map((el) => (
-                        <LayerGroup>
-                          <Circle
-                            center={
-                              el.lat !== undefined ? [el.lat, el.long] : center
-                            }
-                            pathOptions={
-                              el.Color !== undefined
-                                ? {  color: el.Color, fillColor: el.Color }
-                                : ""
-                            }
-                            radius={200}
-                          />
-                        </LayerGroup>
-                      ))}
+                      {data.map((el) =>
+                        el.lat !== undefined ? (
+                          <FeatureGroup
+                            pathOptions={{
+                              color: el.Color,
+                              fillColor: el.Color,
+                            }}
+                          >
+                            <Popup>
+                              <p className="text-danger text-center font-weight-bold">
+                                [CLUSTER {el.Cluster}]
+                              </p>
+                              <table className="mt-2">
+                                <tr>
+                                  <td>Lokasi</td>
+                                  <td>
+                                    : {el.address.toUpperCase()},{" "}
+                                    {el.district.toUpperCase()}
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>Hari</td>
+                                  <td>: {el.day}</td>
+                                </tr>
+                                <tr>
+                                  <td>Waktu</td>
+                                  <td>: {el.time}</td>
+                                </tr>
+                                <tr>
+                                  <td>Tipe Kecelakaan</td>
+                                  <td>: {el.accident_types}</td>
+                                </tr>
+                                <tr>
+                                  <td>Tipe Kendaraan</td>
+                                  <td>
+                                    :{" "}
+                                    {el.suspect_vehicle !== "NOV"
+                                      ? el.suspect_vehicle
+                                      : ""}
+                                    {el.victim_vehicle !== "NOV"
+                                      ? " " + el.victim_vehicle
+                                      : ""}
+                                  </td>
+                                </tr>
+                              </table>
+                            </Popup>
+                            <Circle
+                              center={
+                                el.lat !== undefined
+                                  ? [el.lat, el.long]
+                                  : center
+                              }
+                              radius={100}
+                            />
+                          </FeatureGroup>
+                        ) : (
+                          ""
+                        )
+                      )}
                     </MapContainer>
                   </div>
                 </div>
