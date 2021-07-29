@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import queryString from "query-string";
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory, {
   PaginationProvider,
@@ -22,16 +21,13 @@ const headers = {
 
 function Data(props) {
   const [loading, setLoading] = useState(false);
-  const [params, setParams] = useState({});
   const [data, setData] = useState([]);
   const [columnData, setColumn] = useState([]);
 
   useEffect(() => {
     setLoading(true);
-    const { id, path } = queryString.parse(props.location.search);
-    setParams({ id, path });
     axios
-      .get("/download/full-data-v1_1.csv", { headers })
+      .get("/download", { headers })
       .then((res) => {
         let data = [];
         let cells = res.data.split("\n").map(function (el) {
@@ -50,6 +46,7 @@ function Data(props) {
               columns.map((v, i) => ({ [v]: arr[i] }))
             )
           );
+          return ""
         });
         setData(data);
         setColumn([
@@ -100,7 +97,7 @@ function Data(props) {
       })
       .catch((err) => {
         console.log(err);
-        setLoading(true);
+        setLoading(false);
       });
   }, []);
 
@@ -187,9 +184,7 @@ function Data(props) {
                       >
                         {contentTable}
                       </PaginationProvider>
-                    ) : (
-                      ""
-                    )}
+                    ) : <h3 className="text-center">INPUT DATA TERLEBIH DAHULU</h3>}
                   </div>
                 </div>
               </div>

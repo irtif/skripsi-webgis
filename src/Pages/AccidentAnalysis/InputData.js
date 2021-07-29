@@ -10,6 +10,7 @@ const headers = {
   "Content-Type": "application/json",
   "x-access-token": localStorage.getItem("satlatic_token"),
 };
+
 function Maps(props) {
   const inputFile = (e) => {
     let form_data = new FormData();
@@ -17,8 +18,6 @@ function Maps(props) {
     axios
       .post("/file", form_data, { headers })
       .then((res) => {
-        let id = res.data.id;
-        let path = res.data.file;
         swal({
           title: "Success",
           text: "Data Uploaded Successfully",

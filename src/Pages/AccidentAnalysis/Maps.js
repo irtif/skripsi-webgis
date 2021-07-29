@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import queryString from "query-string";
 import LoadingOverlay from "react-loading-overlay-ts";
 import { Modal } from "react-bootstrap";
 import {
@@ -36,50 +35,51 @@ function Result(props) {
 
   useEffect(() => {
     setLoading(true);
-    executeMapData()
-   
-  }, []);
+    executeMapData();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const executeMapData = () => {
     axios
-    .get("/show/result.csv", { headers })
-    .then((res) => {
-      let data = [];
-      let cells = res.data.split("\n").map(function (el) {
-        return el.split("/");
-      });
-      let columns = cells[0][0].split(",");
-      cells.shift();
-      cells.map((i) => {
-        let arr = i[0]
-          .split(",")
-          .filter((e) => e && e !== ",")
-          .map((i) => i.trim());
-        data.push(
-          Object.assign.apply(
-            {},
-            columns.map((v, i) => ({ [v.trim()]: arr[i] }))
-          )
-        );
-      });
-      
-      let clusterData = [];
-      data.map((i) => {
-        let temp = {
-          cluster: i.Cluster,
-          color: i.Color,
-        };
-        clusterData.push(temp);
-      });
+      .get("/show/result.csv", { headers })
+      .then((res) => {
+        let data = [];
+        let cells = res.data.split("\n").map(function (el) {
+          return el.split("/");
+        });
+        let columns = cells[0][0].split(",");
+        cells.shift();
+        cells.map((i) => {
+          let arr = i[0]
+            .split(",")
+            .filter((e) => e && e !== ",")
+            .map((i) => i.trim());
+          data.push(
+            Object.assign.apply(
+              {},
+              columns.map((v, i) => ({ [v.trim()]: arr[i] }))
+            )
+          );
+          return "";
+        });
 
-      setData(data);
-      setCluster(getUnique(clusterData, "cluster"));
-      executeModalData();
-    })
-    .catch((err) => {
-      executeClustering();
-    });
-  }
+        let clusterData = [];
+        data.map((i) => {
+          let temp = {
+            cluster: i.Cluster,
+            color: i.Color,
+          };
+          clusterData.push(temp);
+          return "";
+        });
+
+        setData(data);
+        setCluster(getUnique(clusterData, "cluster"));
+        executeModalData();
+      })
+      .catch((err) => {
+        executeClustering();
+      });
+  };
 
   const executeModalData = () => {
     axios
@@ -100,7 +100,7 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map((i) => i + " ")}</p>;
+              return row.map((i, index) => <span key={index}>{i + " "}</span>);
             },
           },
           {
@@ -109,7 +109,7 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map((i) => i + " ")}</p>;
+              return row.map((i, index) => <span key={index}>{i + " "}</span>);
             },
           },
           {
@@ -118,9 +118,11 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return (
-                <p className="text-capitalize">{row.map((i) => i + " | ")}</p>
-              );
+              return row.map((i, index) => (
+                <span key={index} className="text-capitalize">
+                  {i + " | "}
+                </span>
+              ));
             },
           },
           {
@@ -129,7 +131,7 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map((i) => i + " ")}</p>;
+              return row.map((i, index) => <span key={index}>{i + " "}</span>);
             },
           },
           {
@@ -138,7 +140,7 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map((i) => i + " ")} </p>;
+              return row.map((i, index) => <span key={index}>{i + " "}</span>);
             },
           },
         ]);
@@ -155,7 +157,7 @@ function Result(props) {
       .get("/execute", { headers })
       .then((res) => {
         console.log(res);
-        executeMapData()
+        executeMapData();
       })
       .catch((err) => {
         console.log(err);
@@ -238,18 +240,55 @@ function Result(props) {
                     <h3 className="card-title float-left font-weight-bold float-left">
                       Result
                     </h3>
-                    <button
+                    {/* <button
                       className="btn btn-primary float-right"
                       onClick={() => setModal(true)}
                     >
                       Show Table
-                    </button>
+                    </button> */}
+                    <div
+                      class="btn-group btn-group-toggle float-right"
+                      data-toggle="buttons"
+                    >
+                      <label
+                        class="btn btn-sm btn-primary btn-simple active"
+                        id="0"
+                      >
+                        <input type="radio" name="options" checked />
+                        <span
+                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          onClick={() => setModal(true)}
+                        >
+                          Show Table
+                        </span>
+                        <span class="d-block d-sm-none">
+                          <i class="tim-icons icon-single-02"></i>
+                        </span>
+                      </label>
+                      <label class="btn btn-sm btn-primary btn-simple" id="1">
+                        <input
+                          type="radio"
+                          class="d-none d-sm-none"
+                          name="options"
+                        />
+                        <span
+                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          onClick={() => (window.location.href = "/input")}
+                        >
+                          Input New
+                        </span>
+                        <span class="d-block d-sm-none">
+                          <i class="tim-icons icon-gift-2"></i>
+                        </span>
+                      </label>
+                    </div>
                   </div>
                   <div className="card-body">
                     <div className="row ml-1">
-                      {cluster.map((i) =>
-                        i.cluster !== undefined ? (
+                      {cluster.map((i, index) => {
+                        return i.cluster !== undefined ? (
                           <div
+                            key={index}
                             className="cluster-content mb-3 mr-2"
                             style={{ backgroundColor: i.color }}
                           >
@@ -257,8 +296,8 @@ function Result(props) {
                           </div>
                         ) : (
                           ""
-                        )
-                      )}
+                        );
+                      })}
                     </div>
                     <MapContainer
                       center={center}
@@ -271,9 +310,10 @@ function Result(props) {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                       />
 
-                      {data.map((el) =>
-                        el.lat !== undefined ? (
+                      {data.map((el, index) => {
+                        return el.lat !== undefined ? (
                           <FeatureGroup
+                            key={index}
                             pathOptions={{
                               color: el.Color,
                               fillColor: el.Color,
@@ -328,8 +368,8 @@ function Result(props) {
                           </FeatureGroup>
                         ) : (
                           ""
-                        )
-                      )}
+                        );
+                      })}
                     </MapContainer>
                   </div>
                 </div>

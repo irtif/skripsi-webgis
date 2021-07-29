@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import queryString from "query-string";
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory, {
   PaginationProvider,
@@ -22,7 +21,6 @@ const headers = {
 
 function ViewData(props) {
   const [loading, setLoading] = useState(false);
-  const [params, setParams] = useState({});
   const [data, setData] = useState([]);
   const [columnData, setColumn] = useState([]);
 
@@ -49,6 +47,7 @@ function ViewData(props) {
               columns.map((v, i) => ({ [v]: arr[i] }))
             )
           );
+          return ""
         });
         setData(data);
         setColumn([
@@ -136,7 +135,7 @@ function ViewData(props) {
         text: "All",
         value: data.length,
       },
-    ], // A numeric array is also available. the purpose of above example is custom the text
+    ]
   };
 
   const contentTable = ({ paginationProps, paginationTableProps }) => (

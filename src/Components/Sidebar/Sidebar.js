@@ -1,7 +1,20 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import axios from 'axios'
 import { Link } from "react-router-dom";
 
+const headers = {
+  "Content-Type": "application/json",
+  "x-access-token": localStorage.getItem("satlatic_token"),
+};
+
 function Sidebar(props) {
+  const [move, setMove] = useState('')
+  useEffect(() => {
+    axios.get("/download", {headers}).then(res => {
+      console.log(res)
+      setMove('/view')
+    }).catch(err => setMove('/input'))
+  }, [])
   return (
     <div className="sidebar">
       <div className="sidebar-wrapper">
@@ -26,11 +39,11 @@ function Sidebar(props) {
               <p>Data</p>
             </Link>
           </li>
-          <li>
-            <Link to="/input">
+          <li >
+            <Link to={move}>
               <i className="tim-icons icon-square-pin"></i>
               <p>Accident Analysis</p>
-            </Link>
+              </Link>
           </li>
           <li>
             <a href="./notifications.html">
