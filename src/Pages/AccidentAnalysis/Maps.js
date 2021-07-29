@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import queryString from "query-string";
 import LoadingOverlay from "react-loading-overlay-ts";
-
+import { Modal, Button } from "react-bootstrap";
 import {
   MapContainer,
   TileLayer,
@@ -11,20 +11,14 @@ import {
   FeatureGroup,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+
+import BootstrapTable from 'react-bootstrap-table-next';
+import paginationFactory from 'react-bootstrap-table2-paginator';
 
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import "./style.css";
-import icon from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
-delete L.Icon.Default.prototype._getIconUrl;
 
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: icon,
-  shadowUrl: iconShadow,
-});
 const headers = {
   "Content-Type": "application/json",
   "x-access-token": localStorage.getItem("satlatic_token"),
@@ -34,23 +28,83 @@ function Result(props) {
   const zoom = 14;
   const center = [-5.147975911780761, 119.43789672442817];
   const [loading, setLoading] = useState(false);
+  const [modal, setModal] = useState(false);
   const [data, setData] = useState([]);
   const [cluster, setCluster] = useState([]);
-  const rectangle = [
-    [51.49, -0.08],
-    [51.5, -0.06],
-  ];
+  const [modalData, setModalData] = useState([]);
+  const [column, setColumn] = useState([])
   useEffect(() => {
     // setLoading(true);
 
     const { id, path } = queryString.parse(props.location.search);
-    let file_path = path.replace(".csv", "");
+    // let file_path = path.replace(".csv", "");
     axios
-      .get("/execute/" + file_path, { headers })
+      .get("/show/" + path.replace(".csv", ".json"), { headers })
+      .then((res) => {
+        let result = JSON.parse(res.data.replace(/'/g, '"'))
+        setModalData(result);
+        setColumn([
+          {
+            dataField: "cluster",
+            text: "Cluster",
+            headerStyle: { textAlign: "center", color: "white" },
+            style: { textAlign: "center", color: "black" },
+          },
+          {
+            dataField: "days",
+            text: "Hari",
+            headerStyle: { textAlign: "center", color: "white" },
+            style: { textAlign: "center", color: "black" },
+            formatter: (row) => {
+              return <p>{row.map(i => i+" ")}</p>
+            }
+          },
+          {
+            dataField: "time",
+            text: "Waktu",
+            headerStyle: { textAlign: "center", color: "white" },
+            style: { textAlign: "center", color: "black" },
+            formatter: (row) => {
+              return <p>{row.map(i => i+" ")}</p>
+            }
+          },
+          {
+            dataField: "address",
+            text: "Lokasi",
+            headerStyle: { textAlign: "center", color: "white" },
+            style: { textAlign: "center", color: "black" },
+            formatter: (row) => {
+              
+              return <p className="text-capitalize">{row.map(i => i+" | ")}</p>
+            }
+          },
+          {
+            dataField: "accident_types",
+            text: "Tipe Kecelakaan",
+            headerStyle: { textAlign: "center", color: "white" },
+            style: { textAlign: "center", color: "black" },
+            formatter: (row) => {
+              return <p>{row.map(i => i+" ")}</p>
+            }
+          },
+          {
+            dataField: "vehicle_types",
+            text: "Kendaraan Rawan",
+            headerStyle: { textAlign: "center", color: "white" },
+            style: { textAlign: "center", color: "black" },
+            formatter: (row) => {
+              return <p>{row.map(i => i+" ")} </p>
+            }
+          }
+        ])
+      })
+      .catch((err) => console.log(err));
+    axios
+      .get("/execute/" + path, { headers })
       .then((res) => {
         setLoading(true);
         axios
-          .get("/show/" + file_path, { headers })
+          .get("/show/" + path, { headers })
           .then((res) => {
             let data = [];
             let cells = res.data.split("\n").map(function (el) {
@@ -107,6 +161,76 @@ function Result(props) {
 
     return unique;
   }
+
+
+  const options = {
+    paginationSize: 2,
+    pageStartIndex: 0,
+    // alwaysShowAllBtns: true, // Always show next and previous button
+    // withFirstAndLast: false, // Hide the going to First and Last page button
+    hideSizePerPage: true, // Hide the sizePerPage dropdown always
+    // hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
+    firstPageText: 'First',
+    prePageText: 'Back',
+    nextPageText: 'Next',
+    lastPageText: 'Last',
+    nextPageTitle: 'First page',
+    prePageTitle: 'Pre page',
+    firstPageTitle: 'Next page',
+    lastPageTitle: 'Last page',
+    sizePerPage:2// A numeric array is also available. the purpose of above example is custom the text
+  };
+
+
+  function MyVerticallyCenteredModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        className="modal-table"
+      >
+        <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          TABEL HASIL
+        </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{marginTop:'-2rem'}} >
+        <BootstrapTable bordered={false} hover={true} keyField='id' data={ modalData } columns={ column } pagination={ paginationFactory(options) } />
+          {/* <table style={{ fontSize: "12px" }} border="1" cellPadding="1" cellSpacing="0">
+            <thead>
+              <tr>
+                <th>Cluster</th>
+                <th>Hari</th>
+                <th>Waktu</th>
+                <th>Lokasi</th>
+                <th>Tipe Kecelakaan</th>
+                <th>Tipe Kendaraan</th>
+              </tr>
+            </thead>
+            {modalData.length > 0
+              ? modalData.map((i) => (
+                  <tbody>
+                    <tr>
+                      <td>{i.cluster}</td>
+                      <td>{i.days.map(j => j+" ")}</td>
+                      <td>{i.time.map(j => j+" ")}</td>
+                      <td>{i.address.map(j => j+", ")}</td>
+                      <td>{i.accident_types.map(j => j+" ")}</td>
+                      <td>{i.suspect_vehicle.map(j => j !== "NOV"? j+" " : '')}
+                          {i.victim_vehicle.map(j => j !== "NOV"? j+" ":'')}
+                      </td>
+                    </tr>
+                  </tbody>
+                ))
+              : ""}
+          </table> */}
+        </Modal.Body>
+      </Modal>
+    );
+  }
+
   return (
     <LoadingOverlay active={loading} spinner text="Loading your content...">
       <div className="wrapper">
@@ -118,9 +242,15 @@ function Result(props) {
               <div className="col-md-12">
                 <div className="card">
                   <div className="card-header pt-4">
-                    <h3 className="card-title float-left font-weight-bold">
+                    <h3 className="card-title float-left font-weight-bold float-left">
                       Result
                     </h3>
+                    <button
+                      className="btn btn-primary float-right"
+                      onClick={() => setModal(true)}
+                    >
+                      Show Table
+                    </button>
                   </div>
                   <div className="card-body">
                     <div className="row ml-1">
@@ -183,13 +313,13 @@ function Result(props) {
                                 <tr>
                                   <td>Tipe Kendaraan</td>
                                   <td>
-                                    :{" "}
+                                    :
                                     {el.suspect_vehicle !== "NOV"
                                       ? el.suspect_vehicle
                                       : ""}
-                                    {el.victim_vehicle !== "NOV"
-                                      ? " " + el.victim_vehicle
-                                      : ""}
+                                     {el.victim_vehicle !== "NOV"
+                                      ? el.victim_vehicle
+                                      : ""} 
                                   </td>
                                 </tr>
                               </table>
@@ -215,6 +345,7 @@ function Result(props) {
           </div>
         </div>
       </div>
+      <MyVerticallyCenteredModal show={modal} onHide={() => setModal(false)} />
     </LoadingOverlay>
   );
 }

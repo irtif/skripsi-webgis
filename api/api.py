@@ -179,7 +179,7 @@ def execute(user, file_name):
 @app.route('/show/<string:file_name>', methods=['GET'])
 @token_required
 def get_result(user, file_name):
-  return send_from_directory(directory=RESULT_DIR, path="result.csv")
+  return send_from_directory(directory=RESULT_DIR, path=file_name)
 
 if __name__ == "__main__":
   app.run(debug=True)

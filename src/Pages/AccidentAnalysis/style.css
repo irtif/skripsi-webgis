@@ -44,3 +44,25 @@
 .leaflet-popup-content p{
   margin: 0px !important;
 }
+
+/* .modal-content{
+  top: -5rem !important;
+} */
+.modal.show .modal-dialog{
+  top: -10rem !important
+}
+
+.modal-table th,
+.modal-table tbody tr td{
+  color: black !important
+}
+
+.modal-backdrop.show{
+  opacity: 1 !important;
+}
+
+.modal-table .react-bootstrap-table-pagination-list .page-item .page-link{
+  color:black !important;
+  font-size: 12px !important;
+}
+

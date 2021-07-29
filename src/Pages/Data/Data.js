@@ -164,9 +164,6 @@ function Data(props) {
     </div>
   );
 
-  const executeData = () => {
-    window.location.href = `/maps?id=${params.id}&path=${params.path}`;
-  };
 
   return (
     <LoadingOverlay active={loading} spinner text="Loading your content...">
@@ -180,14 +177,8 @@ function Data(props) {
                 <div className="card">
                   <div className="card-header pt-4">
                     <h3 className="card-title float-left font-weight-bold">
-                      View Imported Data
+                      DATABASE
                     </h3>
-                    <button
-                      className="btn btn-primary float-right"
-                      onClick={executeData}
-                    >
-                      Execute
-                    </button>
                   </div>
                   <div className="card-body">
                     {data.length && columnData.length > 0 ? (

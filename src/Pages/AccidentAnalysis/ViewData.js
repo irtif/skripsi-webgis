@@ -30,9 +30,11 @@ function ViewData(props) {
     setLoading(true);
     const { id, path } = queryString.parse(props.location.search);
     setParams({ id, path });
+    
     axios
       .get("/download/" + path, { headers })
       .then((res) => {
+        console.log(res.data)
         let data = [];
         let cells = res.data.split("\n").map(function (el) {
           return el.split("/");
