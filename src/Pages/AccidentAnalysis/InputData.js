@@ -8,31 +8,31 @@ import "./style.css";
 
 const headers = {
   "Content-Type": "application/json",
-  "x-access-token": localStorage.getItem("satlatic_token")
+  "x-access-token": localStorage.getItem("satlatic_token"),
 };
 function Maps(props) {
   const inputFile = (e) => {
-      let form_data = new FormData();
-      form_data.append("file", e.target.files[0]);
-      axios
-          .post("/file", form_data, { headers })
-          .then((res) => {
-            let id = res.data.id
-            let path = res.data.file
-            swal({
-                title: "Success",
-                text: "Data Uploaded Successfully",
-                icon: "success",
-                button: "Next",
-            }).then((value) => {
-                window.location.href = `/view?id=${id}&path=${path}`;
-            })
-          })
-          .catch((err) => {
-            console.log(err)
-            swal("Failed", "Network Errors", "error")
-          });
-      console.log(headers)
+    let form_data = new FormData();
+    form_data.append("file", e.target.files[0]);
+    axios
+      .post("/file", form_data, { headers })
+      .then((res) => {
+        let id = res.data.id;
+        let path = res.data.file;
+        swal({
+          title: "Success",
+          text: "Data Uploaded Successfully",
+          icon: "success",
+          button: "Next",
+        }).then((value) => {
+          window.location.href = "/view";
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        swal("Failed", "Network Errors", "error");
+      });
+    console.log(headers);
   };
 
   return (
@@ -66,7 +66,6 @@ function Maps(props) {
                           viewBox="0 0 48 48"
                         >
                           <title>upload-file</title>
-                          {/* <input type="file" accept=".csv" id='inputfile' onChange={inputFile}/> */}
                           <g fill="#ffffff">
                             <path d="M16,15h6V33a2,2,0,0,0,4,0V15h6a1,1,0,0,0,.809-1.588l-8-11a1.038,1.038,0,0,0-1.618,0l-8,11A1,1,0,0,0,16,15Z"></path>
                             <path

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import queryString from "query-string";
 import LoadingOverlay from "react-loading-overlay-ts";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import {
   MapContainer,
   TileLayer,
@@ -12,8 +12,8 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-import BootstrapTable from 'react-bootstrap-table-next';
-import paginationFactory from 'react-bootstrap-table2-paginator';
+import BootstrapTable from "react-bootstrap-table-next";
+import paginationFactory from "react-bootstrap-table2-paginator";
 
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
@@ -32,16 +32,60 @@ function Result(props) {
   const [data, setData] = useState([]);
   const [cluster, setCluster] = useState([]);
   const [modalData, setModalData] = useState([]);
-  const [column, setColumn] = useState([])
-  useEffect(() => {
-    // setLoading(true);
+  const [column, setColumn] = useState([]);
 
-    const { id, path } = queryString.parse(props.location.search);
-    // let file_path = path.replace(".csv", "");
+  useEffect(() => {
+    setLoading(true);
+    executeMapData()
+   
+  }, []);
+
+  const executeMapData = () => {
     axios
-      .get("/show/" + path.replace(".csv", ".json"), { headers })
+    .get("/show/result.csv", { headers })
+    .then((res) => {
+      let data = [];
+      let cells = res.data.split("\n").map(function (el) {
+        return el.split("/");
+      });
+      let columns = cells[0][0].split(",");
+      cells.shift();
+      cells.map((i) => {
+        let arr = i[0]
+          .split(",")
+          .filter((e) => e && e !== ",")
+          .map((i) => i.trim());
+        data.push(
+          Object.assign.apply(
+            {},
+            columns.map((v, i) => ({ [v.trim()]: arr[i] }))
+          )
+        );
+      });
+      
+      let clusterData = [];
+      data.map((i) => {
+        let temp = {
+          cluster: i.Cluster,
+          color: i.Color,
+        };
+        clusterData.push(temp);
+      });
+
+      setData(data);
+      setCluster(getUnique(clusterData, "cluster"));
+      executeModalData();
+    })
+    .catch((err) => {
+      executeClustering();
+    });
+  }
+
+  const executeModalData = () => {
+    axios
+      .get("/show/result.json", { headers })
       .then((res) => {
-        let result = JSON.parse(res.data.replace(/'/g, '"'))
+        let result = JSON.parse(res.data.replace(/'/g, '"'));
         setModalData(result);
         setColumn([
           {
@@ -56,8 +100,8 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map(i => i+" ")}</p>
-            }
+              return <p>{row.map((i) => i + " ")}</p>;
+            },
           },
           {
             dataField: "time",
@@ -65,8 +109,8 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map(i => i+" ")}</p>
-            }
+              return <p>{row.map((i) => i + " ")}</p>;
+            },
           },
           {
             dataField: "address",
@@ -74,9 +118,10 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              
-              return <p className="text-capitalize">{row.map(i => i+" | ")}</p>
-            }
+              return (
+                <p className="text-capitalize">{row.map((i) => i + " | ")}</p>
+              );
+            },
           },
           {
             dataField: "accident_types",
@@ -84,8 +129,8 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map(i => i+" ")}</p>
-            }
+              return <p>{row.map((i) => i + " ")}</p>;
+            },
           },
           {
             dataField: "vehicle_types",
@@ -93,59 +138,30 @@ function Result(props) {
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
             formatter: (row) => {
-              return <p>{row.map(i => i+" ")} </p>
-            }
-          }
-        ])
-      })
-      .catch((err) => console.log(err));
-    axios
-      .get("/execute/" + path, { headers })
-      .then((res) => {
-        setLoading(true);
-        axios
-          .get("/show/" + path, { headers })
-          .then((res) => {
-            let data = [];
-            let cells = res.data.split("\n").map(function (el) {
-              return el.split("/");
-            });
-            let columns = cells[0][0].split(",");
-            cells.shift();
-            cells.map((i) => {
-              let arr = i[0]
-                .split(",")
-                .filter((e) => e && e !== ",")
-                .map((i) => i.trim());
-              data.push(
-                Object.assign.apply(
-                  {},
-                  columns.map((v, i) => ({ [v.trim()]: arr[i] }))
-                )
-              );
-            });
-            let clusterData = [];
-            data.map((i) => {
-              let temp = {
-                cluster: i.Cluster,
-                color: i.Color,
-              };
-              clusterData.push(temp);
-            });
-            setCluster(getUnique(clusterData, "cluster"));
-            setData(data);
-            setLoading(false);
-          })
-          .catch((err) => {
-            console.log(err);
-            setLoading(false);
-          });
+              return <p>{row.map((i) => i + " ")} </p>;
+            },
+          },
+        ]);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
       });
-  }, []);
+  };
+
+  const executeClustering = () => {
+    axios
+      .get("/execute", { headers })
+      .then((res) => {
+        console.log(res);
+        executeMapData()
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
+  };
 
   function getUnique(arr, comp) {
     // store the comparison  values in array
@@ -162,7 +178,6 @@ function Result(props) {
     return unique;
   }
 
-
   const options = {
     paginationSize: 2,
     pageStartIndex: 0,
@@ -170,17 +185,16 @@ function Result(props) {
     // withFirstAndLast: false, // Hide the going to First and Last page button
     hideSizePerPage: true, // Hide the sizePerPage dropdown always
     // hidePageListOnlyOnePage: true, // Hide the pagination list when only one page
-    firstPageText: 'First',
-    prePageText: 'Back',
-    nextPageText: 'Next',
-    lastPageText: 'Last',
-    nextPageTitle: 'First page',
-    prePageTitle: 'Pre page',
-    firstPageTitle: 'Next page',
-    lastPageTitle: 'Last page',
-    sizePerPage:2// A numeric array is also available. the purpose of above example is custom the text
+    firstPageText: "First",
+    prePageText: "Back",
+    nextPageText: "Next",
+    lastPageText: "Last",
+    nextPageTitle: "First page",
+    prePageTitle: "Pre page",
+    firstPageTitle: "Next page",
+    lastPageTitle: "Last page",
+    sizePerPage: 2, // A numeric array is also available. the purpose of above example is custom the text
   };
-
 
   function MyVerticallyCenteredModal(props) {
     return (
@@ -192,40 +206,19 @@ function Result(props) {
         className="modal-table"
       >
         <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          TABEL HASIL
-        </Modal.Title>
+          <Modal.Title id="contained-modal-title-vcenter">
+            TABEL HASIL
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{marginTop:'-2rem'}} >
-        <BootstrapTable bordered={false} hover={true} keyField='id' data={ modalData } columns={ column } pagination={ paginationFactory(options) } />
-          {/* <table style={{ fontSize: "12px" }} border="1" cellPadding="1" cellSpacing="0">
-            <thead>
-              <tr>
-                <th>Cluster</th>
-                <th>Hari</th>
-                <th>Waktu</th>
-                <th>Lokasi</th>
-                <th>Tipe Kecelakaan</th>
-                <th>Tipe Kendaraan</th>
-              </tr>
-            </thead>
-            {modalData.length > 0
-              ? modalData.map((i) => (
-                  <tbody>
-                    <tr>
-                      <td>{i.cluster}</td>
-                      <td>{i.days.map(j => j+" ")}</td>
-                      <td>{i.time.map(j => j+" ")}</td>
-                      <td>{i.address.map(j => j+", ")}</td>
-                      <td>{i.accident_types.map(j => j+" ")}</td>
-                      <td>{i.suspect_vehicle.map(j => j !== "NOV"? j+" " : '')}
-                          {i.victim_vehicle.map(j => j !== "NOV"? j+" ":'')}
-                      </td>
-                    </tr>
-                  </tbody>
-                ))
-              : ""}
-          </table> */}
+        <Modal.Body style={{ marginTop: "-2rem" }}>
+          <BootstrapTable
+            bordered={false}
+            hover={true}
+            keyField="id"
+            data={modalData}
+            columns={column}
+            pagination={paginationFactory(options)}
+          />
         </Modal.Body>
       </Modal>
     );
@@ -315,11 +308,11 @@ function Result(props) {
                                   <td>
                                     :
                                     {el.suspect_vehicle !== "NOV"
-                                      ? el.suspect_vehicle
+                                      ? ` ${el.suspect_vehicle} `
                                       : ""}
-                                     {el.victim_vehicle !== "NOV"
-                                      ? el.victim_vehicle
-                                      : ""} 
+                                    {el.victim_vehicle !== "NOV"
+                                      ? ` ${el.victim_vehicle} `
+                                      : ""}
                                   </td>
                                 </tr>
                               </table>

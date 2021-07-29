@@ -9,7 +9,7 @@ from app import data_mining_process
 
 
 app = Flask(__name__)
-UPLOAD_DIR = "E:/_PROJECT/flask_reactjs/api/files"
+UPLOAD_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
 RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
 ALLOWED_EXTENSIONS = {'csv'}
 
@@ -131,7 +131,7 @@ def post(user):
     if not os.path.isdir(UPLOAD_DIR):
       os.mkdir(UPLOAD_DIR)
 
-    file.save(f"{UPLOAD_DIR}/{file_name}")
+    file.save(f"{UPLOAD_DIR}/data.csv")
     db.session.add(data)
     db.session.commit()
     return data
@@ -165,16 +165,16 @@ def delete(user, id):
   db.session.commit()
   return {'message' : 'Successfully deleted'}, 200
 
-@app.route('/download/<string:name>', methods=['GET'])
+@app.route('/download', methods=['GET'])
 @token_required
-def get_file(user, name):
-  return send_from_directory(directory=UPLOAD_DIR, path=name)
+def get_file(user):
+  return send_from_directory(directory=UPLOAD_DIR, path="data.csv")
 
 
-@app.route('/execute/<string:file_name>', methods=['GET'])
+@app.route('/execute', methods=['GET'])
 @token_required
-def execute(user, file_name):
-  return data_mining_process(file_name)
+def execute(user):
+  return data_mining_process()
 
 @app.route('/show/<string:file_name>', methods=['GET'])
 @token_required

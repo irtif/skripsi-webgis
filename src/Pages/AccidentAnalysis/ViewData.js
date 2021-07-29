@@ -28,11 +28,8 @@ function ViewData(props) {
 
   useEffect(() => {
     setLoading(true);
-    const { id, path } = queryString.parse(props.location.search);
-    setParams({ id, path });
-    
     axios
-      .get("/download/" + path, { headers })
+      .get("/download", { headers })
       .then((res) => {
         console.log(res.data)
         let data = [];
@@ -167,7 +164,7 @@ function ViewData(props) {
   );
 
   const executeData = () => {
-    window.location.href = `/maps?id=${params.id}&path=${params.path}`;
+    window.location.href = '/maps';
   };
 
   return (

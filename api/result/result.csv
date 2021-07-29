@@ -1,0 +1,48 @@
+day,time,address,district,accident_types,suspect_vehicle,victim_vehicle,MD,LB,LR,lat,long,Cluster,Color
+Wednesday,8:00,tol reformasi,panakkukang,TK,R2,R2,-,-,2,-5.1322943,119.4403875,0,#09049E
+Monday,17:00,kapasa raya,tamalanrea,OC,R2,NOV,-,-,1,-5.1029771,119.4940907,1,#6EE130
+Saturday,23:00,urip sumuharjo,panakkukang,TK,R2,R2,-,-,2,-5.1348243,119.4316818,2,#0BBCC6
+Sunday,15:00,cendrawasih,mamajang,OC,R2,NOV,-,-,2,-5.167086,119.4118044,3,#6C7AD4
+Saturday,23:00,tamangapa raya,manggala,TK,R2,R2,-,-,2,-5.1767373,119.4843844,2,#0BBCC6
+Sunday,15:00,letjen hertasning,rappocini,OC,R2,NOV,-,-,1,-5.1630661,119.4444202,3,#6C7AD4
+Saturday,23:00,barawaja,panakkukang,TK,R2,R2,-,-,2,-5.1357031,119.4402319,2,#0BBCC6
+Monday,17:00,pettarani,panakkukang,OC,R2,NOV,-,-,1,-5.1487126,119.4380057,1,#6EE130
+Monday,17:00,perintis kemerdekaan,tamalanrea,OC,R2,NOV,-,-,2,-5.1402715,119.48329437389705,1,#6EE130
+Monday,17:00,insinyur sutami,tamalanrea,OC,R2,NOV,-,-,1,-5.0891074,119.4804065,1,#6EE130
+Monday,17:00,batua raya,panakkukang,OC,R2,NOV,-,-,2,-5.1496211,119.4605657,1,#6EE130
+Wednesday,8:00,raya kampus unhas,tamalanrea,TK,R2,R2,-,-,1,-5.1377601,119.4886605,0,#09049E
+Monday,17:00,perintis kemerdekaan,tamalanrea,OC,R2,NOV,-,-,1,-5.1402715,119.48329437389705,1,#6EE130
+Monday,17:00,paccerakkang,tamalanrea,OC,R2,NOV,-,-,2,-5.1389844,119.5193272,1,#6EE130
+Wednesday,17:00,perintis kemerdekaan,tamalanrea,TK,R2,R2,-,-,1,-5.1402715,119.48329437389705,4,#95C790
+Saturday,23:00,aroepala,rappocini,TK,R2,R2,-,-,2,-5.1724693,119.4530673,2,#0BBCC6
+Wednesday,8:00,kumala,tamalate,TK,R2,R2,-,-,3,-5.169866,119.4189942,0,#09049E
+Monday,17:00,kuta cane selatan,manggala,OC,R2,NOV,-,-,1,-5.1575313,119.4942593,1,#6EE130
+Sunday,15:00,tamalanrea raya,tamalanrea,OC,R2,NOV,-,-,1,-5.1358197,119.5070307,3,#6C7AD4
+Wednesday,8:00,perintis kemerdekaan,biringkanaya,TK,R2,R2,-,-,2,-5.117784,119.5110136,0,#09049E
+Saturday,23:00,mapala i,rappocini,TK,R2,R2,-,-,3,-5.1711628,119.4414973,2,#0BBCC6
+Wednesday,17:00,sultan hasanuddin,ujung pandang,TK,R2,R2,-,-,1,-5.1444747,119.4127353,4,#95C790
+Wednesday,17:00,rappocini raya,rappocini,TK,R2,R2,-,-,2,-5.152599,119.4258781,4,#95C790
+Sunday,15:00,paccerakkang,biringkanaya,OC,R2,NOV,-,-,1,-5.1239434,119.5224673,3,#6C7AD4
+Wednesday,17:00,abdul kadir,tamalate,TK,R2,R2,-,-,2,-5.1811779,119.4159871,4,#95C790
+Wednesday,17:00,kapasa raya,biringkanaya,TK,R2,R2,-,-,3,-5.0945064,119.4925577,4,#95C790
+Sunday,15:00,raya telkomas,biringkanaya,OC,R2,NOV,-,-,1,-5.127321,119.5100393,3,#6C7AD4
+Wednesday,8:00,keberkahan,tamalanrea,TK,R2,R2,-,-,2,-5.1290843,119.5211269,0,#09049E
+Saturday,23:00,perintis kemerdekaan,tamalanrea,TK,R2,R2,-,-,3,-5.1402715,119.48329437389705,2,#0BBCC6
+Wednesday,8:00,metro tanjung bunga,tamalate,TK,R2,R2,-,-,3,-5.1661576,119.3917443,0,#09049E
+Wednesday,17:00,a.r. hakim,tallo,TK,R2,R2,-,-,2,-5.12141,119.4347354,4,#95C790
+Wednesday,17:00,rajawali,mariso,TK,R2,R2,-,-,2,-5.1487926,119.4096505,4,#95C790
+Monday,17:00,perintis kemerdekaan,tamalanrea,OC,R2,NOV,-,-,1,-5.1402715,119.48329437389705,1,#6EE130
+Saturday,23:00,perintis kemerdekaan,tamalanrea,TK,R2,R2,-,-,1,-5.1402715,119.48329437389705,2,#0BBCC6
+Saturday,23:00,urip sumuharjo,panakkukang,TK,R2,R2,-,-,2,-5.1348243,119.4316818,2,#0BBCC6
+Wednesday,8:00,pongtiku,tallo,TK,R2,R2,-,-,1,-5.1253535,119.4317971,0,#09049E
+Wednesday,17:00,batara bira,biringkanaya,TK,R2,R2,-,-,2,-5.0884975,119.5063692,4,#95C790
+Wednesday,8:00,veteran utara,makassar,TK,R2,R2,-,-,3,-5.1392193,119.4233132,0,#09049E
+Saturday,23:00,toddopuli v,panakkukang,TK,R2,R2,-,-,2,-5.1626055,119.4476516,2,#0BBCC6
+Wednesday,17:00,sawerigading,ujung pandang,TK,R2,R2,-,-,3,-5.1408703,119.4127661,4,#95C790
+Saturday,23:00,perintis kemerdekaan,biringkanaya,TK,R2,R2,-,-,2,-5.117784,119.5110136,2,#0BBCC6
+Sunday,15:00,urip sumuharjo,panakkukang,OC,R2,NOV,-,-,1,-5.1348243,119.4316818,3,#6C7AD4
+Monday,17:00,batara bira,biringkanaya,OC,R2,NOV,-,-,1,-5.0884975,119.5063692,1,#6EE130
+Wednesday,8:00,pongtiku,tallo,TK,R2,R2,-,-,2,-5.1253535,119.4317971,0,#09049E
+Sunday,15:00,perintis kemerdekaan,biringkanaya,OC,R2,NOV,-,-,1,-5.117784,119.5110136,3,#6C7AD4
+Sunday,15:00,metro tanjung bunga,tamalate,OC,R2,NOV,-,-,1,-5.1661576,119.3917443,3,#6C7AD4
+Sunday,15:00,yusuf dg. ngawing,rappocini,OC,R2,NOV,-,-,1,-5.1666643,119.4421752,3,#6C7AD4
