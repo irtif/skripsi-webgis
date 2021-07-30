@@ -180,6 +180,12 @@ function Result(props) {
     return unique;
   }
 
+  const customTotal = (from, to, size) => (
+    <span className="react-bootstrap-table-pagination-total">
+      Showing { from } to { to } of { size } Results
+    </span>
+  );
+
   const options = {
     paginationSize: 2,
     pageStartIndex: 0,
@@ -194,15 +200,17 @@ function Result(props) {
     nextPageTitle: "First page",
     prePageTitle: "Pre page",
     firstPageTitle: "Next page",
+    showTotal: true,
+    paginationTotalRenderer: customTotal,
     lastPageTitle: "Last page",
-    sizePerPage: 2, // A numeric array is also available. the purpose of above example is custom the text
+    sizePerPage: 1  , // A numeric array is also available. the purpose of above example is custom the text
   };
 
   function MyVerticallyCenteredModal(props) {
     return (
       <Modal
         {...props}
-        size="lg"
+        size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
         className="modal-table"
@@ -240,12 +248,6 @@ function Result(props) {
                     <h3 className="card-title float-left font-weight-bold float-left">
                       Result
                     </h3>
-                    {/* <button
-                      className="btn btn-primary float-right"
-                      onClick={() => setModal(true)}
-                    >
-                      Show Table
-                    </button> */}
                     <div
                       class="btn-group btn-group-toggle float-right"
                       data-toggle="buttons"
@@ -284,21 +286,6 @@ function Result(props) {
                     </div>
                   </div>
                   <div className="card-body">
-                    <div className="row ml-1">
-                      {cluster.map((i, index) => {
-                        return i.cluster !== undefined ? (
-                          <div
-                            key={index}
-                            className="cluster-content mb-3 mr-2"
-                            style={{ backgroundColor: i.color }}
-                          >
-                            CLUSTER {i.cluster}
-                          </div>
-                        ) : (
-                          ""
-                        );
-                      })}
-                    </div>
                     <MapContainer
                       center={center}
                       zoom={zoom}
@@ -371,6 +358,21 @@ function Result(props) {
                         );
                       })}
                     </MapContainer>
+                    <div className="row ml-3 mt-5">
+                      {cluster.map((i, index) => {
+                        return i.cluster !== undefined ? (
+                          <div
+                            key={index}
+                            className="cluster-content mb-3 mr-2"
+                            style={{ backgroundColor: i.color }}
+                          >
+                            CLUSTER {i.cluster}
+                          </div>
+                        ) : (
+                          ""
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>

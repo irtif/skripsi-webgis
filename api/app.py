@@ -1,23 +1,18 @@
 import os
-import time
-import math
 import json
 import random
-import folium
+import gower
 import itertools
 import numpy as np
 import pandas as pd
 from datetime import datetime
 from matplotlib import pyplot as plt
 
-import geopy
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
 
 from sklearn import metrics
 from sklearn.cluster import DBSCAN as dbscan
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import MinMaxScaler
 
 DATASET_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
 RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
@@ -44,14 +39,8 @@ def data_mining_process():
     # remove white space in address & district
     df["address"] = df["address"].map(lambda x: str(x).strip().lower())
     df["district"] = df["district"].map(lambda x: str(x).strip().lower())
-    # 2. DATA TRANSFORMATION #
-    # change time by simply taking only hour value and labeling days value
-    d_label = LabelEncoder()
-    day_label = d_label.fit_transform(df["day"])
-    day_mapping = {index: label for index,
-                   label in enumerate(d_label.classes_)}
 
-    df["day"] = day_label
+    # 2. DATA TRANSFORMATION #
     df["time"] = pd.to_datetime(df['time'], format='%H:%M').dt.hour
 
     # transform vehicle types
@@ -67,27 +56,7 @@ def data_mining_process():
     df["victim_vehicle"] = df["victim_vehicle"].replace(
         "T", "TX").replace("-", "NOV")
 
-    # transform victim and suspect vehicle to LabelEncoder
-    victim_label = LabelEncoder()
-    victim_vehicle_label = victim_label.fit_transform(df["victim_vehicle"])
-    victim_mapping = {index: label for index,
-                      label in enumerate(victim_label.classes_)}
-
-    suspect_label = LabelEncoder()
-    suspect_vehicle_label = suspect_label.fit_transform(df["suspect_vehicle"])
-    suspect_mapping = {index: label for index,
-                       label in enumerate(suspect_label.classes_)}
-
-    df["victim_vehicle"] = victim_vehicle_label
-    df["suspect_vehicle"] = suspect_vehicle_label
-
-    # accident_types labeling
-    types_label = LabelEncoder()
-    accident_label = types_label.fit_transform(df["accident_types"])
-    accident_mapping = {index: label for index,
-                        label in enumerate(types_label.classes_)}
-    df["accident_types"] = accident_label
-
+   
     # REDUCE DUPLICATE ADDRESS & DISTRICT BEFORE TRANSFORM INTO COORDINATE
     df_map = df.copy()
     df_map = df_map.drop_duplicates(subset=['address', 'district'])
@@ -127,28 +96,22 @@ def data_mining_process():
     my_df = loc_result.copy()
     my_df = my_df.dropna()
 
-    decoders = {
-        "d_label": d_label,
-        "types_label": types_label,
-        "victim_label": victim_label,
-        "suspect_label": suspect_label
-    }
-    return dbscan_clustering(my_df, decoders)
+    return dbscan_clustering(my_df)
 
 
-def dbscan_clustering(my_df, decoders):
+def dbscan_clustering(my_df):
 
-    # 1. MinMaxScaler - Find optimal hyperparameters by iterating through a range of eps and minpts
+    # 1. SET PARAMS
+    ft_eps = np.arange(2, 8)
+    ft_minPts = np.arange(3, 9)
+    ft_params = list(itertools.product(ft_eps, ft_minPts))
+
+    # 1. GowerDistance - Find optimal hyperparameters by iterating through a range of eps and minpts
     df_features = my_df[["day", "time", "accident_types",
                          "suspect_vehicle", "victim_vehicle"]].copy()
-    ft_minmax = MinMaxScaler(feature_range=(0, 1)).fit(df_features)
-    ft_minmax_scaled = ft_minmax.transform(df_features)
+    distance_matrix = gower.gower_matrix(df_features)
+    df_gower = pd.DataFrame(distance_matrix)
 
-    df_ft_minmax = pd.DataFrame(ft_minmax_scaled, columns=df_features.columns)
-
-    ft_eps = np.arange(2, 10)
-    ft_minPts = np.arange(3, 13)
-    ft_params = list(itertools.product(ft_eps, ft_minPts))
 
     # DBSCAN CLUSTERING START #
     ft_clusters = []
@@ -158,12 +121,12 @@ def dbscan_clustering(my_df, decoders):
     ft_labels = []
 
     for p in ft_params:
-        ft_dbc = dbscan(eps=p[0]/100, min_samples=p[1]).fit(df_ft_minmax)
+        ft_dbc = dbscan(eps=p[0]/100, min_samples=p[1], metric="precomputed").fit(df_gower)
         labels = ft_dbc.labels_
         ft_eps.append(p[0]/100)
         ft_minPts.append(p[1])
         ft_clusters.append(len(np.unique(labels)))
-        ft_sil_score.append(metrics.silhouette_score(df_ft_minmax, labels)) if len(
+        ft_sil_score.append(metrics.silhouette_score(df_gower, labels)) if len(
             np.unique(labels)) > 1 else "Null"
         ft_labels.append(labels)
 
@@ -171,13 +134,8 @@ def dbscan_clustering(my_df, decoders):
     params_df = pd.DataFrame(
         params, columns=['clusters', 'silhouette_score', 'eps', 'min_pts'])
 
-    # Plot the resulting Silhouette scores on a graph
-    plt.figure(figsize=(16, 8), dpi=300)
-    plt.plot(ft_sil_score, 'bo-', color='black')
-    plt.xlabel('Epsilon/100 | MinPts')
-    plt.ylabel('Silhouette Score')
-    plt.title('Silhouette Score based on different combnation of Hyperparameters')
-    # plt.savefig(f"{dir}/result.png")
+    if not os.path.isdir(RESULT_DIR):
+      os.mkdir(RESULT_DIR)
 
     # FIND OPTIMAL CLUSTER
     c1_cls = params_df.clusters > 5
@@ -186,7 +144,7 @@ def dbscan_clustering(my_df, decoders):
     filter_df = params_df[c1_cls & c2_score & c3_pts]
 
     if filter_df.shape[0] == 0:
-        print("can't find optimal cluster")
+        return "can't find optimal cluster", 424
 
     filter_df2 = filter_df[filter_df.silhouette_score ==
                            filter_df.silhouette_score.max()]
@@ -215,20 +173,13 @@ def dbscan_clustering(my_df, decoders):
     result_df = my_df.copy()
     result_df["Cluster"] = labels
     result_df = result_df.loc[result_df["Cluster"] != -1]
-
-    result_df["day"] = decoders["d_label"].inverse_transform(result_df["day"])
     result_df["time"] = result_df["time"].map(lambda x: str(x)+":00")
-    result_df["accident_types"] = decoders["types_label"].inverse_transform(
-        result_df["accident_types"])
-    result_df["suspect_vehicle"] = decoders["suspect_label"].inverse_transform(
-        result_df["suspect_vehicle"])
-    result_df["victim_vehicle"] = decoders["victim_label"].inverse_transform(
-        result_df["victim_vehicle"])
 
     return visualization(result_df, choosen_params)
 
 
 def visualization(df, params):
+
     data = df.copy()
     list_colors = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
                    for i in range(params['clusters'])]
@@ -238,9 +189,10 @@ def visualization(df, params):
 
     data["Color"] = data["Cluster"].apply(lambda x:
                                           list_colors[list_clusters[x]])
-    if not os.path.isdir(RESULT_DIR):
-      os.mkdir(RESULT_DIR)
+
     data.to_csv(f"{RESULT_DIR}/result.csv", index=False)
+    data["address"] = data["address"].map(lambda x: x.replace("'", ""))
+    
     labels = params['labels']
     labels = np.delete(labels, np.where(labels == -1))
     result = []
@@ -258,13 +210,15 @@ def visualization(df, params):
 
     with open(f"{RESULT_DIR}/result.json", 'w') as my_file:
         json.dump(str(result), my_file)
+
     now2 = datetime.now()
     first_time2 = now2.strftime("%H:%M:%S")
 
     return {
         "json_file": '/result.json',
         "start": first_time,
-        "stop": first_time2
+        "stop": first_time2,
+        "result": str(params)
     }
 
 # data_mining_process()

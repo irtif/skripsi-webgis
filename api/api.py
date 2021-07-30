@@ -30,7 +30,7 @@ class FileModel(db.Model):
   def __repr__(self):
     return f"File(file={self.file}"
 
-# db.create_all()
+db.create_all()
 
 signup_args = reqparse.RequestParser()
 signup_args.add_argument("email")
@@ -83,7 +83,7 @@ def login():
   if not user or not check_password_hash(user.password, args["password"]):
     return "Please check your login details and try again.", 401
 
-  token =  jwt.encode({'id': user.id, 'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=30)}, app.config['SECRET_KEY'])
+  token =  jwt.encode({'id': user.id, 'exp' : datetime.datetime.utcnow() + datetime.timedelta(minutes=180)}, app.config['SECRET_KEY'])
   return jsonify({'message': 'Login Successfully', 'token' : token})
 
 # --- FILE CONTROLLER --- #
