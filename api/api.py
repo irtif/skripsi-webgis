@@ -5,7 +5,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
 from functools import wraps
-from app import data_mining_process
+# from app import data_mining_process
+from app2 import processing
 
 
 app = Flask(__name__)
@@ -30,7 +31,7 @@ class FileModel(db.Model):
   def __repr__(self):
     return f"File(file={self.file}"
 
-db.create_all()
+# db.create_all()
 
 signup_args = reqparse.RequestParser()
 signup_args.add_argument("email")
@@ -174,7 +175,7 @@ def get_file(user):
 @app.route('/execute', methods=['GET'])
 @token_required
 def execute(user):
-  return data_mining_process()
+  return processing()
 
 @app.route('/show/<string:file_name>', methods=['GET'])
 @token_required

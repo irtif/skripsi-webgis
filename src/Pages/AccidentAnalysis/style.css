@@ -31,6 +31,9 @@
 
 }
 
+.modal-table .react-bootstrap-table{
+  font-size: 11px !important;
+}
 .cluster-content{
   width: 5rem;
   height: 2rem;

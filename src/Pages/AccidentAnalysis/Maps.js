@@ -71,7 +71,7 @@ function Result(props) {
           clusterData.push(temp);
           return "";
         });
-
+        console.log(data)
         setData(data);
         setCluster(getUnique(clusterData, "cluster"));
         executeModalData();
@@ -156,7 +156,6 @@ function Result(props) {
     axios
       .get("/execute", { headers })
       .then((res) => {
-        console.log(res);
         executeMapData();
       })
       .catch((err) => {
@@ -350,7 +349,7 @@ function Result(props) {
                                   ? [el.lat, el.long]
                                   : center
                               }
-                              radius={100}
+                              radius={50}
                             />
                           </FeatureGroup>
                         ) : (
