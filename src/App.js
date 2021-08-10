@@ -4,7 +4,8 @@ import Register from "./Pages/AuthPages/Register";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Data from "./Pages/Data/Data";
 import InputData from "./Pages/AccidentAnalysis/InputData";
-import Maps from './Pages/AccidentAnalysis/Maps'
+// import Maps from './Pages/AccidentAnalysis/Maps'
+import Maps2 from './Pages/AccidentAnalysis/Maps2'
 import ViewData from "./Pages/AccidentAnalysis/ViewData";
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
 
           <Route path="/input" component={InputData} />
           <Route path="/view" component={ViewData} />
-            <Route path="/maps" component={Maps} />
+          {/* <Route path="/maps" component={Maps} /> */}
+          <Route path="/maps2" component={Maps2} />
         </Switch>
       </BrowserRouter>
     </div>

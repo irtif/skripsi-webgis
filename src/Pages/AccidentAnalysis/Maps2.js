@@ -23,7 +23,7 @@ const headers = {
   "x-access-token": localStorage.getItem("satlatic_token"),
 };
 
-function Result(props) {
+function Result2(props) {
   const zoom = 13;
   const center = [-5.147975911780761, 119.43789672442817];
   const [loading, setLoading] = useState(false);
@@ -32,6 +32,7 @@ function Result(props) {
   const [cluster, setCluster] = useState([]);
   const [modalData, setModalData] = useState([]);
   const [column, setColumn] = useState([]);
+  const [markerData, setMarkerData] = useState([])
 
   useEffect(() => {
     setLoading(true);
@@ -61,6 +62,10 @@ function Result(props) {
           );
           return "";
         });
+        setData(data)
+
+        let initiate_marker = data.filter(el => el.Cluster === "0")
+        setMarkerData(initiate_marker)
 
         let clusterData = [];
         data.map((i) => {
@@ -71,15 +76,31 @@ function Result(props) {
           clusterData.push(temp);
           return "";
         });
-        console.log(data)
-        setData(data);
-        setCluster(getUnique(clusterData, "cluster"));
+
+        let new_clusters = getUnique(clusterData, "cluster")
+        setCluster(new_clusters);
         executeModalData();
+ 
       })
       .catch((err) => {
         executeClustering();
       });
   };
+
+  function getUnique(arr, comp) {
+    // store the comparison  values in array
+    const unique = arr
+      .map((e) => e[comp])
+
+      // store the indexes of the unique objects
+      .map((e, i, final) => final.indexOf(e) === i && i)
+
+      // eliminate the false indexes & return unique objects
+      .filter((e) => arr[e])
+      .map((e) => arr[e]);
+
+    return unique;
+  }
 
   const executeModalData = () => {
     axios
@@ -164,19 +185,11 @@ function Result(props) {
       });
   };
 
-  function getUnique(arr, comp) {
-    // store the comparison  values in array
-    const unique = arr
-      .map((e) => e[comp])
 
-      // store the indexes of the unique objects
-      .map((e, i, final) => final.indexOf(e) === i && i)
 
-      // eliminate the false indexes & return unique objects
-      .filter((e) => arr[e])
-      .map((e) => arr[e]);
-
-    return unique;
+  const showClusterMarkers = (cluster) => {
+    let filter_data = data.filter(el => el.Cluster === cluster)
+    setMarkerData(filter_data)
   }
 
   const customTotal = (from, to, size) => (
@@ -245,7 +258,7 @@ function Result(props) {
                 <div className="card">
                   <div className="card-header pt-4">
                     <h3 className="card-title float-left font-weight-bold float-left">
-                      Result
+                      Result 2
                     </h3>
                     <div
                       class="btn-group btn-group-toggle float-right"
@@ -296,7 +309,7 @@ function Result(props) {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                       />
 
-                      {data.map((el, index) => {
+                      {markerData.map((el, index) => {
                         return el.lat !== undefined ? (
                           <FeatureGroup
                             key={index}
@@ -349,7 +362,7 @@ function Result(props) {
                                   ? [el.lat, el.long]
                                   : center
                               }
-                              radius={50}
+                              radius={80}
                             />
                           </FeatureGroup>
                         ) : (
@@ -364,6 +377,7 @@ function Result(props) {
                             key={index}
                             className="cluster-content mb-3 mr-2"
                             style={{ backgroundColor: i.color }}
+                            onClick={() => showClusterMarkers(i.cluster)}
                           >
                             CLUSTER {i.cluster}
                           </div>
@@ -384,4 +398,4 @@ function Result(props) {
   );
 }
 
-export default Result;
+export default Result2;

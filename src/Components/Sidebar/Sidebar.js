@@ -11,7 +11,6 @@ function Sidebar(props) {
   const [move, setMove] = useState('')
   useEffect(() => {
     axios.get("/download", {headers}).then(res => {
-      console.log(res)
       setMove('/view')
     }).catch(err => setMove('/input'))
   }, [])

@@ -163,7 +163,7 @@ function ViewData(props) {
   );
 
   const executeData = () => {
-    window.location.href = '/maps';
+    window.location.href = '/maps2';
   };
 
   return (
