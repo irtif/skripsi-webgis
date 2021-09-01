@@ -6,7 +6,7 @@ from flask_restful import reqparse, fields, marshal_with, abort
 from flask_sqlalchemy import SQLAlchemy
 from functools import wraps
 # from app import data_mining_process
-from app2 import processing
+from app3 import processing
 
 
 app = Flask(__name__)

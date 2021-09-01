@@ -32,7 +32,7 @@ function Result2(props) {
   const [cluster, setCluster] = useState([]);
   const [modalData, setModalData] = useState([]);
   const [column, setColumn] = useState([]);
-  const [markerData, setMarkerData] = useState([])
+  const [markerData, setMarkerData] = useState([]);
 
   useEffect(() => {
     setLoading(true);
@@ -62,25 +62,11 @@ function Result2(props) {
           );
           return "";
         });
-        setData(data)
+        setData(data);
 
-        let initiate_marker = data.filter(el => el.Cluster === "0")
-        setMarkerData(initiate_marker)
-
-        let clusterData = [];
-        data.map((i) => {
-          let temp = {
-            cluster: i.Cluster,
-            color: i.Color,
-          };
-          clusterData.push(temp);
-          return "";
-        });
-
-        let new_clusters = getUnique(clusterData, "cluster")
-        setCluster(new_clusters);
+        let initiate_marker = data.filter((el) => el.Cluster === "0");
+        setMarkerData(initiate_marker);
         executeModalData();
- 
       })
       .catch((err) => {
         executeClustering();
@@ -107,6 +93,29 @@ function Result2(props) {
       .get("/show/result.json", { headers })
       .then((res) => {
         let result = JSON.parse(res.data.replace(/'/g, '"'));
+        let clusterData = [];
+        result.map((data) => {
+          let times = "";
+          for (let i = 0; i < data.time.length; i++) {
+            times += data.time[i] + " ";
+          }
+
+          let accident_types = "";
+          for (let i = 0; i < data.accident_types.length; i++) {
+            accident_types += data.accident_types[i] + " ";
+          }
+          let temp = {
+            cluster: data.cluster,
+            color: data.color[0],
+            time: times,
+            accident_types: accident_types,
+          };
+          clusterData.push(temp);
+          return "";
+        });
+
+        let new_clusters = getUnique(clusterData, "cluster");
+        setCluster(new_clusters);
         setModalData(result);
         setColumn([
           {
@@ -185,16 +194,17 @@ function Result2(props) {
       });
   };
 
-
-
   const showClusterMarkers = (cluster) => {
-    let filter_data = data.filter(el => el.Cluster === cluster)
-    setMarkerData(filter_data)
-  }
+    console.log(data)
+    console.log(cluster)
+    let filter_data = data.filter((el) => el.Cluster === String(cluster));
+    console.log(filter_data)
+    setMarkerData(filter_data);
+  };
 
   const customTotal = (from, to, size) => (
     <span className="react-bootstrap-table-pagination-total">
-      Showing { from } to { to } of { size } Results
+      Showing {from} to {to} of {size} Results
     </span>
   );
 
@@ -215,7 +225,7 @@ function Result2(props) {
     showTotal: true,
     paginationTotalRenderer: customTotal,
     lastPageTitle: "Last page",
-    sizePerPage: 1  , // A numeric array is also available. the purpose of above example is custom the text
+    sizePerPage: 1, // A numeric array is also available. the purpose of above example is custom the text
   };
 
   function MyVerticallyCenteredModal(props) {
@@ -362,7 +372,7 @@ function Result2(props) {
                                   ? [el.lat, el.long]
                                   : center
                               }
-                              radius={80}
+                              radius={150}
                             />
                           </FeatureGroup>
                         ) : (
@@ -370,7 +380,7 @@ function Result2(props) {
                         );
                       })}
                     </MapContainer>
-                    <div className="row ml-3 mt-5">
+                    <div className="row ml-4 mt-5">
                       {cluster.map((i, index) => {
                         return i.cluster !== undefined ? (
                           <div
@@ -379,7 +389,7 @@ function Result2(props) {
                             style={{ backgroundColor: i.color }}
                             onClick={() => showClusterMarkers(i.cluster)}
                           >
-                            CLUSTER {i.cluster}
+                            CLUSTER {i.cluster} - {i.time} - {i.accident_types}
                           </div>
                         ) : (
                           ""
