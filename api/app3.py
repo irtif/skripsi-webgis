@@ -28,6 +28,9 @@ def processing():
     # --- IMPORT DATASET --- #
     # 1. READ DATA FROM FILE FOLDER #
     df = pd.read_csv(f"{DATASET_DIR}/data.csv")
+    if len(df) > 7000:
+      df.reset_index(drop=True, inplace=True)
+      df = df[-7000:].copy()
     df.drop(["no", "date", "suspect_age", "victim_age", "MD", "LB", "LR",
             "material_loss"], axis="columns", inplace=True)
     df.columns = ["day", "time", "address", "district", "accident_types",
@@ -218,5 +221,4 @@ def dbscan_clustering(df, pca_df):
   return {
         "start": execute_start,
         "stop": execute_stop,
-    }
-
+  }

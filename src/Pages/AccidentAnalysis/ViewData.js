@@ -23,32 +23,46 @@ function ViewData(props) {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [columnData, setColumn] = useState([]);
-
+  const [count, setCount] = useState(0)
   useEffect(() => {
     setLoading(true);
     axios
       .get("/download", { headers })
       .then((res) => {
-        console.log(res.data)
         let data = [];
         let cells = res.data.split("\n").map(function (el) {
           return el.split("/");
         });
-        let columns = cells[0][0].split('"').filter((e) => e && e !== ",");
+        let columns = cells[0][0].split('"')[0].split(",");
         cells.shift();
         cells.map((i) => {
           let arr = i[0]
             .split('"')
             .filter((e) => e && e !== ",")
-            .map((i) => i.trim());
-          data.push(
-            Object.assign.apply(
-              {},
-              columns.map((v, i) => ({ [v]: arr[i] }))
-            )
-          );
-          return ""
+            .map((i) => i.trim())
+            .filter((e) => e);
+
+          if (arr.length > 1) {
+            let arr1 = arr[1];
+            arr = arr[0].split(",").filter((e) => e);
+            arr.push(arr1);
+          } else {
+            if (arr[0]) {
+              arr = arr[0].split(",");
+            }
+          }
+          if (arr.length > 1) {
+            data.push(
+              Object.assign.apply(
+                {},
+                columns.map((v, i) => ({ [v]: arr[i] }))
+              )
+            );
+          }
+          return "";
         });
+
+        data = data.filter(e => e.day !== "")
         setData(data);
         setColumn([
           {
@@ -56,6 +70,9 @@ function ViewData(props) {
             text: "No",
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
+            formatter: (cell, row, enumObject, index) => {
+              return <p>{parseInt(cell)+1}</p>;
+            },
           },
           {
             dataField: "day",
@@ -94,13 +111,15 @@ function ViewData(props) {
             style: { textAlign: "center", color: "black" },
           },
         ]);
+
         setLoading(false);
+        setCount(100);
       })
       .catch((err) => {
         console.log(err);
         setLoading(true);
-      });
-  }, []);
+      })
+  }, [count]);
 
   const customTotal = (from, to, size) => (
     <span className="react-bootstrap-table-pagination-total ml-3">
@@ -135,7 +154,7 @@ function ViewData(props) {
         text: "All",
         value: data.length,
       },
-    ]
+    ],
   };
 
   const contentTable = ({ paginationProps, paginationTableProps }) => (
@@ -163,7 +182,7 @@ function ViewData(props) {
   );
 
   const executeData = () => {
-    window.location.href = '/maps2';
+    window.location.href = "/maps2";
   };
 
   return (
@@ -178,7 +197,7 @@ function ViewData(props) {
                 <div className="card">
                   <div className="card-header pt-4">
                     <h3 className="card-title float-left font-weight-bold">
-                      View Imported Data
+                      View Imported Data <p className="d-none">Count: {count}</p>
                     </h3>
                     <button
                       className="btn btn-primary float-right"

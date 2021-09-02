@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, make_response
 from flask.helpers import send_from_directory
 import werkzeug, os, jwt, datetime
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -7,7 +7,8 @@ from flask_sqlalchemy import SQLAlchemy
 from functools import wraps
 # from app import data_mining_process
 from app3 import processing
-
+import pandas as pd
+import numpy as np
 
 app = Flask(__name__)
 UPLOAD_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
@@ -129,9 +130,23 @@ def post(user):
     
     data = FileModel(file=file_name)
 
-    if not os.path.isdir(UPLOAD_DIR):
-      os.mkdir(UPLOAD_DIR)
+    if os.path.isdir(UPLOAD_DIR):
+      df = pd.read_csv(f"{UPLOAD_DIR}/data.csv")
+      file.save(f"{UPLOAD_DIR}/temp.csv")
+      df2 = pd.read_csv(f"{UPLOAD_DIR}/temp.csv")
+      new_df = df.append(df2)
+      new_df.reset_index(drop=True, inplace=True)
+      new_df['no'] = [i for i in range(0, new_df.shape[0])]
+      new_df.to_csv(f"{UPLOAD_DIR}/data.csv", index=False)
 
+      os.remove(f"{RESULT_DIR}/result.csv")
+      os.remove(f"{RESULT_DIR}/result.json")
+      os.rmdir(RESULT_DIR)
+      db.session.add(data)
+      db.session.commit()
+      return data
+    
+    os.mkdir(UPLOAD_DIR)
     file.save(f"{UPLOAD_DIR}/data.csv")
     db.session.add(data)
     db.session.commit()
