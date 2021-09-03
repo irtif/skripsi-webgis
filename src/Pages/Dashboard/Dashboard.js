@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
-
 function Dashboard(props) {
+
+  useEffect(() => {
+  })
+
+  
   return (
     <div className="wrapper">
       <Sidebar />

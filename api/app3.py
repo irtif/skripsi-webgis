@@ -273,7 +273,8 @@ def dbscan_clustering(min_samples, df, pca_df):
 
   # create color for each clusters
   new_df["Color"] = new_df["Cluster"].apply(lambda x: colors[no_clusters[x]])
-
+  new_clusters = list(np.unique(new_df['Cluster'].values.tolist()))
+  new_df['Cluster'] = new_df['Cluster'].apply(lambda x: new_clusters.index(x))
   if not os.path.isdir(RESULT_DIR):
     os.mkdir(RESULT_DIR)
 
@@ -283,7 +284,8 @@ def dbscan_clustering(min_samples, df, pca_df):
   new_df["address"] = new_df["address"].map(lambda x: x.replace("'", ""))
   result = []
 
-  for i in np.unique(no_clusters):
+  reset_clusters = [i for i in range(0, len(new_clusters))]
+  for i in np.unique(reset_clusters):
     vehicle_types = (list(dict.fromkeys(list(np.unique(new_df.loc[new_df["Cluster"]==i]["victim_vehicle"].values)) + list(np.unique(new_df.loc[new_df["Cluster"]==i]["suspect_vehicle"].values)))))
     vehicle_types.remove("NOV") if "NOV" in vehicle_types else vehicle_types
 

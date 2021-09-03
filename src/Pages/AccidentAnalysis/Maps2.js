@@ -387,13 +387,15 @@ function Result2(props) {
                     <div className="row ml-4 mt-5">
                       {cluster.map((i, index) => {
                         return i.cluster !== undefined ? (
+                          
                           <div
                             key={index}
                             className="cluster-content mb-3 mr-2"
                             style={{ backgroundColor: i.color }}
                             onClick={() => showClusterMarkers(i.cluster)}
                           >
-                            CLUSTER {i.cluster} - {i.time} - {i.accident_types}
+                            {}
+                            CLUSTER {index} - {i.time} - {i.accident_types}
                           </div>
                         ) : (
                           ""
