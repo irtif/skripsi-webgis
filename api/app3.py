@@ -29,8 +29,8 @@ def processing():
     # 1. READ DATA FROM FILE FOLDER #
     df = pd.read_csv(f"{DATASET_DIR}/data.csv")
     if len(df) > 7000:
-      df.reset_index(drop=True, inplace=True)
       df = df[-7000:].copy()
+      df.reset_index(drop=True, inplace=True)
     df.drop(["no", "date", "suspect_age", "victim_age", "MD", "LB", "LR",
             "material_loss"], axis="columns", inplace=True)
     df.columns = ["day", "time", "address", "district", "accident_types",
@@ -148,7 +148,7 @@ def processing():
     df_encoded.drop(["NOV"], axis="columns", inplace=True)
     df_encoded = df_encoded.groupby(level=0,axis=1).sum()
     df_encoded = df_encoded[unique_label]
-
+    minPts = df_encoded.shape[1]*2-1
     """
     Due to combining the suspect and victim vehicle types allows the occurrence of 
     label 1 increase.. below is the code to keep it at 1 even though the same attributes 
@@ -163,11 +163,98 @@ def processing():
     pca_df = pd.DataFrame(pca2)
 
  
-    return dbscan_clustering(location_merged, pca_df)
+    return dbscan_clustering(minPts, location_merged, pca_df)
 
-def dbscan_clustering(df, pca_df):
+def calculate_SSE(sse_df, eps, minpts):
+    clusters_point = {}
+    sse = {}
+    
+    sse_df = sse_df.loc[sse_df["Label"] != -1]
+    
+    for index, row in sse_df.iterrows():
+        label = row["Label"].astype(int)
+
+        if label not in clusters_point:
+            temp_df = sse_df.copy()
+            temp_df = temp_df.loc[temp_df["Label"] == label]
+
+            column_0_sum = format(temp_df[0].sum()/temp_df.shape[0], ".6f")
+            column_1_sum = format(temp_df[1].sum()/temp_df.shape[0], ".6f")
+            column_2_sum = format(temp_df[2].sum()/temp_df.shape[0], ".6f")
+
+            core_point = [column_0_sum, column_1_sum, column_2_sum]
+            clusters_point[label] = core_point
+
+        x = row[0]
+        y = row[1]
+        z = row[2]
+        
+        corepoint = np.array(clusters_point[label]).astype(float)
+        sse_formula = ((x - corepoint[0])**2) + ((y - corepoint[1])**2) + ((z - corepoint[2])**2)
+
+        if label in sse:
+            prev_sse = sse[label]
+            sse_cluster = prev_sse + sse_formula        
+            sse[label] = sse_cluster
+
+        else:
+            sse[label] = sse_formula
+
+    values = sse.values()    
+    SSE = sum(values)
+    return SSE
+
+def dbscan_clustering(min_samples, df, pca_df):
   
-  dbc = dbscan(eps=0.23, min_samples=53).fit(pca_df)
+  # TUNING HYPERPARAMETERS
+  clusters = []
+  sil_score = []
+  sil_percentage = []
+  SSE = []
+  epsilon = []
+  minPts = []
+  cluster_labels = []
+  no_noise = []
+
+  list_eps = np.arange(1, 30)
+
+  for p in list_eps:
+    dbc = dbscan(eps=p/100, min_samples=min_samples).fit(pca_df)
+    labels = dbc.labels_
+    no_noise.append(list(labels).count(-1))
+    
+    sse_df = pca_df.copy()
+    sse_df['Label'] = labels
+    sse_value = calculate_SSE(sse_df, eps=p/100, minpts=53)
+    SSE.append(sse_value)
+    
+    labels = np.delete(labels, np.where(labels == -1))
+    
+    epsilon.append(p/100)
+    minPts.append(53)
+    
+    clusters.append(len(np.unique(labels)))
+    
+    score_df = sse_df.loc[sse_df["Label"] != -1]
+    score = float(metrics.silhouette_score(score_df, labels)) if len(np.unique(labels)) > 1 else "Null"
+    sil_score.append("%.3f" % score if type(score) == float else np.nan)
+    sil_percentage.append("%.1f" % (((score+1)/2)*100) + " %" if type(score) == float else np.nan)
+    
+    cluster_labels.append(labels)
+
+  params = list(zip(clusters, epsilon, minPts, SSE, sil_score, no_noise))
+  params_df = pd.DataFrame(params, columns=['clusters', 'eps', 'min_pts','SSE','silhouette_score', 'number_of_noises'])
+
+  params_df['silhouette_score'] = pd.to_numeric(params_df['silhouette_score'])
+  filter_df = params_df[(params_df.silhouette_score > 0.9) & (params_df.SSE < 200)]
+  filter_df = filter_df[filter_df.number_of_noises == filter_df.number_of_noises.min()]
+  filter_df = filter_df[filter_df.clusters == filter_df.clusters.min()]
+
+  choosenEps = 0.23
+  if len(filter_df) >= 1:
+    choosenEps = filter_df["eps"].iloc[0]
+
+  dbc = dbscan(eps=choosenEps, min_samples=min_samples).fit(pca_df)
   labels = dbc.labels_
   df['Cluster'] = labels
   df = df.loc[df["Cluster"] != -1]
@@ -180,7 +267,7 @@ def dbscan_clustering(df, pca_df):
  
   new_df = pd.merge(group_df, df, on=['address', 'Cluster'])
   no_clusters = np.unique(labels)
-
+  print(no_clusters)
   colors = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
                 for i in range(len(no_clusters))]
 
@@ -215,10 +302,13 @@ def dbscan_clustering(df, pca_df):
     json.dump(str(result), my_file)
   
   execute_stop = datetime.now().strftime("%H:%M:%S")
-  print("execute_start: ", execute_start)
-  print("execute_stop: ", execute_stop) 
+  # print("execute_start: ", execute_start)
+  # print("execute_stop: ", execute_stop) 
 
   return {
-        "start": execute_start,
-        "stop": execute_stop,
+    "start": execute_start,
+    "stop": execute_stop,
   }
+
+
+# processing()

@@ -183,9 +183,14 @@ function Result2(props) {
   };
 
   const executeClustering = () => {
+    var startTime = new Date();
+    console.log(startTime.getHours() + ":" + startTime.getMinutes() + ":" + startTime.getSeconds())
     axios
       .get("/execute", { headers })
       .then((res) => {
+        console.log(res)
+        var endTime = new Date();
+        console.log(endTime.getHours() + ":" + endTime.getMinutes() + ":" + endTime.getSeconds())
         executeMapData();
       })
       .catch((err) => {
@@ -195,8 +200,7 @@ function Result2(props) {
   };
 
   const showClusterMarkers = (cluster) => {
-    console.log(data)
-    console.log(cluster)
+    // console.log(data)
     let filter_data = data.filter((el) => el.Cluster === String(cluster));
     console.log(filter_data)
     setMarkerData(filter_data);

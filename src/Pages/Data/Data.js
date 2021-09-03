@@ -33,20 +33,20 @@ function Data(props) {
         let cells = res.data.split("\n").map(function (el) {
           return el.split("/");
         });
-        let columns = cells[0][0].split('"').filter((e) => e && e !== ",");
+        let columns = cells[0][0].split(",");
         cells.shift();
         cells.map((i) => {
           let arr = i[0]
-            .split('"')
+            .split(",")
             .filter((e) => e && e !== ",")
             .map((i) => i.trim());
           data.push(
             Object.assign.apply(
               {},
-              columns.map((v, i) => ({ [v]: arr[i] }))
+              columns.map((v, i) => ({ [v.trim()]: arr[i] }))
             )
           );
-          return ""
+          return "";
         });
         setData(data);
         setColumn([

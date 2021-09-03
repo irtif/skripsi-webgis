@@ -44,12 +44,12 @@ function Sidebar(props) {
               <p>Accident Analysis</p>
               </Link>
           </li>
-          <li>
+          {/* <li>
             <a href="./notifications.html">
               <i className="tim-icons icon-refresh-01"></i>
               <p>History</p>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
