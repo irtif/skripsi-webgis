@@ -35,7 +35,7 @@
   font-size: 11px !important;
 }
 .cluster-content{
-  width: 15rem;
+  width: 18rem;
   /* height: 2rem; */
   border-radius: 5px;
   font-size: 12px;
@@ -45,6 +45,7 @@
   line-height: 3rem;
   cursor: pointer;
 }
+
 .leaflet-popup-content p{
   margin: 0px !important;
 }

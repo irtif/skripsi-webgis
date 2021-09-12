@@ -31,6 +31,7 @@ def processing():
     if len(df) > 7000:
       df = df[-7000:].copy()
       df.reset_index(drop=True, inplace=True)
+      
     df.drop(["no", "date", "suspect_age", "victim_age", "MD", "LB", "LR",
             "material_loss"], axis="columns", inplace=True)
     df.columns = ["day", "time", "address", "district", "accident_types",

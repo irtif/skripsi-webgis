@@ -16,14 +16,7 @@ function Navbar(props) {
             </button>
           </div>
           <Link className="navbar-brand" to='/dashboard'>
-            <img src={logo} alt="logo_satlantas" width="50" className="rounded-circle" />
-          </Link>
-          <Link
-            to='/dashboard'
-            className="text-white font-weight-bold"
-            style={{ marginLeft: "5rem" }}
-          >
-            SATLANTAS MAKASSAR
+            <img src={logo} alt="logo_satlantas" width="50" className="rounded-circle" /> <span className="h5 text-white font-weight-bold" >SATLANTAS MAKASSAR</span>
           </Link>
         </div>
         <button

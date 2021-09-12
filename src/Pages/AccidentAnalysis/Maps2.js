@@ -104,17 +104,26 @@ function Result2(props) {
           for (let i = 0; i < data.accident_types.length; i++) {
             accident_types += data.accident_types[i] + " ";
           }
+
+          let vehicle_types = "";
+
+          for (let i = 0; i < data.vehicle_types.length; i++) {
+            vehicle_types += data.vehicle_types[i] + " ";
+          }
           let temp = {
             cluster: data.cluster,
             color: data.color[0],
             time: times,
             accident_types: accident_types,
+            vehicle_types: vehicle_types
           };
+          console.log(temp)
           clusterData.push(temp);
           return "";
         });
 
         let new_clusters = getUnique(clusterData, "cluster");
+        console.log(new_clusters)
         setCluster(new_clusters);
         setModalData(result);
         setColumn([
@@ -272,7 +281,7 @@ function Result2(props) {
                 <div className="card">
                   <div className="card-header pt-4">
                     <h3 className="card-title float-left font-weight-bold float-left">
-                      Result 2
+                      CLUSTERING RESULT
                     </h3>
                     <div
                       class="btn-group btn-group-toggle float-right"
@@ -394,8 +403,8 @@ function Result2(props) {
                             style={{ backgroundColor: i.color }}
                             onClick={() => showClusterMarkers(i.cluster)}
                           >
-                            {}
                             CLUSTER {index} - {i.time} - {i.accident_types}
+                           <span className="d-block" style={{marginTop:'-2rem'}}> {i.vehicle_types}</span>
                           </div>
                         ) : (
                           ""

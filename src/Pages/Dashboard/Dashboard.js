@@ -4,6 +4,7 @@ import Sidebar from "../../Components/Sidebar/Sidebar";
 import { Line } from "react-chartjs-2";
 import { MDBContainer } from "mdbreact";
 import axios from "axios";
+import "./Dashboard.css";
 
 const headers = {
   "Content-Type": "application/json",
@@ -40,128 +41,235 @@ function Dashboard(props) {
           return "";
         });
 
-        let years = [];
-        let chartData = [];
-        data.map((i) => {
-          let check = new Date(i.date);
-          let year = check.getFullYear();
-          let month = check.getMonth() + 1;
-          let checkYear = chartData.filter((data) => data.year == year);
-
-          if (checkYear.length > 0 && !isNaN(year)) {
-            let yearIndex = chartData.findIndex((x) => x.year === year);
-            let checkMonth = checkYear[0].months.filter(
-              (data) => data.month == month
-            );
-            if (checkMonth.length > 0) {
-              let monthIndex = chartData[yearIndex].months.findIndex(
-                (x) => x.month === month
-              );
-              chartData[yearIndex].months[monthIndex].values += 1;
-            } else {
-              chartData[yearIndex].months.push({ month: month, values: 1 });
-            }
-          } else if (!isNaN(year)) {
-            let temp = {};
-            temp["year"] = year;
-            temp["months"] = [{ month: month, values: 1 }];
-            chartData.push(temp);
-          }
-        });
-
-        // chartData.map(x => x.months.sort((a, b) => (a.month > b.month ? 1 : -1)))
-        chartData.sort((a, b) => (a.year > b.year ? 1 : -1));        
-        chartData.map(x => {
-          if(x.months.length<12){
-            x.months = Array.from(Array(12).keys(), month => 
-            x.months.find(sale => +sale.month === month+1) || { month: month+1, sale: 0 }
-            );
-        }
-          x.months.sort((a, b) => (a.month > b.month ? 1 : -1))
-        })
-        let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
-        // let newArr = chartData.slice(0, 3)
-        let datasets = [
-          {
-            fill: true,
-            lineTension: 0.3,
-            backgroundColor: "rgba(225, 204,230, .3)",
-            borderColor: "rgb(205, 130, 158)",
-            borderCapStyle: "butt",
-            borderDash: [],
-            borderDashOffset: 0.0,
-            borderJoinStyle: "miter",
-            pointBorderColor: "rgb(205, 130,1 58)",
-            pointBackgroundColor: "rgb(255, 255, 255)",
-            pointBorderWidth: 10,
-            pointHoverRadius: 5,
-            pointHoverBackgroundColor: "rgb(0, 0, 0)",
-            pointHoverBorderColor: "rgba(220, 220, 220,1)",
-            pointHoverBorderWidth: 2,
-            pointRadius: 1,
-            pointHitRadius: 10,
-          },
-          {
-            fill: true,
-            lineTension: 0.3,
-            backgroundColor: "rgba(184, 185, 210, .3)",
-            borderColor: "rgb(35, 26, 136)",
-            borderCapStyle: "butt",
-            borderDash: [],
-            borderDashOffset: 0.0,
-            borderJoinStyle: "miter",
-            pointBorderColor: "rgb(35, 26, 136)",
-            pointBackgroundColor: "rgb(255, 255, 255)",
-            pointBorderWidth: 10,
-            pointHoverRadius: 5,
-            pointHoverBackgroundColor: "rgb(0, 0, 0)",
-            pointHoverBorderColor: "rgba(220, 220, 220, 1)",
-            pointHoverBorderWidth: 2,
-            pointRadius: 1,
-            pointHitRadius: 10,
-          },
-          {
-            fill: true,
-            lineTension: 0.3,
-            backgroundColor: "rgba(184, 185, 210, .3)",
-            borderColor: "rgb(35, 26, 136)",
-            borderCapStyle: "butt",
-            borderDash: [],
-            borderDashOffset: 0.0,
-            borderJoinStyle: "miter",
-            pointBorderColor: "rgb(35, 26, 136)",
-            pointBackgroundColor: "rgb(255, 255, 255)",
-            pointBorderWidth: 10,
-            pointHoverRadius: 5,
-            pointHoverBackgroundColor: "rgb(0, 0, 0)",
-            pointHoverBorderColor: "rgba(220, 220, 220, 1)",
-            pointHoverBorderWidth: 2,
-            pointRadius: 1,
-            pointHitRadius: 10,
-          },
-        ];
-        newArr.map((x, index) => {
-          let temp = datasets[index];
-          temp["label"] = x.year;
-          temp["data"] = x.months.map((i) => i.values);
-          datasets[index] = temp
-        });
-
-        setData({
-          labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-          datasets: datasets
-        })
-
-        // let count = 0
-        // chartData.map(x => x.months.map(y => count += y.values))
-        // console.log(count)
-        // let totalYears = years.filter((v, i, a) => a.indexOf(v) === i);
+        numberOfCase(data, columns);
+        numberOfVictim(data);
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
       });
   }, []);
+
+  const numberOfCase = (data, columns) => {
+    let chartData = [];
+    data.map((i) => {
+      let check = new Date(i.date);
+      let year = check.getFullYear();
+      let month = check.getMonth() + 1;
+      let checkYear = chartData.filter((data) => data.year == year);
+      if (checkYear.length > 0 && !isNaN(year)) {
+        let yearIndex = chartData.findIndex((x) => x.year === year);
+        let checkMonth = checkYear[0].months.filter(
+          (data) => data.month == month
+        );
+        if (checkMonth.length > 0) {
+          let monthIndex = chartData[yearIndex].months.findIndex(
+            (x) => x.month === month
+          );
+          chartData[yearIndex].months[monthIndex].values += 1;
+        } else {
+          chartData[yearIndex].months.push({ month: month, values: 1 });
+        }
+      } else if (!isNaN(year)) {
+        let temp = {};
+        temp["year"] = year;
+        temp["months"] = [{ month: month, values: 1 }];
+        chartData.push(temp);
+      }
+    });
+
+    // chartData.map(x => x.months.sort((a, b) => (a.month > b.month ? 1 : -1)))
+    chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
+    chartData.map((x) => {
+      if (x.months.length < 12) {
+        x.months = Array.from(
+          Array(12).keys(),
+          (month) =>
+            x.months.find((sale) => +sale.month === month + 1) || {
+              month: month + 1,
+              sale: 0,
+            }
+        );
+      }
+      x.months.sort((a, b) => (a.month > b.month ? 1 : -1));
+    });
+    let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
+    // let newArr = chartData.slice(0, 3)
+    let datasets = [
+      {
+        fill: true,
+        lineTension: 0.3,
+        backgroundColor: "rgba(225, 204,230, .3)",
+        borderColor: "rgb(205, 130, 158)",
+        borderCapStyle: "butt",
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: "miter",
+        pointBorderColor: "rgb(205, 130, 158)",
+        pointBackgroundColor: "rgb(255, 255, 255)",
+        pointBorderWidth: 7,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgb(0, 0, 0)",
+        pointHoverBorderColor: "rgba(220, 220, 220,1)",
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+      },
+      {
+        fill: true,
+        lineTension: 0.3,
+        backgroundColor: "rgba(184, 185, 210, .3)",
+        borderColor: "rgb(35, 26, 136)",
+        borderCapStyle: "butt",
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: "miter",
+        pointBorderColor: "rgb(35, 26, 136)",
+        pointBackgroundColor: "rgb(255, 255, 255)",
+        pointBorderWidth: 7,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgb(0, 0, 0)",
+        pointHoverBorderColor: "rgba(220, 220, 220, 1)",
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+      },
+      {
+        fill: true,
+        lineTension: 0.3,
+        backgroundColor: "rgba(184, 185, 210, .3)",
+        borderColor: "rgb(156, 5, 111)",
+        borderCapStyle: "butt",
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: "miter",
+        pointBorderColor: "rgb(156, 5, 111)",
+        pointBackgroundColor: "rgb(255, 255, 255)",
+        pointBorderWidth: 7,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgb(0, 0, 0)",
+        pointHoverBorderColor: "rgba(220, 220, 220, 1)",
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+      },
+    ];
+    newArr.map((x, index) => {
+      let temp = datasets[index];
+      temp["label"] = x.year;
+      temp["data"] = x.months.map((i) => i.values);
+      datasets[index] = temp;
+    });
+
+    setData({
+      labels: [
+        "JAN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAY",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OCT",
+        "NOV",
+        "DEC",
+      ],
+
+      datasets: datasets,
+      barChartOptions: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          xAxes: [
+            {
+              barPercentage: 1,
+              gridLines: {
+                display: true,
+                color: "rgba(0, 0, 0, 1)",
+              },
+            },
+          ],
+          yAxes: [
+            {
+              gridLines: {
+                display: true,
+                color: "rgba(0, 0, 0, 1)",
+              },
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+      },
+    });
+  };
+
+  let options = {
+    legend: {
+      labels: {
+        fontColor: "#d9d8d7",
+      },
+    },
+    title: {
+      display: true,
+      fontColor: "#d9d8d7",
+      text: "Accident Records",
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            // beginAtZero: true,
+            fontColor: "#d9d8d7",
+            fontSize: 10,
+            stepSize: 50,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            fontColor: "#d9d8d7",
+            fontSize: 10,
+          },
+        },
+      ],
+    },
+  };
+
+  const numberOfVictim = (data) => {
+    let chartData = [];
+    data.map((i) => {
+      let check = new Date(i.date);
+      let year = check.getFullYear();
+      let month = check.getMonth() + 1;
+      let checkYear = chartData.filter((data) => data.year == year);
+
+      if (checkYear.length > 0 && !isNaN(year)) {
+        // let yearIndex = chartData.findIndex((x) => x.year === year);
+        // let checkMonth = checkYear[0].months.filter(
+        //   (data) => data.month == month
+        // );
+        // if (checkMonth.length > 0) {
+        //   let monthIndex = chartData[yearIndex].months.findIndex(
+        //     (x) => x.month === month
+        //   );
+        //   chartData[yearIndex].months[monthIndex].values += 1;
+        // } else {
+        //   chartData[yearIndex].months.push({ month: month, values: 1 });
+        // }
+      } else if (!isNaN(year)) {
+        // console.log(i)
+        // let temp = {};
+        // temp["year"] = year;
+        // temp["months"] = [{ month: month, values: 1 }];
+        // chartData.push(temp);
+      }
+    });
+  };
 
   return (
     <div className="wrapper">
@@ -178,63 +286,53 @@ function Dashboard(props) {
                       <h5 className="card-category">Accident</h5>
                       <h2 className="card-title">Based on Location</h2>
                     </div>
-                    <div className="col-sm-6">
-                      <div
-                        className="btn-group btn-group-toggle float-right"
-                        data-toggle="buttons"
-                      >
-                        <label
-                          className="btn btn-sm btn-primary btn-simple active"
-                          id="0"
-                        >
-                          <input type="radio" name="options" checked />
-                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Accounts
-                          </span>
-                          <span className="d-block d-sm-none">
-                            <i className="tim-icons icon-single-02"></i>
-                          </span>
-                        </label>
-                        <label
-                          className="btn btn-sm btn-primary btn-simple"
-                          id="1"
-                        >
-                          <input
-                            type="radio"
-                            className="d-none d-sm-none"
-                            name="options"
-                          />
-                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Purchases
-                          </span>
-                          <span className="d-block d-sm-none">
-                            <i className="tim-icons icon-gift-2"></i>
-                          </span>
-                        </label>
-                        <label
-                          className="btn btn-sm btn-primary btn-simple"
-                          id="2"
-                        >
-                          <input
-                            type="radio"
-                            className="d-none"
-                            name="options"
-                          />
-                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            Sessions
-                          </span>
-                          <span className="d-block d-sm-none">
-                            <i className="tim-icons icon-tap-02"></i>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
                   </div>
                 </div>
                 <div class="card-body">
                   <MDBContainer>
-                    <Line data={data} options={{ responsive: true }} />
+                    <Line data={data} options={options} />
                   </MDBContainer>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card card-chart">
+                <div class="card-header">
+                  <h5 class="card-category">Number of Victim</h5>
+                  {/* <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3> */}
+                </div>
+                <div class="card-body">
+                  <div class="chart-area">
+                    {/* <canvas id="chartLinePurple"></canvas> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-chart">
+                <div class="card-header">
+                  <h5 class="card-category">Accident Types</h5>
+                  {/* <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3> */}
+                </div>
+                <div class="card-body">
+                  <div class="chart-area">
+                    {/* <canvas id="CountryChart"></canvas> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-chart">
+                <div class="card-header">
+                  <h5 class="card-category">Vehicles Involved</h5>
+                  {/* <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3> */}
+                </div>
+                <div class="card-body">
+                  <div class="chart-area">
+                    {/* <canvas id="chartLineGreen"></canvas> */}
+                  </div>
                 </div>
               </div>
             </div>

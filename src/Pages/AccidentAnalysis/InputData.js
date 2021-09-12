@@ -73,9 +73,9 @@ function Maps(props) {
                             ></path>
                           </g>
                         </svg>
-                        <h6 className="display-5 mt-3 mb-5">
+                        <h4 className="mt-3 mb-5">
                           Enter the required data for analysis
-                        </h6>
+                        </h4>
                         <div
                           className="container text-left text-light"
                           style={{ fontSize: "10px" }}
