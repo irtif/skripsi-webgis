@@ -117,14 +117,14 @@ function Login(props) {
                 </Button>
               </center>
             </Form>
-            <div>
+            {/* <div>
               <p
                 className="text-dark text-center mt-4"
                 style={{ fontSize: "12px" }}
               >
                 Don't Have an Account? <Link to="/register">Sign Up</Link>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

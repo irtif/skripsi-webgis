@@ -55,6 +55,9 @@ function Data(props) {
             text: "No",
             headerStyle: { textAlign: "center", color: "white" },
             style: { textAlign: "center", color: "black" },
+            formatter: (cell, row, enumObject, index) => {
+              return <p>{parseInt(cell)}</p>;
+            },
           },
           {
             dataField: "day",

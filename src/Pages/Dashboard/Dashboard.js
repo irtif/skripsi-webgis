@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
-import { Line } from "react-chartjs-2";
+import { Line, Bar } from "react-chartjs-2";
 import { MDBContainer } from "mdbreact";
 import axios from "axios";
 import "./Dashboard.css";
@@ -14,6 +14,7 @@ const headers = {
 function Dashboard(props) {
   const [loading, setLoading] = useState(false);
   const [newData, setNewData] = useState({});
+  const [victimData, setVictimData] = useState({});
   const [data, setData] = useState({});
 
   useEffect(() => {
@@ -240,6 +241,26 @@ function Dashboard(props) {
     },
   };
 
+  let victimOptions = {
+    responsive: true,
+    legend: {
+      display: false,
+    },
+    type: "bar",
+    scales: {
+      xAxes: [
+        {
+          stacked: true,
+        },
+      ],
+      yAxes: [
+        {
+          stacked: true,
+        },
+      ],
+    },
+  };
+
   const numberOfVictim = (data) => {
     let chartData = [];
     data.map((i) => {
@@ -247,28 +268,65 @@ function Dashboard(props) {
       let year = check.getFullYear();
       let month = check.getMonth() + 1;
       let checkYear = chartData.filter((data) => data.year == year);
-
       if (checkYear.length > 0 && !isNaN(year)) {
-        // let yearIndex = chartData.findIndex((x) => x.year === year);
-        // let checkMonth = checkYear[0].months.filter(
-        //   (data) => data.month == month
-        // );
-        // if (checkMonth.length > 0) {
-        //   let monthIndex = chartData[yearIndex].months.findIndex(
-        //     (x) => x.month === month
-        //   );
-        //   chartData[yearIndex].months[monthIndex].values += 1;
-        // } else {
-        //   chartData[yearIndex].months.push({ month: month, values: 1 });
-        // }
+        let yearIndex = chartData.findIndex((x) => x.year === year);
+        i.LR.includes("-")
+          ? console.log()
+          : (chartData[yearIndex].LR += parseInt(i.LR));
+        i.LB.includes("-")
+          ? console.log()
+          : (chartData[yearIndex].LB += parseInt(i.LB));
+        i.MD.includes("-")
+          ? console.log()
+          : (chartData[yearIndex].MD += parseInt(i.MD));
       } else if (!isNaN(year)) {
-        // console.log(i)
-        // let temp = {};
-        // temp["year"] = year;
-        // temp["months"] = [{ month: month, values: 1 }];
-        // chartData.push(temp);
+        let temp = {};
+        temp["year"] = year;
+        temp["LR"] = i.LR == "-" ? 0 : parseInt(i.LR);
+        temp["LB"] = i.LB == "-" ? 0 : parseInt(i.LB);
+        temp["MD"] = i.MD == "-" ? 0 : parseInt(i.MD);
+        chartData.push(temp);
       }
     });
+    chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
+    let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
+    console.log(newArr);
+
+    let datasets = {
+      labels: ["LB", "LR", "MD"],
+      datasets: [
+        {
+          backgroundColor: "rgba(255,99,132,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(155,231,91,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+      ],
+    };
+
+    newArr.map((x, index) => {
+      let temp = datasets.datasets[index];
+      temp["label"] = x.year;
+      temp["data"] = [x.LB, x.LR, x.MD];
+      datasets.datasets[index] = temp;
+    });
+
+    setVictimData(datasets);
   };
 
   return (
@@ -297,20 +355,19 @@ function Dashboard(props) {
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
               <div class="card card-chart">
                 <div class="card-header">
                   <h5 class="card-category">Number of Victim</h5>
-                  {/* <h3 class="card-title"><i class="tim-icons icon-bell-55 text-primary"></i> 763,215</h3> */}
                 </div>
                 <div class="card-body">
-                  <div class="chart-area">
-                    {/* <canvas id="chartLinePurple"></canvas> */}
-                  </div>
+                  <MDBContainer>
+                    <Bar data={victimData} options={victimOptions} />
+                  </MDBContainer>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
               <div class="card card-chart">
                 <div class="card-header">
                   <h5 class="card-category">Accident Types</h5>
@@ -323,6 +380,8 @@ function Dashboard(props) {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="row">
             <div class="col-lg-4">
               <div class="card card-chart">
                 <div class="card-header">
