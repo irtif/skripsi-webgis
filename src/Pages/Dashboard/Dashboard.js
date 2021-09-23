@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
-import { Line, Bar } from "react-chartjs-2";
+import { Line, Bar, HorizontalBar } from "react-chartjs-2";
 import { MDBContainer } from "mdbreact";
 import axios from "axios";
 import "./Dashboard.css";
@@ -13,9 +13,10 @@ const headers = {
 
 function Dashboard(props) {
   const [loading, setLoading] = useState(false);
-  const [newData, setNewData] = useState({});
   const [victimData, setVictimData] = useState({});
   const [data, setData] = useState({});
+  const [accTypes, setAccTypes] = useState({});
+  const [vehicleTypes, setVhcTypes] = useState({});
 
   useEffect(() => {
     setLoading(true);
@@ -44,6 +45,8 @@ function Dashboard(props) {
 
         numberOfCase(data, columns);
         numberOfVictim(data);
+        numberOfAccTypes(data);
+        numberOfVhcTypes(data);
       })
       .catch((err) => {
         console.log(err);
@@ -88,7 +91,7 @@ function Dashboard(props) {
           (month) =>
             x.months.find((sale) => +sale.month === month + 1) || {
               month: month + 1,
-              sale: 0,
+              values: 0,
             }
         );
       }
@@ -208,59 +211,6 @@ function Dashboard(props) {
     });
   };
 
-  let options = {
-    legend: {
-      labels: {
-        fontColor: "#d9d8d7",
-      },
-    },
-    title: {
-      display: true,
-      fontColor: "#d9d8d7",
-      text: "Accident Records",
-    },
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            // beginAtZero: true,
-            fontColor: "#d9d8d7",
-            fontSize: 10,
-            stepSize: 50,
-          },
-        },
-      ],
-      xAxes: [
-        {
-          ticks: {
-            fontColor: "#d9d8d7",
-            fontSize: 10,
-          },
-        },
-      ],
-    },
-  };
-
-  let victimOptions = {
-    responsive: true,
-    legend: {
-      display: false,
-    },
-    type: "bar",
-    scales: {
-      xAxes: [
-        {
-          stacked: true,
-        },
-      ],
-      yAxes: [
-        {
-          stacked: true,
-        },
-      ],
-    },
-  };
-
   const numberOfVictim = (data) => {
     let chartData = [];
     data.map((i) => {
@@ -290,7 +240,6 @@ function Dashboard(props) {
     });
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
-    console.log(newArr);
 
     let datasets = {
       labels: ["LB", "LR", "MD"],
@@ -329,6 +278,307 @@ function Dashboard(props) {
     setVictimData(datasets);
   };
 
+  const numberOfAccTypes = (data) => {
+    let chartData = [];
+    data.map((i) => {
+      let check = new Date(i.date);
+      let year = check.getFullYear();
+      let checkYear = chartData.filter((data) => data.year == year);
+      if (checkYear.length > 0 && !isNaN(year)) {
+        let yearIndex = chartData.findIndex((x) => x.year === year);
+
+        if (i.accident_types in chartData[yearIndex]) {
+          chartData[yearIndex][`${i.accident_types}`] += 1;
+        } else {
+          chartData[yearIndex][`${i.accident_types}`] = 0;
+        }
+      } else if (!isNaN(year)) {
+        let temp = {};
+        temp["year"] = year;
+        temp[`${i.accident_types}`] = 0;
+        chartData.push(temp);
+      }
+    });
+
+    chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
+    let columns = ["LL", "OC", "T", "TB", "TK", "TL", "TM"];
+
+    chartData.map((data, index) => {
+      columns.map((column) => {
+        column in data ? console.log() : (chartData[index][column] = 0);
+      });
+    });
+
+    let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
+    let datasets = {
+      labels: columns,
+      datasets: [
+        {
+          backgroundColor: "rgba(255,99,132,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(155,231,91,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+      ],
+    };
+
+    newArr.map((x, index) => {
+      let temp = datasets.datasets[index];
+      temp["label"] = x.year;
+      temp["data"] = [x.LL, x.OC, x.T, x.TB, x.TK, x.TL, x.TM];
+      datasets.datasets[index] = temp;
+    });
+
+    setAccTypes(datasets);
+  };
+
+  const numberOfVhcTypes = (data) => {
+    let chartData = [];
+    data.map((i) => {
+      let check = new Date(i.date);
+      let year = check.getFullYear();
+      let checkYear = chartData.filter((data) => data.year == year);
+      if (checkYear.length > 0 && !isNaN(year)) {
+        let yearIndex = chartData.findIndex((x) => x.year === year);
+        if (i.victim_vehicle !== i.suspect_vehicle) {
+          if (i.victim_vehicle in chartData[yearIndex]) {
+            chartData[yearIndex][`${i.victim_vehicle}`] += 1;
+          } else if (i.victim_vehicle !== "-") {
+            chartData[yearIndex][`${i.victim_vehicle}`] = 1;
+          }
+          if (i.suspect_vehicle in chartData[yearIndex]) {
+            chartData[yearIndex][`${i.suspect_vehicle}`] += 1;
+          } else if (i.suspect_vehicle !== "-") {
+            chartData[yearIndex][`${i.suspect_vehicle}`] = 1;
+          }
+        } else {
+          if (i.victim_vehicle in chartData[yearIndex]) {
+            chartData[yearIndex][`${i.victim_vehicle}`] += 1;
+          } else if (i.victim_vehicle !== "-") {
+            chartData[yearIndex][`${i.suspect_vehicle}`] = 1;
+          }
+        }
+      } else if (!isNaN(year)) {
+        let temp = {};
+        temp["year"] = year;
+        if (i.victim_vehicle !== i.suspect_vehicle) {
+          i.victim_vehicle !== "-"
+            ? (temp[`${i.victim_vehicle}`] = 1)
+            : console.log();
+          i.suspect_vehicle !== "-"
+            ? (temp[`${i.suspect_vehicle}`] = 1)
+            : console.log();
+        } else {
+          i.victim_vehicle !== "-"
+            ? (temp[`${i.victim_vehicle}`] = 1)
+            : console.log();
+        }
+        chartData.push(temp);
+      }
+    });
+
+    chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
+    let columns = ["B", "B1", "B2", "M", "R2", "R3", "R4", "Rro", "T", "TR"];
+
+    chartData.map((data, index) => {
+      chartData[index]["TR"] = 0;
+      let temp = Object.keys(data).filter((k) => k.startsWith("R"));
+      let passed = ["R2", "R3", "R4", "Rro"];
+      temp = temp
+        .filter((i) => !passed.includes(i))
+        .map((i) => {
+          chartData[index]["TR"] += data[i];
+          delete chartData[index][`${i}`];
+        });
+
+      columns.map((column) => {
+        column in data ? console.log() : (chartData[index][column] = 0);
+      });
+    });
+
+    let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
+    let datasets = {
+      labels: columns,
+      datasets: [
+        {
+          backgroundColor: "rgba(255,99,132,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(155,231,91,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+        {
+          backgroundColor: "rgba(0,232,240,0.2)",
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+        },
+      ],
+    };
+
+    newArr.map((x, index) => {
+      let temp = datasets.datasets[index];
+      temp["label"] = x.year;
+      temp["data"] = [x.B, x.B1, x.B2, x.M, x.R2, x.R3, x.R4, x.Rro, x.T, x.TR];
+      datasets.datasets[index] = temp;
+    });
+
+    setVhcTypes(datasets);
+  };
+
+  let options = {
+    legend: {
+      labels: {
+        fontColor: "#d9d8d7",
+      },
+    },
+    title: {
+      display: true,
+      fontColor: "#d9d8d7",
+      text: "Accident Records",
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            // beginAtZero: true,
+            fontColor: "#d9d8d7",
+            fontSize: 10,
+            stepSize: 50,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            fontColor: "#d9d8d7",
+            fontSize: 10,
+          },
+        },
+      ],
+    },
+  };
+
+  let barOptions = {
+    responsive: true,
+    legend: {
+      display: false,
+    },
+    type: "bar",
+    scales: {
+      xAxes: [
+        {
+          stacked: true,
+        },
+      ],
+      yAxes: [
+        {
+          stacked: true,
+        },
+      ],
+    },
+  };
+
   return (
     <div className="wrapper">
       <Sidebar />
@@ -362,7 +612,7 @@ function Dashboard(props) {
                 </div>
                 <div class="card-body">
                   <MDBContainer>
-                    <Bar data={victimData} options={victimOptions} />
+                    <Bar data={victimData} options={barOptions} />
                   </MDBContainer>
                 </div>
               </div>
@@ -371,30 +621,32 @@ function Dashboard(props) {
               <div class="card card-chart">
                 <div class="card-header">
                   <h5 class="card-category">Accident Types</h5>
-                  {/* <h3 class="card-title"><i class="tim-icons icon-delivery-fast text-info"></i> 3,500€</h3> */}
                 </div>
                 <div class="card-body">
                   <div class="chart-area">
-                    {/* <canvas id="CountryChart"></canvas> */}
+                    <MDBContainer>
+                      <Bar data={accTypes} options={barOptions} />
+                    </MDBContainer>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div class="col-lg-4">
-              <div class="card card-chart">
+           <div className="row">
+           <div class="col-lg-12">
+              <div class="card">
                 <div class="card-header">
                   <h5 class="card-category">Vehicles Involved</h5>
-                  {/* <h3 class="card-title"><i class="tim-icons icon-send text-success"></i> 12,100K</h3> */}
                 </div>
                 <div class="card-body">
                   <div class="chart-area">
-                    {/* <canvas id="chartLineGreen"></canvas> */}
+                    <MDBContainer>
+                      <HorizontalBar data={vehicleTypes} options={barOptions} />
+                    </MDBContainer>
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </div>
