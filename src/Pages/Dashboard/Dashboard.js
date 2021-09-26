@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { MDBContainer } from "mdbreact";
+import LoadingOverlay from "react-loading-overlay-ts";
+import { Line, Bar, HorizontalBar } from "react-chartjs-2";
+
 import Navbar from "../../Components/Navbar/Navbar";
 import Sidebar from "../../Components/Sidebar/Sidebar";
-import { Line, Bar, HorizontalBar } from "react-chartjs-2";
-import { MDBContainer } from "mdbreact";
-import axios from "axios";
 import "./Dashboard.css";
 
 const headers = {
@@ -47,6 +49,7 @@ function Dashboard(props) {
         numberOfVictim(data);
         numberOfAccTypes(data);
         numberOfVhcTypes(data);
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
@@ -60,11 +63,11 @@ function Dashboard(props) {
       let check = new Date(i.date);
       let year = check.getFullYear();
       let month = check.getMonth() + 1;
-      let checkYear = chartData.filter((data) => data.year == year);
+      let checkYear = chartData.filter((data) => data.year === year);
       if (checkYear.length > 0 && !isNaN(year)) {
         let yearIndex = chartData.findIndex((x) => x.year === year);
         let checkMonth = checkYear[0].months.filter(
-          (data) => data.month == month
+          (data) => data.month === month
         );
         if (checkMonth.length > 0) {
           let monthIndex = chartData[yearIndex].months.findIndex(
@@ -80,9 +83,9 @@ function Dashboard(props) {
         temp["months"] = [{ month: month, values: 1 }];
         chartData.push(temp);
       }
+      return
     });
 
-    // chartData.map(x => x.months.sort((a, b) => (a.month > b.month ? 1 : -1)))
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
     chartData.map((x) => {
       if (x.months.length < 12) {
@@ -96,9 +99,9 @@ function Dashboard(props) {
         );
       }
       x.months.sort((a, b) => (a.month > b.month ? 1 : -1));
+      return
     });
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
-    // let newArr = chartData.slice(0, 3)
     let datasets = [
       {
         fill: true,
@@ -163,6 +166,7 @@ function Dashboard(props) {
       temp["label"] = x.year;
       temp["data"] = x.months.map((i) => i.values);
       datasets[index] = temp;
+      return
     });
 
     setData({
@@ -216,8 +220,7 @@ function Dashboard(props) {
     data.map((i) => {
       let check = new Date(i.date);
       let year = check.getFullYear();
-      let month = check.getMonth() + 1;
-      let checkYear = chartData.filter((data) => data.year == year);
+      let checkYear = chartData.filter((data) => data.year === year);
       if (checkYear.length > 0 && !isNaN(year)) {
         let yearIndex = chartData.findIndex((x) => x.year === year);
         i.LR.includes("-")
@@ -232,12 +235,14 @@ function Dashboard(props) {
       } else if (!isNaN(year)) {
         let temp = {};
         temp["year"] = year;
-        temp["LR"] = i.LR == "-" ? 0 : parseInt(i.LR);
-        temp["LB"] = i.LB == "-" ? 0 : parseInt(i.LB);
-        temp["MD"] = i.MD == "-" ? 0 : parseInt(i.MD);
+        temp["LR"] = i.LR === "-" ? 0 : parseInt(i.LR);
+        temp["LB"] = i.LB === "-" ? 0 : parseInt(i.LB);
+        temp["MD"] = i.MD === "-" ? 0 : parseInt(i.MD);
         chartData.push(temp);
       }
+      return
     });
+
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
 
@@ -273,6 +278,7 @@ function Dashboard(props) {
       temp["label"] = x.year;
       temp["data"] = [x.LB, x.LR, x.MD];
       datasets.datasets[index] = temp;
+      return
     });
 
     setVictimData(datasets);
@@ -283,7 +289,7 @@ function Dashboard(props) {
     data.map((i) => {
       let check = new Date(i.date);
       let year = check.getFullYear();
-      let checkYear = chartData.filter((data) => data.year == year);
+      let checkYear = chartData.filter((data) => data.year === year);
       if (checkYear.length > 0 && !isNaN(year)) {
         let yearIndex = chartData.findIndex((x) => x.year === year);
 
@@ -298,6 +304,7 @@ function Dashboard(props) {
         temp[`${i.accident_types}`] = 0;
         chartData.push(temp);
       }
+      return
     });
 
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
@@ -307,6 +314,7 @@ function Dashboard(props) {
       columns.map((column) => {
         column in data ? console.log() : (chartData[index][column] = 0);
       });
+      return
     });
 
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
@@ -370,6 +378,7 @@ function Dashboard(props) {
       temp["label"] = x.year;
       temp["data"] = [x.LL, x.OC, x.T, x.TB, x.TK, x.TL, x.TM];
       datasets.datasets[index] = temp;
+      return
     });
 
     setAccTypes(datasets);
@@ -380,7 +389,7 @@ function Dashboard(props) {
     data.map((i) => {
       let check = new Date(i.date);
       let year = check.getFullYear();
-      let checkYear = chartData.filter((data) => data.year == year);
+      let checkYear = chartData.filter((data) => data.year === year);
       if (checkYear.length > 0 && !isNaN(year)) {
         let yearIndex = chartData.findIndex((x) => x.year === year);
         if (i.victim_vehicle !== i.suspect_vehicle) {
@@ -418,6 +427,7 @@ function Dashboard(props) {
         }
         chartData.push(temp);
       }
+      return
     });
 
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
@@ -432,11 +442,14 @@ function Dashboard(props) {
         .map((i) => {
           chartData[index]["TR"] += data[i];
           delete chartData[index][`${i}`];
+          return
         });
 
       columns.map((column) => {
         column in data ? console.log() : (chartData[index][column] = 0);
+        return
       });
+      return
     });
 
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
@@ -514,6 +527,7 @@ function Dashboard(props) {
           hoverBorderColor: "rgba(255,99,132,1)",
         },
       ],
+      
     };
 
     newArr.map((x, index) => {
@@ -521,6 +535,7 @@ function Dashboard(props) {
       temp["label"] = x.year;
       temp["data"] = [x.B, x.B1, x.B2, x.M, x.R2, x.R3, x.R4, x.Rro, x.T, x.TR];
       datasets.datasets[index] = temp;
+      return
     });
 
     setVhcTypes(datasets);
@@ -569,17 +584,26 @@ function Dashboard(props) {
       xAxes: [
         {
           stacked: true,
+          ticks: {
+            fontColor: "#d9d8d7",
+            fontSize: 10,
+          }
         },
       ],
       yAxes: [
         {
           stacked: true,
+          ticks: {
+            fontColor: "#d9d8d7",
+            fontSize: 10
+          },
         },
       ],
     },
   };
 
   return (
+    <LoadingOverlay active={loading} spinner text="Loading your content...">
     <div className="wrapper">
       <Sidebar />
       <div className="main-panel">
@@ -591,8 +615,7 @@ function Dashboard(props) {
                 <div className="card-header ">
                   <div className="row">
                     <div className="col-sm-6 text-left">
-                      <h5 className="card-category">Accident</h5>
-                      <h2 className="card-title">Based on Location</h2>
+                      <h5 className="card-title font-weight-bold">ACCIDENT FREQUENCY</h5>
                     </div>
                   </div>
                 </div>
@@ -608,7 +631,7 @@ function Dashboard(props) {
             <div class="col-lg-6">
               <div class="card card-chart">
                 <div class="card-header">
-                  <h5 class="card-category">Number of Victim</h5>
+                  <h5 className="card-title font-weight-bold">NUMBER OF VICTIM</h5>
                 </div>
                 <div class="card-body">
                   <MDBContainer>
@@ -620,10 +643,10 @@ function Dashboard(props) {
             <div class="col-lg-6">
               <div class="card card-chart">
                 <div class="card-header">
-                  <h5 class="card-category">Accident Types</h5>
+                  <h5 className="card-title font-weight-bold">ACCIDENT TYPES</h5>
                 </div>
                 <div class="card-body">
-                  <div class="chart-area">
+                  <div>
                     <MDBContainer>
                       <Bar data={accTypes} options={barOptions} />
                     </MDBContainer>
@@ -632,25 +655,26 @@ function Dashboard(props) {
               </div>
             </div>
           </div>
-           <div className="row">
-           <div class="col-lg-12">
+          <div className="row">
+            <div class="col-lg-12">
               <div class="card">
                 <div class="card-header">
-                  <h5 class="card-category">Vehicles Involved</h5>
+                  <h5 className="card-title font-weight-bold">VEHICLES INVOLVED</h5>
                 </div>
                 <div class="card-body">
-                  <div class="chart-area">
+                  <div>
                     <MDBContainer>
                       <HorizontalBar data={vehicleTypes} options={barOptions} />
                     </MDBContainer>
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
     </div>
+    </LoadingOverlay>
   );
 }
 

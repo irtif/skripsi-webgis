@@ -3,7 +3,6 @@ import axios from "axios";
 import swal from "sweetalert";
 
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import background from "../../assets/login.jpg";
 import "./style.css";
 

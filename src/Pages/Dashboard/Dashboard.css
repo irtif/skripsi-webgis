@@ -1,5 +1,10 @@
-.chartjs-render-monitor {
-  /* height: 250px !important; */
-  /* height: 350px !important;
-  width: 850px !important; */
+.logo-satlantas{
+  display: none;
+}
+
+
+@media (min-width: 1224px) {
+  .logo-satlantas{
+    display: initial;
+  }
 }
