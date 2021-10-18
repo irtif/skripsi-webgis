@@ -118,13 +118,11 @@ function Result2(props) {
             accident_types: accident_types,
             vehicle_types: vehicle_types,
           };
-          console.log(temp);
           clusterData.push(temp);
           return "";
         });
 
         let new_clusters = getUnique(clusterData, "cluster");
-        console.log(new_clusters);
         setCluster(new_clusters);
         setModalData(result);
         setColumn([
@@ -204,7 +202,6 @@ function Result2(props) {
     axios
       .get("/execute", { headers })
       .then((res) => {
-        console.log(res);
         var endTime = new Date();
         console.log(
           endTime.getHours() +
@@ -222,9 +219,7 @@ function Result2(props) {
   };
 
   const showClusterMarkers = (cluster) => {
-    // console.log(data)
     let filter_data = data.filter((el) => el.Cluster === String(cluster));
-    console.log(filter_data);
     setMarkerData(filter_data);
   };
 
@@ -436,47 +431,47 @@ function Result2(props) {
                       CLUSTERING RESULT
                     </h3>
                     <div
-                      class="btn-group btn-group-toggle float-right"
+                      className="btn-group btn-group-toggle float-right"
                       data-toggle="buttons"
                     >
-                      <label class="btn btn-sm btn-primary btn-simple" id="0">
+                      <label className="btn btn-sm btn-primary btn-simple" id="0">
                         <input type="radio" name="options" checked />
                         <span
-                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
                           onClick={() => setModalInfo(true)}
                         >
                           Show Info
                         </span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-single-02"></i>
+                        <span className="d-block d-sm-none">
+                          <i className="tim-icons icon-single-02"></i>
                         </span>
                       </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="0">
+                      <label className="btn btn-sm btn-primary btn-simple" id="0">
                         <input type="radio" name="options" checked />
                         <span
-                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
                           onClick={() => setModal(true)}
                         >
                           Show Table
                         </span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-single-02"></i>
+                        <span className="d-block d-sm-none">
+                          <i className="tim-icons icon-single-02"></i>
                         </span>
                       </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="1">
+                      <label className="btn btn-sm btn-primary btn-simple" id="1">
                         <input
                           type="radio"
-                          class="d-none d-sm-none"
+                          className="d-none d-sm-none"
                           name="options"
                         />
                         <span
-                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
                           onClick={() => (window.location.href = "/input")}
                         >
                           Input New
                         </span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
+                        <span className="d-block d-sm-none">
+                          <i className="tim-icons icon-gift-2"></i>
                         </span>
                       </label>
                     </div>

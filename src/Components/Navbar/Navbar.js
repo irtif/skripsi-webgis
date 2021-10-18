@@ -11,14 +11,14 @@ function Navbar(props) {
   }
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
-      <div class="container-fluid">
-        <div class="navbar-wrapper">
-          <div class="navbar-toggle d-inline">
-            <button type="button" class="navbar-toggler">
-              <span class="navbar-toggler-bar bar1"></span>
-              <span class="navbar-toggler-bar bar2"></span>
-              <span class="navbar-toggler-bar bar3"></span>
+    <nav className="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+      <div className="container-fluid">
+        <div className="navbar-wrapper">
+          <div className="navbar-toggle d-inline">
+            <button type="button" className="navbar-toggler">
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
             </button>
           </div>
           <Link className="navbar-brand" to="/dashboard">
@@ -34,38 +34,38 @@ function Navbar(props) {
           </Link>
         </div>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navigation"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-bar navbar-kebab"></span>
-          <span class="navbar-toggler-bar navbar-kebab"></span>
-          <span class="navbar-toggler-bar navbar-kebab"></span>
-        </button>cd
-        <div class="collapse navbar-collapse" id="navigation">
-          <ul class="navbar-nav ml-auto">
-            <li class="dropdown nav-item">
+          <span className="navbar-toggler-bar navbar-kebab"></span>
+          <span className="navbar-toggler-bar navbar-kebab"></span>
+          <span className="navbar-toggler-bar navbar-kebab"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navigation">
+          <ul className="navbar-nav ml-auto">
+            <li className="dropdown nav-item">
               <div
                 to='/'
-                class="dropdown-toggle nav-link"
+                className="dropdown-toggle nav-link"
                 data-toggle="dropdown"
               >
-                <div class="photo">
+                <div className="photo">
                   <img src={image} alt="Profile" />
                 </div>
-                <b class="caret d-none d-lg-block d-xl-block"></b>
-                <p class="d-lg-none">Log out</p>
+                <b className="caret d-none d-lg-block d-xl-block"></b>
+                <p className="d-lg-none">Log out</p>
               </div>
-              <ul class="dropdown-menu dropdown-navbar">
-                <li class="nav-link" onClick={() => Logout()}>
+              <ul className="dropdown-menu dropdown-navbar">
+                <li className="nav-link" onClick={() => Logout()}>
                   <p className="text-dark font-weight-bold ml-2">Log out</p>
                 </li>
               </ul>
             </li>
-            <li class="separator d-lg-none"></li>
+            <li className="separator d-lg-none"></li>
           </ul>
         </div>
       </div>

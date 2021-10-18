@@ -43,7 +43,6 @@ function Dashboard(props) {
             )
           );
         });
-
         numberOfCase(data, columns);
         numberOfVictim(data);
         numberOfAccTypes(data);
@@ -55,6 +54,11 @@ function Dashboard(props) {
         setLoading(false);
       });
   }, []);
+
+  const datasetKeyProvider=()=>{ 
+    return btoa(Math.random()).substring(0,12)
+} 
+
 
   const numberOfCase = (data, columns) => {
     let chartData = [];
@@ -305,8 +309,7 @@ function Dashboard(props) {
     chartData.forEach((data, index) => {
       columns.forEach((column) => {
         column in data ? console.log() : (chartData[index][column] = 0);
-        
-      });      
+      });
     });
 
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
@@ -418,7 +421,6 @@ function Dashboard(props) {
         }
         chartData.push(temp);
       }
-      
     });
 
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
@@ -433,14 +435,14 @@ function Dashboard(props) {
         .forEach((i) => {
           chartData[index]["TR"] += data[i];
           delete chartData[index][`${i}`];
-          return
+          return;
         });
 
       columns.forEach((column) => {
         column in data ? console.log() : (chartData[index][column] = 0);
-        return
+        return;
       });
-      return
+      return;
     });
 
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
@@ -518,7 +520,6 @@ function Dashboard(props) {
           hoverBorderColor: "rgba(255,99,132,1)",
         },
       ],
-      
     };
 
     newArr.forEach((x, index) => {
@@ -577,7 +578,7 @@ function Dashboard(props) {
           ticks: {
             fontColor: "#d9d8d7",
             fontSize: 10,
-          }
+          },
         },
       ],
       yAxes: [
@@ -585,7 +586,7 @@ function Dashboard(props) {
           stacked: true,
           ticks: {
             fontColor: "#d9d8d7",
-            fontSize: 10
+            fontSize: 10,
           },
         },
       ],
@@ -594,76 +595,100 @@ function Dashboard(props) {
 
   return (
     <LoadingOverlay active={loading} spinner text="Loading your content...">
-    <div className="wrapper">
-      <Sidebar />
-      <div className="main-panel">
-        <Navbar />
-        <div className="content">
-          <div className="row">
-            <div className="col-12">
-              <div className="card card-chart">
-                <div className="card-header ">
-                  <div className="row">
-                    <div className="col-sm-6 text-left">
-                      <h5 className="card-title font-weight-bold">ACCIDENT FREQUENCY</h5>
+      <div className="wrapper">
+        <Sidebar />
+        <div className="main-panel">
+          <Navbar />
+          <div className="content">
+            {data.datasets ? (
+              <div>
+                <div className="row">
+                  <div className="col-12">
+                    <div className="card card-chart">
+                      <div className="card-header ">
+                        <div className="row">
+                          <div className="col-sm-6 text-left">
+                            <h5 className="card-title font-weight-bold">
+                              ACCIDENT FREQUENCY
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body">
+                        <MDBContainer>
+                          <Line data={data} options={options} />
+                        </MDBContainer>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="card-body">
-                  <MDBContainer>
-                    <Line data={data} options={options} />
-                  </MDBContainer>
+                <div className="row">
+                  <div className="col-lg-6">
+                    <div className="card card-chart">
+                      <div className="card-header">
+                        <h5 className="card-title font-weight-bold">
+                          NUMBER OF VICTIM
+                        </h5>
+                      </div>
+                      <div className="card-body">
+                        <MDBContainer>
+                          <Bar data={victimData} options={barOptions} datasetKeyProvider={datasetKeyProvider}/>
+                        </MDBContainer>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="card card-chart">
+                      <div className="card-header">
+                        <h5 className="card-title font-weight-bold">
+                          ACCIDENT TYPES
+                        </h5>
+                      </div>
+                      <div className="card-body">
+                        <div>
+                          <MDBContainer>
+                            <Bar data={accTypes} options={barOptions} datasetKeyProvider={datasetKeyProvider} />
+                          </MDBContainer>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="card card-chart">
-                <div class="card-header">
-                  <h5 className="card-title font-weight-bold">NUMBER OF VICTIM</h5>
-                </div>
-                <div class="card-body">
-                  <MDBContainer>
-                    <Bar data={victimData} options={barOptions} />
-                  </MDBContainer>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="card card-chart">
-                <div class="card-header">
-                  <h5 className="card-title font-weight-bold">ACCIDENT TYPES</h5>
-                </div>
-                <div class="card-body">
-                  <div>
-                    <MDBContainer>
-                      <Bar data={accTypes} options={barOptions} />
-                    </MDBContainer>
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div className="card">
+                      <div className="card-header">
+                        <h5 className="card-title font-weight-bold">
+                          VEHICLES INVOLVED
+                        </h5>
+                      </div>
+                      <div className="card-body">
+                        <div>
+                          <MDBContainer>
+                            <HorizontalBar
+                              data={vehicleTypes}
+                              options={barOptions}
+                              datasetKeyProvider={datasetKeyProvider}
+                            />
+                          </MDBContainer>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="row">
-            <div class="col-lg-12">
-              <div class="card">
-                <div class="card-header">
-                  <h5 className="card-title font-weight-bold">VEHICLES INVOLVED</h5>
-                </div>
-                <div class="card-body">
-                  <div>
-                    <MDBContainer>
-                      <HorizontalBar data={vehicleTypes} options={barOptions} />
-                    </MDBContainer>
+            ) : (
+              <div className="row">
+                <div className="col-12">
+                  <div className="card p-3">
+                    <h3>Input data terlebih dahulu</h3>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
-    </div>
     </LoadingOverlay>
   );
 }

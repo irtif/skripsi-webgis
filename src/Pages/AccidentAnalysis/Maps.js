@@ -248,38 +248,38 @@ function Result(props) {
                       Result
                     </h3>
                     <div
-                      class="btn-group btn-group-toggle float-right"
+                      className="btn-group btn-group-toggle float-right"
                       data-toggle="buttons"
                     >
                       <label
-                        class="btn btn-sm btn-primary btn-simple active"
+                        className="btn btn-sm btn-primary btn-simple active"
                         id="0"
                       >
                         <input type="radio" name="options" checked />
                         <span
-                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
                           onClick={() => setModal(true)}
                         >
                           Show Table
                         </span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-single-02"></i>
+                        <span className="d-block d-sm-none">
+                          <i className="tim-icons icon-single-02"></i>
                         </span>
                       </label>
-                      <label class="btn btn-sm btn-primary btn-simple" id="1">
+                      <label className="btn btn-sm btn-primary btn-simple" id="1">
                         <input
                           type="radio"
-                          class="d-none d-sm-none"
+                          className="d-none d-sm-none"
                           name="options"
                         />
                         <span
-                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
                           onClick={() => (window.location.href = "/input")}
                         >
                           Input New
                         </span>
-                        <span class="d-block d-sm-none">
-                          <i class="tim-icons icon-gift-2"></i>
+                        <span className="d-block d-sm-none">
+                          <i className="tim-icons icon-gift-2"></i>
                         </span>
                       </label>
                     </div>

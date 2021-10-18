@@ -706,7 +706,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 705.0,Tuesday,2018-06-05,18:30, Perintis Kemerdekaan,Tamalanrea,TM,15,70,R2,-,-,-,2,"50,000"
 706.0,Wednesday,2018-06-06,20:00,Urip Sumuharjo,Panakkukang,TK,22,31,R2,R2,-,-,2,"100,000"
 707.0,Wednesday,2018-06-06,22:00, Tamalanrea Raya,Tamalanrea,TL,-,21,R4,R4,-,-,-,"1,000,000"
-708.0,Wednesday,2018-06-06,17:15, Perintis Kemerdekaan,Tamalanrea,TK,42,-,R2,R2,-,-,1,"150,000"
+708.0,Wednesday,2018-06-06,17:15, Perintis Kemerdekaan,Tamalanrea,TK,42,,R2,R2,-,-,1,"150,000"
 709.0,Monday,2018-06-04,19:00, Perintis Kemerdekaan,Biringkanaya,TL,-,33,R2,R2,-,-,2,-
 710.0,Thursday,2018-06-07,20:00, Dr. Sutomo,Ujung Pandang,OC,16,15,R2,-,-,-,1,-
 711.0,Friday,2018-06-08,13:00, Perintis Kemerdekaan,Tamalanrea,OC,22,50,R2,-,-,-,1,-
@@ -968,7 +968,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 967.0,Sunday,2018-08-12,15:00, Tamalanrea Raya ,Tamalanrea,OC,38,-,R2,-,-,-,1,"300,000"
 968.0,Monday,2018-08-13,12:00, Borong Raya ,Manggala,OC,15,15,R2,-,-,1,-,-
 969.0,Sunday,2018-08-12,19:00,Urip Sumuharjo,Panakkukang,TL,-,28,R4,R2,-,-,1,-
-970.0,Sunday,2018-08-12,15:30,Urip Sumuharjo,Panakkukang,TL,-,58,R2,R2,-,-,1,"100,000"
+970.0,Sunday,2018-08-12,15:30,Urip Sumuharjo,Panakkukang,TL,-,58,R2,R2,-,-,`,"100,000"
 971.0,Sunday,2018-08-12,9:15, Kapasa Raya ,Biringkanaya,TK,30,35,R2,R4,-,-,2,"5,000,000"
 972.0,Monday,2018-08-13,11:00, Goa Ria,Biringkanaya,TL,-,44,R2,Rro,-,-,1,"50,000"
 973.0,Monday,2018-08-13,16:30, Perintis Kemerdekaan,Biringkanaya,TK,27,-,R2,R4,-,-,1,"250,000"
