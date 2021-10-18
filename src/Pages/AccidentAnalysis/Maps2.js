@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import LoadingOverlay from "react-loading-overlay-ts";
-import { Modal } from "react-bootstrap";
+import { Modal} from "react-bootstrap";
 import {
   MapContainer,
   TileLayer,
@@ -28,6 +28,7 @@ function Result2(props) {
   const center = [-5.147975911780761, 119.43789672442817];
   const [loading, setLoading] = useState(false);
   const [modal, setModal] = useState(false);
+  const [modalInfo, setModalInfo] = useState(false);
   const [data, setData] = useState([]);
   const [cluster, setCluster] = useState([]);
   const [modalData, setModalData] = useState([]);
@@ -115,15 +116,15 @@ function Result2(props) {
             color: data.color[0],
             time: times,
             accident_types: accident_types,
-            vehicle_types: vehicle_types
+            vehicle_types: vehicle_types,
           };
-          console.log(temp)
+          console.log(temp);
           clusterData.push(temp);
           return "";
         });
 
         let new_clusters = getUnique(clusterData, "cluster");
-        console.log(new_clusters)
+        console.log(new_clusters);
         setCluster(new_clusters);
         setModalData(result);
         setColumn([
@@ -193,13 +194,25 @@ function Result2(props) {
 
   const executeClustering = () => {
     var startTime = new Date();
-    console.log(startTime.getHours() + ":" + startTime.getMinutes() + ":" + startTime.getSeconds())
+    console.log(
+      startTime.getHours() +
+        ":" +
+        startTime.getMinutes() +
+        ":" +
+        startTime.getSeconds()
+    );
     axios
       .get("/execute", { headers })
       .then((res) => {
-        console.log(res)
+        console.log(res);
         var endTime = new Date();
-        console.log(endTime.getHours() + ":" + endTime.getMinutes() + ":" + endTime.getSeconds())
+        console.log(
+          endTime.getHours() +
+            ":" +
+            endTime.getMinutes() +
+            ":" +
+            endTime.getSeconds()
+        );
         executeMapData();
       })
       .catch((err) => {
@@ -211,7 +224,7 @@ function Result2(props) {
   const showClusterMarkers = (cluster) => {
     // console.log(data)
     let filter_data = data.filter((el) => el.Cluster === String(cluster));
-    console.log(filter_data)
+    console.log(filter_data);
     setMarkerData(filter_data);
   };
 
@@ -269,6 +282,145 @@ function Result2(props) {
     );
   }
 
+  function InfoModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="xl"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        className="modal-table"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {/* TABEL INFO */}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ marginTop: "-2rem" }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-6">
+                <table
+                  cellPadding={2}
+                  cellSpacing={0}
+                  border={0}
+                  className="text-dark"
+                >
+                  <thead>
+                    <th>Tipe Kendaraan:</th>
+                  </thead>
+                  <tr>
+                    <td>R2</td>
+                    <td>: Motor</td>
+                  </tr>
+                  <tr>
+                    <td>R3</td>
+                    <td>: Motor Viar</td>
+                  </tr>
+                  <tr>
+                    <td>R4</td>
+                    <td>: Mobil Roda 4</td>
+                  </tr>
+                  <tr>
+                    <td>TR</td>
+                    <td>: Truk</td>
+                  </tr>
+                  <tr>
+                    <td>M</td>
+                    <td>: Microlet</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>: Bus</td>
+                  </tr>
+                  <tr>
+                    <td>B1</td>
+                    <td>: Becak</td>
+                  </tr>
+                  <tr>
+                    <td>B2</td>
+                    <td>: Becak Motor</td>
+                  </tr>
+                  <tr>
+                    <td>Tx</td>
+                    <td>: Taxi</td>
+                  </tr>
+                  <tr>
+                    <td>Rro</td>
+                    <td>: Sepeda Motor</td>
+                  </tr>
+                </table>
+              </div>
+              <div className="col-sm-6">
+                <table
+                  cellPadding={2}
+                  cellSpacing={0}
+                  border={0}
+                  className="text-dark"
+                >
+                  <thead>
+                    <th>Tipe Kecelakaan:</th>
+                  </thead>
+                  <tr>
+                    <td>TK</td>
+                    <td>: Tabrak Kendaraan</td>
+                  </tr>
+                  <tr>
+                    <td>TB</td>
+                    <td>: Tabrak Beruntun</td>
+                  </tr>
+                  <tr>
+                    <td>T</td>
+                    <td>: Kecelakaan Tunggal</td>
+                  </tr>
+                  <tr>
+                    <td>TM</td>
+                    <td>: Tabrak Manusia</td>
+                  </tr>
+                  <tr>
+                    <td>TL</td>
+                    <td>: Tabrak Lari</td>
+                  </tr>
+                  <tr>
+                    <td>OC</td>
+                    <td>: Out of Control</td>
+                  </tr>
+                  <tr>
+                    <td>LL</td>
+                    <td>: Lain-lain</td>
+                  </tr>
+                </table>
+              </div>  
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+    );
+  }
+
+  // const accidentTypesData = [
+  //   { name: "TK", value: "Tabrak Kendaraan" },
+  //   { name: "TB", value: "Tabrakan Beruntun" },
+  //   { name: "T", value: "Kecelakaan Tunggal" },
+  //   { name: "TM", value: "Tabrak Manusia" },
+  //   { name: "TL", value: "Tabrak Lari" },
+  //   { name: "OC", value: "Out of Control" },
+  //   { name: "LL", value: "Lain-lain" },
+  // ];
+
+  // const vehicleTypesData = [
+  //   { name: "R2", value: "Motor" },
+  //   { name: "R3", value: "Motor Viar" },
+  //   { name: "R4", value: "Mobil Roda 4" },
+  //   { name: "TR", value: "Truk" },
+  //   { name: "M", value: "Microlet" },
+  //   { name: "B", value: "Bus" },
+  //   { name: "B1", value: "Becak" },
+  //   { name: "B2", value: "Becak Motor" },
+  //   { name: "Tx", value: "Taxi" },
+  //   { name: "Rro", value: "Sepeda Motor" },
+  // ];
+
   return (
     <LoadingOverlay active={loading} spinner text="Loading your content...">
       <div className="wrapper">
@@ -287,10 +439,19 @@ function Result2(props) {
                       class="btn-group btn-group-toggle float-right"
                       data-toggle="buttons"
                     >
-                      <label
-                        class="btn btn-sm btn-primary btn-simple active"
-                        id="0"
-                      >
+                      <label class="btn btn-sm btn-primary btn-simple" id="0">
+                        <input type="radio" name="options" checked />
+                        <span
+                          class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                          onClick={() => setModalInfo(true)}
+                        >
+                          Show Info
+                        </span>
+                        <span class="d-block d-sm-none">
+                          <i class="tim-icons icon-single-02"></i>
+                        </span>
+                      </label>
+                      <label class="btn btn-sm btn-primary btn-simple" id="0">
                         <input type="radio" name="options" checked />
                         <span
                           class="d-none d-sm-block d-md-block d-lg-block d-xl-block"
@@ -393,10 +554,10 @@ function Result2(props) {
                         );
                       })}
                     </MapContainer>
+
                     <div className="row ml-4 mt-5">
                       {cluster.map((i, index) => {
                         return i.cluster !== undefined ? (
-                          
                           <div
                             key={index}
                             className="cluster-content mb-3 mr-2"
@@ -404,9 +565,46 @@ function Result2(props) {
                             onClick={() => showClusterMarkers(i.cluster)}
                           >
                             CLUSTER {index} - {i.time} - {i.accident_types}
-                           <span className="d-block" style={{marginTop:'-2rem'}}> {i.vehicle_types}</span>
+                            <span
+                              className="d-block"
+                              style={{ marginTop: "-2rem" }}
+                            >
+                              {i.vehicle_types}
+                            </span>
                           </div>
                         ) : (
+                          // <OverlayTrigger
+                          //   placement="top"
+                          //   overlay={
+                          //     <Tooltip
+                          //       id="button-tooltip-2"
+                          //       style={{ background: "none" }}
+                          //     >
+                          //     <p className="text-secondary">{i.accident_types}</p>
+                          //     </Tooltip>
+                          //   }
+                          // >
+                          //   {({ ref, ...triggerHandler }) => (
+                          //     <div
+                          //       key={index}
+                          //       className="cluster-content mb-3 mr-2"
+                          //       style={{ backgroundColor: i.color }}
+                          //       onClick={() => showClusterMarkers(i.cluster)}
+                          //       variant="light"
+                          //       {...triggerHandler}
+                          //       ref={ref}
+                          //       roundedCircle
+                          //     >
+                          //       CLUSTER {index} - {i.time} - {i.accident_types}
+                          //       <span
+                          //         className="d-block"
+                          //         style={{ marginTop: "-2rem" }}
+                          //       >
+                          //         {i.vehicle_types}
+                          //       </span>
+                          //     </div>
+                          //   )}
+                          // </OverlayTrigger>
                           ""
                         );
                       })}
@@ -419,6 +617,7 @@ function Result2(props) {
         </div>
       </div>
       <MyVerticallyCenteredModal show={modal} onHide={() => setModal(false)} />
+      <InfoModal show={modalInfo} onHide={() => setModalInfo(false)} />
     </LoadingOverlay>
   );
 }

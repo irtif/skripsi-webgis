@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 
 function Navbar(props) {
 
+  const Logout = () => {
+    localStorage.removeItem(("satlatic_token"));
+    window.location.href = '/login'
+  }
+
   return (
     <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
       <div class="container-fluid">
@@ -39,11 +44,11 @@ function Navbar(props) {
           <span class="navbar-toggler-bar navbar-kebab"></span>
           <span class="navbar-toggler-bar navbar-kebab"></span>
           <span class="navbar-toggler-bar navbar-kebab"></span>
-        </button>
+        </button>cd
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto">
             <li class="dropdown nav-item">
-              <Link
+              <div
                 to='/'
                 class="dropdown-toggle nav-link"
                 data-toggle="dropdown"
@@ -53,12 +58,10 @@ function Navbar(props) {
                 </div>
                 <b class="caret d-none d-lg-block d-xl-block"></b>
                 <p class="d-lg-none">Log out</p>
-              </Link>
+              </div>
               <ul class="dropdown-menu dropdown-navbar">
-                <li class="nav-link">
-                  <Link to='/' class="nav-item dropdown-item">
-                    Log out
-                  </Link>
+                <li class="nav-link" onClick={() => Logout()}>
+                  <p className="text-dark font-weight-bold ml-2">Log out</p>
                 </li>
               </ul>
             </li>

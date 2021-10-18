@@ -31,7 +31,7 @@ function Dashboard(props) {
         });
         let columns = cells[0][0].split(",");
         cells.shift();
-        cells.map((i) => {
+        cells.forEach((i) => {
           let arr = i[0]
             .split(",")
             .filter((e) => e && e !== ",")
@@ -42,7 +42,6 @@ function Dashboard(props) {
               columns.map((v, i) => ({ [v.trim()]: arr[i] }))
             )
           );
-          return "";
         });
 
         numberOfCase(data, columns);
@@ -59,7 +58,7 @@ function Dashboard(props) {
 
   const numberOfCase = (data, columns) => {
     let chartData = [];
-    data.map((i) => {
+    data.forEach((i) => {
       let check = new Date(i.date);
       let year = check.getFullYear();
       let month = check.getMonth() + 1;
@@ -83,11 +82,10 @@ function Dashboard(props) {
         temp["months"] = [{ month: month, values: 1 }];
         chartData.push(temp);
       }
-      return
     });
 
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
-    chartData.map((x) => {
+    chartData.forEach((x) => {
       if (x.months.length < 12) {
         x.months = Array.from(
           Array(12).keys(),
@@ -99,7 +97,6 @@ function Dashboard(props) {
         );
       }
       x.months.sort((a, b) => (a.month > b.month ? 1 : -1));
-      return
     });
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
     let datasets = [
@@ -161,12 +158,11 @@ function Dashboard(props) {
         pointHitRadius: 10,
       },
     ];
-    newArr.map((x, index) => {
+    newArr.forEach((x, index) => {
       let temp = datasets[index];
       temp["label"] = x.year;
       temp["data"] = x.months.map((i) => i.values);
       datasets[index] = temp;
-      return
     });
 
     setData({
@@ -217,7 +213,7 @@ function Dashboard(props) {
 
   const numberOfVictim = (data) => {
     let chartData = [];
-    data.map((i) => {
+    data.forEach((i) => {
       let check = new Date(i.date);
       let year = check.getFullYear();
       let checkYear = chartData.filter((data) => data.year === year);
@@ -240,7 +236,6 @@ function Dashboard(props) {
         temp["MD"] = i.MD === "-" ? 0 : parseInt(i.MD);
         chartData.push(temp);
       }
-      return
     });
 
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
@@ -273,20 +268,18 @@ function Dashboard(props) {
       ],
     };
 
-    newArr.map((x, index) => {
+    newArr.forEach((x, index) => {
       let temp = datasets.datasets[index];
       temp["label"] = x.year;
       temp["data"] = [x.LB, x.LR, x.MD];
       datasets.datasets[index] = temp;
-      return
     });
-
     setVictimData(datasets);
   };
 
   const numberOfAccTypes = (data) => {
     let chartData = [];
-    data.map((i) => {
+    data.forEach((i) => {
       let check = new Date(i.date);
       let year = check.getFullYear();
       let checkYear = chartData.filter((data) => data.year === year);
@@ -304,17 +297,16 @@ function Dashboard(props) {
         temp[`${i.accident_types}`] = 0;
         chartData.push(temp);
       }
-      return
     });
 
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
     let columns = ["LL", "OC", "T", "TB", "TK", "TL", "TM"];
 
-    chartData.map((data, index) => {
-      columns.map((column) => {
+    chartData.forEach((data, index) => {
+      columns.forEach((column) => {
         column in data ? console.log() : (chartData[index][column] = 0);
-      });
-      return
+        
+      });      
     });
 
     let newArr = chartData.slice(Math.max(chartData.length - 5, 1));
@@ -373,12 +365,11 @@ function Dashboard(props) {
       ],
     };
 
-    newArr.map((x, index) => {
+    newArr.forEach((x, index) => {
       let temp = datasets.datasets[index];
       temp["label"] = x.year;
       temp["data"] = [x.LL, x.OC, x.T, x.TB, x.TK, x.TL, x.TM];
       datasets.datasets[index] = temp;
-      return
     });
 
     setAccTypes(datasets);
@@ -386,7 +377,7 @@ function Dashboard(props) {
 
   const numberOfVhcTypes = (data) => {
     let chartData = [];
-    data.map((i) => {
+    data.forEach((i) => {
       let check = new Date(i.date);
       let year = check.getFullYear();
       let checkYear = chartData.filter((data) => data.year === year);
@@ -427,25 +418,25 @@ function Dashboard(props) {
         }
         chartData.push(temp);
       }
-      return
+      
     });
 
     chartData.sort((a, b) => (a.year > b.year ? 1 : -1));
     let columns = ["B", "B1", "B2", "M", "R2", "R3", "R4", "Rro", "T", "TR"];
 
-    chartData.map((data, index) => {
+    chartData.forEach((data, index) => {
       chartData[index]["TR"] = 0;
       let temp = Object.keys(data).filter((k) => k.startsWith("R"));
       let passed = ["R2", "R3", "R4", "Rro"];
-      temp = temp
+      temp
         .filter((i) => !passed.includes(i))
-        .map((i) => {
+        .forEach((i) => {
           chartData[index]["TR"] += data[i];
           delete chartData[index][`${i}`];
           return
         });
 
-      columns.map((column) => {
+      columns.forEach((column) => {
         column in data ? console.log() : (chartData[index][column] = 0);
         return
       });
@@ -530,12 +521,11 @@ function Dashboard(props) {
       
     };
 
-    newArr.map((x, index) => {
+    newArr.forEach((x, index) => {
       let temp = datasets.datasets[index];
       temp["label"] = x.year;
       temp["data"] = [x.B, x.B1, x.B2, x.M, x.R2, x.R3, x.R4, x.Rro, x.T, x.TR];
       datasets.datasets[index] = temp;
-      return
     });
 
     setVhcTypes(datasets);
