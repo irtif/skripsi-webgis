@@ -1,1084 +1,1047 @@
 address,Cluster,Count,day,time,district,accident_types,suspect_vehicle,victim_vehicle,lat,long,Color
-cendrawasih,0,10,Friday,Night,mamajang,OC,R2,NOV,-5.167086,119.4118044,#B04746
-cendrawasih,0,10,Saturday,Night,mamajang,OC,R2,NOV,-5.167086,119.4118044,#B04746
-cendrawasih,0,10,Wednesday,Evening,mariso,OC,R2,NOV,-5.155219,119.4137008,#B04746
-cendrawasih,0,10,Monday,Evening,mariso,OC,R2,NOV,-5.155219,119.4137008,#B04746
-cendrawasih,0,10,Tuesday,Night,mamajang,T,R2,NOV,-5.167086,119.4118044,#B04746
-cendrawasih,0,10,Wednesday,Evening,mamajang,TM,R2,NOV,-5.167086,119.4118044,#B04746
-cendrawasih,0,10,Tuesday,Night,mariso,OC,R2,NOV,-5.155219,119.4137008,#B04746
-cendrawasih,0,10,Wednesday,Night,mariso,OC,R2,NOV,-5.155219,119.4137008,#B04746
-cendrawasih,0,10,Sunday,Evening,mariso,OC,R2,NOV,-5.155219,119.4137008,#B04746
-cendrawasih,0,10,Thursday,Night,mariso,OC,R2,NOV,-5.155219,119.4137008,#B04746
-cendrawasih,2,8,Friday,Afternoon,mariso,OC,R2,NOV,-5.155219,119.4137008,#72877E
-cendrawasih,2,8,Sunday,Afternoon,mamajang,OC,R2,NOV,-5.167086,119.4118044,#72877E
-cendrawasih,2,8,Saturday,Afternoon,mariso,OC,R2,NOV,-5.155219,119.4137008,#72877E
-cendrawasih,2,8,Thursday,Afternoon,mamajang,TM,R2,NOV,-5.167086,119.4118044,#72877E
-cendrawasih,2,8,Friday,Afternoon,mariso,TM,R2,NOV,-5.155219,119.4137008,#72877E
-cendrawasih,2,8,Monday,Afternoon,mariso,TM,R2,NOV,-5.155219,119.4137008,#72877E
-cendrawasih,2,8,Tuesday,Afternoon,mamajang,OC,R2,NOV,-5.167086,119.4118044,#72877E
-cendrawasih,2,8,Saturday,Afternoon,mamajang,TM,R2,NOV,-5.167086,119.4118044,#72877E
-cendrawasih,5,8,Thursday,Night,mariso,TK,R2,R2,-5.155219,119.4137008,#3E751B
-cendrawasih,5,8,Friday,Night,mariso,TK,R2,R2,-5.155219,119.4137008,#3E751B
-cendrawasih,5,8,Sunday,Evening,mariso,TK,R2,R2,-5.155219,119.4137008,#3E751B
-cendrawasih,5,8,Sunday,Evening,mamajang,TK,R2,R2,-5.167086,119.4118044,#3E751B
-cendrawasih,5,8,Monday,Evening,mariso,TK,R2,R4,-5.155219,119.4137008,#3E751B
-cendrawasih,5,8,Wednesday,Night,mariso,TK,R2,R2,-5.155219,119.4137008,#3E751B
-cendrawasih,5,8,Thursday,Night,mamajang,TK,R2,R2,-5.167086,119.4118044,#3E751B
-cendrawasih,5,8,Tuesday,Evening,mamajang,TK,R2,R2,-5.167086,119.4118044,#3E751B
-cendrawasih,7,12,Wednesday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Wednesday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Monday,Morning,mamajang,TK,R2,R3,-5.167086,119.4118044,#CAA478
-cendrawasih,7,12,Wednesday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Sunday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Tuesday,Morning,mamajang,TK,R2,R2,-5.167086,119.4118044,#CAA478
-cendrawasih,7,12,Sunday,Morning,mamajang,TK,R2,R2,-5.167086,119.4118044,#CAA478
-cendrawasih,7,12,Saturday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Monday,Morning,mariso,TK,R3,R2,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Sunday,Morning,mariso,TK,R2,R3,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Sunday,Morning,mariso,TK,R3,R2,-5.155219,119.4137008,#CAA478
-cendrawasih,7,12,Friday,Morning,mamajang,TK,R3,R2,-5.167086,119.4118044,#CAA478
-cendrawasih,10,7,Saturday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#11E4FD
-cendrawasih,10,7,Monday,Afternoon,mariso,TK,R2,R2,-5.155219,119.4137008,#11E4FD
-cendrawasih,10,7,Sunday,Afternoon,mariso,TK,R2,Rro,-5.155219,119.4137008,#11E4FD
-cendrawasih,10,7,Saturday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#11E4FD
-cendrawasih,10,7,Sunday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#11E4FD
-cendrawasih,10,7,Friday,Afternoon,mariso,TK,R2,R2,-5.155219,119.4137008,#11E4FD
-cendrawasih,10,7,Sunday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#11E4FD
-cendrawasih,15,7,Sunday,Afternoon,mariso,TL,R2,R2,-5.155219,119.4137008,#FC9A7C
-cendrawasih,15,7,Thursday,Afternoon,mariso,TL,R2,R2,-5.155219,119.4137008,#FC9A7C
-cendrawasih,15,7,Saturday,Afternoon,mamajang,TL,R2,NOV,-5.167086,119.4118044,#FC9A7C
-cendrawasih,15,7,Sunday,Afternoon,mariso,TL,R2,R2,-5.155219,119.4137008,#FC9A7C
-cendrawasih,15,7,Thursday,Afternoon,mariso,TL,R2,NOV,-5.155219,119.4137008,#FC9A7C
-cendrawasih,15,7,Thursday,Afternoon,mamajang,TL,R2,NOV,-5.167086,119.4118044,#FC9A7C
-cendrawasih,15,7,Wednesday,Afternoon,mamajang,TL,R2,NOV,-5.167086,119.4118044,#FC9A7C
-gunung bawakaraeng,5,9,Sunday,Night,ujung pandang,TK,R2,R2,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Tuesday,Evening,bontoala,TK,R2,R4,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Tuesday,Night,bontoala,TK,R2,R2,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Tuesday,Evening,bontoala,TK,R2,R4,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Monday,Night,makassar,TK,R2,R2,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Friday,Evening,makassar,TK,R3,R2,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Saturday,Night,ujung pandang,TK,R2,R3,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Wednesday,Night,bontoala,TK,R3,R2,-5.1349865,119.425356,#3E751B
-gunung bawakaraeng,5,9,Monday,Night,bontoala,TK,R2,R2,-5.1349865,119.425356,#3E751B
-insinyur sutami,0,11,Thursday,Evening,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Monday,Night,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Tuesday,Evening,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#B04746
-insinyur sutami,0,11,Wednesday,Evening,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Friday,Evening,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Wednesday,Night,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Thursday,Evening,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#B04746
-insinyur sutami,0,11,Saturday,Evening,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Thursday,Night,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Monday,Evening,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,0,11,Tuesday,Night,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B04746
-insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Wednesday,Afternoon,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Tuesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Tuesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Thursday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Saturday,Afternoon,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Thursday,Afternoon,biringkanaya,TM,TR,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Monday,Afternoon,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Wednesday,Afternoon,biringkanaya,OC,R3,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#72877E
-insinyur sutami,2,18,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,T,R3,NOV,-5.0777351,119.5094889,#72877E
-insinyur sutami,5,7,Tuesday,Evening,tamalanrea,TK,R4,R2,-5.0777351,119.5094889,#3E751B
-insinyur sutami,5,7,Thursday,Evening,tamalanrea,TK,TR,TR,-5.0777351,119.5094889,#3E751B
-insinyur sutami,5,7,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0720497,119.5207207,#3E751B
-insinyur sutami,5,7,Wednesday,Evening,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#3E751B
-insinyur sutami,5,7,Saturday,Night,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#3E751B
-insinyur sutami,5,7,Saturday,Night,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#3E751B
-insinyur sutami,5,7,Friday,Night,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#3E751B
-insinyur sutami,6,16,Thursday,Morning,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#2C3231
-insinyur sutami,6,16,Monday,Morning,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#2C3231
-insinyur sutami,6,16,Thursday,Morning,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#2C3231
-insinyur sutami,6,16,Tuesday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#2C3231
-insinyur sutami,6,16,Monday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#2C3231
-insinyur sutami,6,16,Monday,Morning,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#2C3231
-insinyur sutami,6,16,Wednesday,Morning,tallo,OC,R2,NOV,-5.1150772,119.4212502,#2C3231
-insinyur sutami,6,16,Tuesday,Morning,tamalanrea,OC,R2,R2,-5.0777351,119.5094889,#2C3231
-insinyur sutami,6,16,Tuesday,Morning,biringkanaya,TB,TR,R2,-5.0720497,119.5207207,#2C3231
-insinyur sutami,6,16,Sunday,Morning,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#2C3231
-insinyur sutami,6,16,Friday,Morning,tallo,TM,R3,NOV,-5.1150772,119.4212502,#2C3231
-insinyur sutami,6,16,Monday,Morning,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#2C3231
-insinyur sutami,6,16,Tuesday,Morning,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#2C3231
-insinyur sutami,6,16,Friday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#2C3231
-insinyur sutami,6,16,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#2C3231
-insinyur sutami,6,16,Sunday,Morning,biringkanaya,TB,TR,R2,-5.0720497,119.5207207,#2C3231
-insinyur sutami,7,12,Wednesday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Thursday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Tuesday,Morning,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Monday,Morning,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Friday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Sunday,Morning,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0720497,119.5207207,#CAA478
-insinyur sutami,7,12,Friday,Morning,biringkanaya,TK,TR,R2,-5.0720497,119.5207207,#CAA478
-insinyur sutami,7,12,Tuesday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Saturday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CAA478
-insinyur sutami,7,12,Monday,Morning,biringkanaya,TK,R2,R2,-5.0720497,119.5207207,#CAA478
-insinyur sutami,7,12,Friday,Morning,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#CAA478
-insinyur sutami,10,11,Sunday,Afternoon,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,10,11,Monday,Afternoon,tallo,TK,R2,R2,-5.1150772,119.4212502,#11E4FD
-insinyur sutami,10,11,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0720497,119.5207207,#11E4FD
-insinyur sutami,10,11,Thursday,Afternoon,tamalanrea,TK,R2,M,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,10,11,Monday,Afternoon,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,10,11,Wednesday,Afternoon,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,10,11,Wednesday,Afternoon,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,10,11,Monday,Afternoon,tamalanrea,TK,R3,R3,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,10,11,Thursday,Afternoon,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,10,11,Wednesday,Afternoon,biringkanaya,TK,R2,TR,-5.0720497,119.5207207,#11E4FD
-insinyur sutami,10,11,Monday,Afternoon,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#11E4FD
-insinyur sutami,13,8,Thursday,Afternoon,biringkanaya,TK,R4,TR,-5.0720497,119.5207207,#98872F
-insinyur sutami,13,8,Thursday,Afternoon,tamalanrea,TK,TR,R4,-5.0777351,119.5094889,#98872F
-insinyur sutami,13,8,Friday,Afternoon,tamalanrea,TK,TR,R4,-5.0777351,119.5094889,#98872F
-insinyur sutami,13,8,Monday,Afternoon,tamalanrea,TK,R4,R4,-5.0777351,119.5094889,#98872F
-insinyur sutami,13,8,Saturday,Afternoon,biringkanaya,TK,R4,M,-5.0720497,119.5207207,#98872F
-insinyur sutami,13,8,Saturday,Afternoon,biringkanaya,TK,R4,R4,-5.0720497,119.5207207,#98872F
-insinyur sutami,13,8,Monday,Afternoon,biringkanaya,TK,R4,R4,-5.0720497,119.5207207,#98872F
-insinyur sutami,13,8,Wednesday,Afternoon,tamalanrea,TK,R4,R4,-5.0777351,119.5094889,#98872F
-insinyur sutami,14,7,Wednesday,Morning,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#442234
-insinyur sutami,14,7,Friday,Morning,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#442234
-insinyur sutami,14,7,Sunday,Morning,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#442234
-insinyur sutami,14,7,Friday,Morning,tallo,TL,R2,R2,-5.1150772,119.4212502,#442234
-insinyur sutami,14,7,Wednesday,Morning,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#442234
-insinyur sutami,14,7,Thursday,Morning,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#442234
-insinyur sutami,14,7,Tuesday,Morning,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#442234
-insinyur sutami,15,8,Sunday,Afternoon,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#FC9A7C
-insinyur sutami,15,8,Monday,Afternoon,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#FC9A7C
-insinyur sutami,15,8,Tuesday,Afternoon,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#FC9A7C
-insinyur sutami,15,8,Sunday,Afternoon,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#FC9A7C
-insinyur sutami,15,8,Wednesday,Afternoon,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#FC9A7C
-insinyur sutami,15,8,Sunday,Afternoon,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#FC9A7C
-insinyur sutami,15,8,Saturday,Afternoon,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#FC9A7C
-insinyur sutami,15,8,Monday,Afternoon,tallo,TL,R3,R3,-5.1150772,119.4212502,#FC9A7C
-kapasa raya,5,7,Sunday,Evening,tamalanrea,TK,R2,R4,-5.1029771,119.4940907,#3E751B
-kapasa raya,5,7,Sunday,Evening,tamalanrea,TK,R2,TR,-5.1029771,119.4940907,#3E751B
-kapasa raya,5,7,Saturday,Night,tamalanrea,TK,R2,R2,-5.1029771,119.4940907,#3E751B
-kapasa raya,5,7,Friday,Evening,biringkanaya,TK,R2,R2,-5.1128231,119.5115767,#3E751B
-kapasa raya,5,7,Sunday,Evening,tamalanrea,TK,R2,R2,-5.1029771,119.4940907,#3E751B
-kapasa raya,5,7,Saturday,Evening,tamalanrea,TK,R2,R4,-5.1029771,119.4940907,#3E751B
-kapasa raya,5,7,Friday,Evening,biringkanaya,TK,R2,R4,-5.1128231,119.5115767,#3E751B
-letjen hertasning,14,8,Monday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#442234
-letjen hertasning,14,8,Monday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#442234
-letjen hertasning,14,8,Friday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#442234
-letjen hertasning,14,8,Saturday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#442234
-letjen hertasning,14,8,Sunday,Morning,panakkukang,TL,R2,R2,-5.1625545,119.4430925,#442234
-letjen hertasning,14,8,Wednesday,Morning,rappocini,TL,R3,R2,-5.1630661,119.4444202,#442234
-letjen hertasning,14,8,Wednesday,Morning,panakkukang,TL,R2,R2,-5.1625545,119.4430925,#442234
-letjen hertasning,14,8,Monday,Morning,rappocini,TL,R2,NOV,-5.1630661,119.4444202,#442234
-metro tanjung bunga,0,21,Thursday,Night,tamalate,OC,TR,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Friday,Night,mariso,OC,R2,NOV,-5.1523252,119.4054678,#B04746
-metro tanjung bunga,0,21,Friday,Night,tamalate,T,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Wednesday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Tuesday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Thursday,Evening,mariso,OC,R2,NOV,-5.1523252,119.4054678,#B04746
-metro tanjung bunga,0,21,Wednesday,Night,tamalate,T,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Sunday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Wednesday,Evening,tamalate,T,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Tuesday,Evening,tamalate,TM,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Sunday,Night,tamalate,T,R3,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Sunday,Evening,tamalate,T,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Sunday,Night,mariso,T,R2,NOV,-5.1523252,119.4054678,#B04746
-metro tanjung bunga,0,21,Monday,Evening,tamalate,T,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Thursday,Night,mariso,OC,R2,NOV,-5.1523252,119.4054678,#B04746
-metro tanjung bunga,0,21,Tuesday,Evening,mariso,OC,R2,NOV,-5.1523252,119.4054678,#B04746
-metro tanjung bunga,0,21,Thursday,Night,tamalate,T,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Monday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Tuesday,Evening,mariso,TM,R2,NOV,-5.1523252,119.4054678,#B04746
-metro tanjung bunga,0,21,Monday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,0,21,Saturday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#B04746
-metro tanjung bunga,1,8,Friday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#5D3C42
-metro tanjung bunga,1,8,Wednesday,Afternoon,tamalate,TK,R2,R4,-5.1661576,119.3917443,#5D3C42
-metro tanjung bunga,1,8,Saturday,Afternoon,mariso,TK,R2,R4,-5.1523252,119.4054678,#5D3C42
-metro tanjung bunga,1,8,Wednesday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#5D3C42
-metro tanjung bunga,1,8,Saturday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#5D3C42
-metro tanjung bunga,1,8,Wednesday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#5D3C42
-metro tanjung bunga,1,8,Monday,Afternoon,tamalate,TK,R2,R4,-5.1661576,119.3917443,#5D3C42
-metro tanjung bunga,1,8,Friday,Afternoon,tamalate,TK,R2,R4,-5.1661576,119.3917443,#5D3C42
-metro tanjung bunga,5,7,Friday,Evening,tamalate,TK,R2,R4,-5.1661576,119.3917443,#3E751B
-metro tanjung bunga,5,7,Tuesday,Night,tamalate,TK,R2,R2,-5.1661576,119.3917443,#3E751B
-metro tanjung bunga,5,7,Saturday,Evening,tamalate,TK,R2,R4,-5.1661576,119.3917443,#3E751B
-metro tanjung bunga,5,7,Friday,Evening,tamalate,TK,R4,R2,-5.1661576,119.3917443,#3E751B
-metro tanjung bunga,5,7,Saturday,Evening,tamalate,TK,R2,R2,-5.1661576,119.3917443,#3E751B
-metro tanjung bunga,5,7,Tuesday,Evening,tamalate,TK,R2,R2,-5.1661576,119.3917443,#3E751B
-metro tanjung bunga,5,7,Monday,Evening,tamalate,TK,R2,R2,-5.1661576,119.3917443,#3E751B
-metro tanjung bunga,10,7,Monday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#11E4FD
-metro tanjung bunga,10,7,Friday,Afternoon,mariso,TK,R2,R2,-5.1523252,119.4054678,#11E4FD
-metro tanjung bunga,10,7,Friday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#11E4FD
-metro tanjung bunga,10,7,Thursday,Afternoon,tamalate,TK,R3,R3,-5.1661576,119.3917443,#11E4FD
-metro tanjung bunga,10,7,Monday,Afternoon,tamalate,TK,R2,R3,-5.1661576,119.3917443,#11E4FD
-metro tanjung bunga,10,7,Friday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#11E4FD
-metro tanjung bunga,10,7,Friday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#11E4FD
-metro tanjung bunga,14,7,Wednesday,Morning,mariso,TL,R2,R2,-5.1523252,119.4054678,#442234
-metro tanjung bunga,14,7,Wednesday,Morning,tamalate,TL,R2,R2,-5.1661576,119.3917443,#442234
-metro tanjung bunga,14,7,Tuesday,Morning,mariso,TL,R2,R2,-5.1523252,119.4054678,#442234
-metro tanjung bunga,14,7,Monday,Morning,tamalate,TL,R2,NOV,-5.1661576,119.3917443,#442234
-metro tanjung bunga,14,7,Sunday,Morning,tamalate,TL,R2,R2,-5.1661576,119.3917443,#442234
-metro tanjung bunga,14,7,Thursday,Morning,tamalate,TL,R2,NOV,-5.1661576,119.3917443,#442234
-metro tanjung bunga,14,7,Tuesday,Morning,tamalate,TL,R2,Rro,-5.1661576,119.3917443,#442234
-paccerakkang,0,8,Friday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#B04746
-paccerakkang,0,8,Sunday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#B04746
-paccerakkang,0,8,Saturday,Night,biringkanaya,T,R2,NOV,-5.1239434,119.5224673,#B04746
-paccerakkang,0,8,Wednesday,Night,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#B04746
-paccerakkang,0,8,Monday,Night,biringkanaya,T,R2,NOV,-5.1239434,119.5224673,#B04746
-paccerakkang,0,8,Saturday,Evening,biringkanaya,T,R2,NOV,-5.1239434,119.5224673,#B04746
-paccerakkang,0,8,Monday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#B04746
-paccerakkang,0,8,Sunday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#B04746
-pajaiang,2,7,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#72877E
-pajaiang,2,7,Friday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#72877E
-pajaiang,2,7,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#72877E
-pajaiang,2,7,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#72877E
-pajaiang,2,7,Wednesday,Afternoon,biringkanaya,TM,R2,NOV,-5.1072138,119.5214542,#72877E
-pajaiang,2,7,Monday,Afternoon,biringkanaya,TM,R2,NOV,-5.1072138,119.5214542,#72877E
-pajaiang,2,7,Saturday,Afternoon,biringkanaya,T,R2,NOV,-5.1072138,119.5214542,#72877E
-perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Monday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Tuesday,Night,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Thursday,Night,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Monday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Sunday,Night,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Tuesday,Night,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Monday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,TB,R2,R2,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Wednesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Wednesday,Night,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,TB,R2,R2,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Wednesday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Monday,Night,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Tuesday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,TM,R3,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Sunday,Evening,biringkanaya,TM,R3,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Friday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Saturday,Evening,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Monday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Sunday,Night,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Wednesday,Evening,panakkukang,TM,R2,NOV,-5.1451058,119.4735564,#B04746
-perintis kemerdekaan,0,44,Thursday,Evening,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Wednesday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B04746
-perintis kemerdekaan,0,44,Monday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Sunday,Evening,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B04746
-perintis kemerdekaan,1,25,Sunday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Friday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Thursday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Saturday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Sunday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Friday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Friday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Monday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Sunday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Thursday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Friday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Saturday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Wednesday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Monday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Monday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Wednesday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Saturday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Tuesday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Thursday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Saturday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Saturday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Sunday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Monday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#5D3C42
-perintis kemerdekaan,1,25,Wednesday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,1,25,Sunday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#5D3C42
-perintis kemerdekaan,2,41,Friday,Afternoon,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Thursday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Tuesday,Afternoon,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Tuesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Tuesday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Wednesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Thursday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Thursday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Tuesday,Afternoon,tamalanrea,TB,R2,R2,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Wednesday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Thursday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Friday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Tuesday,Afternoon,tamalanrea,TM,R3,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Sunday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#72877E
-perintis kemerdekaan,2,41,Wednesday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#72877E
-perintis kemerdekaan,3,25,Wednesday,Night,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Friday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Saturday,Evening,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Monday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Sunday,Night,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Monday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Sunday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Wednesday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Thursday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Tuesday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Tuesday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Tuesday,Night,tamalanrea,TL,TR,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Friday,Night,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Saturday,Night,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Monday,Night,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Saturday,Evening,biringkanaya,TL,R2,NOV,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Wednesday,Evening,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Thursday,Night,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Sunday,Evening,tamalanrea,TL,R3,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Tuesday,Night,tamalanrea,TL,R3,R2,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Thursday,Night,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#DAF2F9
-perintis kemerdekaan,3,25,Thursday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Tuesday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Thursday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,3,25,Friday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#DAF2F9
-perintis kemerdekaan,4,10,Thursday,Evening,biringkanaya,TL,R4,R4,-5.0744673,119.5232631,#0118DF
-perintis kemerdekaan,4,10,Saturday,Evening,biringkanaya,TL,R4,R4,-5.0744673,119.5232631,#0118DF
-perintis kemerdekaan,4,10,Saturday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#0118DF
-perintis kemerdekaan,4,10,Friday,Evening,biringkanaya,TL,TR,R4,-5.0744673,119.5232631,#0118DF
-perintis kemerdekaan,4,10,Sunday,Evening,tamalanrea,TL,R4,R4,-5.1402715,119.48329437389705,#0118DF
-perintis kemerdekaan,4,10,Tuesday,Evening,biringkanaya,TL,R4,NOV,-5.0744673,119.5232631,#0118DF
-perintis kemerdekaan,4,10,Sunday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#0118DF
-perintis kemerdekaan,4,10,Friday,Evening,tamalanrea,TL,TR,R4,-5.1402715,119.48329437389705,#0118DF
-perintis kemerdekaan,4,10,Monday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#0118DF
-perintis kemerdekaan,4,10,Thursday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#0118DF
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Friday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Friday,Evening,panakkukang,TK,R2,R2,-5.1451058,119.4735564,#3E751B
-perintis kemerdekaan,5,59,Wednesday,Evening,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Friday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Friday,Evening,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Thursday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Thursday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Sunday,Evening,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Wednesday,Evening,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,TR,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Evening,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Friday,Evening,tamalanrea,TK,TR,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Sunday,Evening,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Friday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Monday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Friday,Evening,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Friday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Monday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Monday,Evening,biringkanaya,TK,R2,TR,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Wednesday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Thursday,Night,tamalanrea,TK,TR,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Wednesday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Wednesday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Friday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Evening,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Thursday,Evening,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Evening,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Saturday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Wednesday,Evening,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,tamalanrea,TK,R3,R2,-5.1402715,119.48329437389705,#3E751B
-perintis kemerdekaan,5,59,Friday,Evening,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Tuesday,Evening,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Friday,Evening,biringkanaya,TK,R2,M,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Saturday,Evening,biringkanaya,TK,R3,R3,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Monday,Evening,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Thursday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Sunday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Wednesday,Evening,biringkanaya,TK,R2,TR,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,5,59,Thursday,Evening,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#3E751B
-perintis kemerdekaan,6,43,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Wednesday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Thursday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Sunday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Wednesday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Monday,Morning,biringkanaya,TB,TR,R2,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Wednesday,Morning,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Wednesday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Tuesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Wednesday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Sunday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Thursday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Sunday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Thursday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Thursday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Tuesday,Morning,tamalanrea,TM,TR,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Sunday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Saturday,Morning,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Tuesday,Morning,tamalanrea,T,R3,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Monday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#2C3231
-perintis kemerdekaan,6,43,Friday,Morning,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,6,43,Tuesday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#2C3231
-perintis kemerdekaan,7,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Tuesday,Morning,tamalanrea,TK,R2,M,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Saturday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Monday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Wednesday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Saturday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Tuesday,Morning,biringkanaya,TK,R2,M,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Wednesday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Tuesday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Sunday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Sunday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Tuesday,Morning,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Thursday,Morning,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Tuesday,Morning,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Tuesday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Wednesday,Morning,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Wednesday,Morning,tamalanrea,TK,R3,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Saturday,Morning,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,tamalanrea,TK,Rro,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Monday,Morning,biringkanaya,TK,R2,Rro,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Wednesday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CAA478
-perintis kemerdekaan,7,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CAA478
-perintis kemerdekaan,8,11,Friday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Monday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Sunday,Afternoon,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#F2B1FF
-perintis kemerdekaan,8,11,Saturday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Monday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Friday,Afternoon,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#F2B1FF
-perintis kemerdekaan,8,11,Wednesday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Friday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Tuesday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Wednesday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#F2B1FF
-perintis kemerdekaan,8,11,Sunday,Afternoon,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#F2B1FF
-perintis kemerdekaan,9,17,Wednesday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Friday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Saturday,Evening,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Monday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Thursday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Tuesday,Night,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#A4F34C
-perintis kemerdekaan,9,17,Friday,Night,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Sunday,Night,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#A4F34C
-perintis kemerdekaan,9,17,Saturday,Night,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#A4F34C
-perintis kemerdekaan,9,17,Thursday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Wednesday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#A4F34C
-perintis kemerdekaan,9,17,Sunday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#A4F34C
-perintis kemerdekaan,9,17,Tuesday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#A4F34C
-perintis kemerdekaan,9,17,Monday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#A4F34C
-perintis kemerdekaan,9,17,Friday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Friday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,9,17,Thursday,Evening,biringkanaya,TK,TR,R4,-5.0744673,119.5232631,#A4F34C
-perintis kemerdekaan,10,32,Sunday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,tamalanrea,TK,R2,M,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,tamalanrea,TK,R2,M,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,biringkanaya,TK,R2,M,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Monday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Friday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Sunday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Thursday,Afternoon,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Tuesday,Afternoon,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Friday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Monday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Thursday,Afternoon,tamalanrea,TK,R2,TR,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Monday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Monday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,tamalanrea,TK,R3,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Tuesday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Tuesday,Afternoon,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Wednesday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Monday,Afternoon,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,10,32,Friday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#11E4FD
-perintis kemerdekaan,10,32,Thursday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#11E4FD
-perintis kemerdekaan,11,24,Friday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Friday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Thursday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Friday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Sunday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Friday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Sunday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Saturday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Thursday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Thursday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Friday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Wednesday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Friday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Saturday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Monday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Thursday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Friday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Wednesday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Wednesday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Sunday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Tuesday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Wednesday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#858166
-perintis kemerdekaan,11,24,Saturday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,11,24,Sunday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#858166
-perintis kemerdekaan,12,15,Thursday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#129A63
-perintis kemerdekaan,12,15,Tuesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Wednesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Saturday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Friday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#129A63
-perintis kemerdekaan,12,15,Thursday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#129A63
-perintis kemerdekaan,12,15,Sunday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#129A63
-perintis kemerdekaan,12,15,Monday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Sunday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#129A63
-perintis kemerdekaan,12,15,Sunday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Wednesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Monday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Wednesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Sunday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#129A63
-perintis kemerdekaan,12,15,Sunday,Morning,panakkukang,TL,R4,R2,-5.1451058,119.4735564,#129A63
-perintis kemerdekaan,13,8,Friday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#98872F
-perintis kemerdekaan,13,8,Thursday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#98872F
-perintis kemerdekaan,13,8,Tuesday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#98872F
-perintis kemerdekaan,13,8,Thursday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#98872F
-perintis kemerdekaan,13,8,Sunday,Afternoon,tamalanrea,TK,R4,R4,-5.1402715,119.48329437389705,#98872F
-perintis kemerdekaan,13,8,Wednesday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#98872F
-perintis kemerdekaan,13,8,Thursday,Afternoon,tamalanrea,TK,TR,R4,-5.1402715,119.48329437389705,#98872F
-perintis kemerdekaan,13,8,Thursday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#98872F
-perintis kemerdekaan,14,15,Friday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Monday,Morning,tamalanrea,TL,R2,TR,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Thursday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Friday,Morning,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#442234
-perintis kemerdekaan,14,15,Tuesday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Thursday,Morning,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Friday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Thursday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Thursday,Morning,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#442234
-perintis kemerdekaan,14,15,Friday,Morning,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,14,15,Tuesday,Morning,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#442234
-perintis kemerdekaan,14,15,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#442234
-perintis kemerdekaan,15,24,Sunday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Saturday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Monday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Tuesday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Tuesday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Sunday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Wednesday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Thursday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Saturday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Thursday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Saturday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Sunday,Afternoon,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#FC9A7C
-perintis kemerdekaan,15,24,Monday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Wednesday,Afternoon,biringkanaya,TL,R2,NOV,-5.0744673,119.5232631,#FC9A7C
-perintis kemerdekaan,15,24,Monday,Afternoon,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#FC9A7C
-perintis kemerdekaan,15,24,Friday,Afternoon,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#FC9A7C
-perintis kemerdekaan,15,24,Monday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Wednesday,Afternoon,tamalanrea,TL,R3,R3,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Wednesday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#FC9A7C
-perintis kemerdekaan,15,24,Sunday,Afternoon,panakkukang,TL,R2,R2,-5.1451058,119.4735564,#FC9A7C
-pettarani,0,10,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#B04746
-pettarani,0,10,Wednesday,Evening,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#B04746
-pettarani,0,10,Monday,Evening,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#B04746
-pettarani,0,10,Thursday,Evening,panakkukang,T,R2,NOV,-5.1530178,119.4400985,#B04746
-pettarani,0,10,Thursday,Night,panakkukang,TM,B,NOV,-5.1530178,119.4400985,#B04746
-pettarani,0,10,Wednesday,Night,tamalate,T,R2,NOV,-5.1738401,119.4313806,#B04746
-pettarani,0,10,Friday,Evening,rappocini,T,R2,NOV,-5.1642548,119.4350915,#B04746
-pettarani,0,10,Thursday,Night,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#B04746
-pettarani,0,10,Sunday,Night,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#B04746
-pettarani,0,10,Thursday,Evening,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#B04746
-pettarani,2,7,Wednesday,Afternoon,rappocini,T,R2,NOV,-5.1642548,119.4350915,#72877E
-pettarani,2,7,Wednesday,Afternoon,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#72877E
-pettarani,2,7,Monday,Afternoon,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#72877E
-pettarani,2,7,Thursday,Afternoon,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#72877E
-pettarani,2,7,Thursday,Afternoon,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#72877E
-pettarani,2,7,Thursday,Afternoon,rappocini,TM,R2,NOV,-5.1642548,119.4350915,#72877E
-pettarani,2,7,Monday,Afternoon,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#72877E
-pettarani,3,12,Saturday,Evening,rappocini,TL,R2,R2,-5.1642548,119.4350915,#DAF2F9
-pettarani,3,12,Saturday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#DAF2F9
-pettarani,3,12,Monday,Night,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#DAF2F9
-pettarani,3,12,Wednesday,Evening,rappocini,TL,B2,R2,-5.1642548,119.4350915,#DAF2F9
-pettarani,3,12,Saturday,Night,rappocini,TL,R2,R2,-5.1642548,119.4350915,#DAF2F9
-pettarani,3,12,Sunday,Night,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#DAF2F9
-pettarani,3,12,Monday,Night,tamalate,TL,R2,R2,-5.1738401,119.4313806,#DAF2F9
-pettarani,3,12,Friday,Evening,tamalate,TL,R3,R2,-5.1738401,119.4313806,#DAF2F9
-pettarani,3,12,Friday,Night,tamalate,TL,R2,NOV,-5.1738401,119.4313806,#DAF2F9
-pettarani,3,12,Thursday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#DAF2F9
-pettarani,3,12,Sunday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#DAF2F9
-pettarani,3,12,Saturday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#DAF2F9
-pettarani,5,9,Sunday,Evening,rappocini,TK,R2,R4,-5.1642548,119.4350915,#3E751B
-pettarani,5,9,Saturday,Evening,panakkukang,TK,R2,R4,-5.1530178,119.4400985,#3E751B
-pettarani,5,9,Friday,Evening,rappocini,TK,R2,R2,-5.1642548,119.4350915,#3E751B
-pettarani,5,9,Monday,Night,rappocini,TK,B2,R2,-5.1642548,119.4350915,#3E751B
-pettarani,5,9,Wednesday,Evening,rappocini,TK,R2,R2,-5.1642548,119.4350915,#3E751B
-pettarani,5,9,Monday,Night,rappocini,TK,TR,R2,-5.1642548,119.4350915,#3E751B
-pettarani,5,9,Friday,Night,rappocini,TK,R2,R2,-5.1642548,119.4350915,#3E751B
-pettarani,5,9,Wednesday,Night,panakkukang,TK,R2,R2,-5.1530178,119.4400985,#3E751B
-pettarani,5,9,Friday,Evening,panakkukang,TK,TR,R2,-5.1530178,119.4400985,#3E751B
-pettarani,6,11,Friday,Morning,rappocini,OC,TR,NOV,-5.1642548,119.4350915,#2C3231
-pettarani,6,11,Wednesday,Morning,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#2C3231
-pettarani,6,11,Tuesday,Morning,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#2C3231
-pettarani,6,11,Sunday,Morning,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#2C3231
-pettarani,6,11,Wednesday,Morning,rappocini,TM,R2,NOV,-5.1642548,119.4350915,#2C3231
-pettarani,6,11,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#2C3231
-pettarani,6,11,Tuesday,Morning,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#2C3231
-pettarani,6,11,Wednesday,Morning,rappocini,LL,R2,NOV,-5.1642548,119.4350915,#2C3231
-pettarani,6,11,Saturday,Morning,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#2C3231
-pettarani,6,11,Friday,Morning,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#2C3231
-pettarani,6,11,Friday,Morning,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#2C3231
-pettarani,9,7,Saturday,Night,rappocini,TK,R2,R4,-5.1642548,119.4350915,#A4F34C
-pettarani,9,7,Friday,Night,panakkukang,TK,R2,R4,-5.1530178,119.4400985,#A4F34C
-pettarani,9,7,Sunday,Night,panakkukang,TK,R2,R4,-5.1530178,119.4400985,#A4F34C
-pettarani,9,7,Saturday,Evening,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#A4F34C
-pettarani,9,7,Friday,Night,panakkukang,TK,R4,R2,-5.1530178,119.4400985,#A4F34C
-pettarani,9,7,Tuesday,Evening,panakkukang,TK,TR,R4,-5.1530178,119.4400985,#A4F34C
-pettarani,9,7,Thursday,Evening,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#A4F34C
-pettarani,10,8,Wednesday,Afternoon,rappocini,TK,TR,R2,-5.1642548,119.4350915,#11E4FD
-pettarani,10,8,Thursday,Afternoon,panakkukang,TK,TR,R2,-5.1530178,119.4400985,#11E4FD
-pettarani,10,8,Saturday,Afternoon,panakkukang,TK,R2,Rro,-5.1530178,119.4400985,#11E4FD
-pettarani,10,8,Sunday,Afternoon,rappocini,TK,R2,R2,-5.1642548,119.4350915,#11E4FD
-pettarani,10,8,Monday,Afternoon,rappocini,TK,R2,R2,-5.1642548,119.4350915,#11E4FD
-pettarani,10,8,Wednesday,Afternoon,panakkukang,TK,R2,R2,-5.1530178,119.4400985,#11E4FD
-pettarani,10,8,Tuesday,Afternoon,panakkukang,TK,R2,TR,-5.1530178,119.4400985,#11E4FD
-pettarani,10,8,Friday,Afternoon,tamalate,TK,R3,R2,-5.1738401,119.4313806,#11E4FD
-pettarani,13,7,Saturday,Afternoon,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#98872F
-pettarani,13,7,Tuesday,Afternoon,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#98872F
-pettarani,13,7,Friday,Afternoon,rappocini,TK,R4,R4,-5.1642548,119.4350915,#98872F
-pettarani,13,7,Monday,Afternoon,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#98872F
-pettarani,13,7,Tuesday,Afternoon,panakkukang,TK,TR,R4,-5.1530178,119.4400985,#98872F
-pettarani,13,7,Saturday,Afternoon,rappocini,TK,R4,R4,-5.1642548,119.4350915,#98872F
-pettarani,13,7,Saturday,Afternoon,rappocini,TK,R4,R4,-5.1642548,119.4350915,#98872F
-pettarani,14,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Saturday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Friday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Sunday,Morning,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#442234
-pettarani,14,12,Sunday,Morning,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#442234
-pettarani,14,12,Monday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Thursday,Morning,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#442234
-pettarani,14,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Wednesday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#442234
-pettarani,14,12,Sunday,Morning,panakkukang,TL,R3,R2,-5.1530178,119.4400985,#442234
-pettarani,15,10,Thursday,Afternoon,rappocini,TL,R2,R2,-5.1642548,119.4350915,#FC9A7C
-pettarani,15,10,Monday,Afternoon,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#FC9A7C
-pettarani,15,10,Sunday,Afternoon,rappocini,TL,TR,R2,-5.1642548,119.4350915,#FC9A7C
-pettarani,15,10,Saturday,Afternoon,panakkukang,TL,R2,NOV,-5.1530178,119.4400985,#FC9A7C
-pettarani,15,10,Wednesday,Afternoon,tamalate,TL,R2,R2,-5.1738401,119.4313806,#FC9A7C
-pettarani,15,10,Monday,Afternoon,rappocini,TL,R2,R2,-5.1642548,119.4350915,#FC9A7C
-pettarani,15,10,Wednesday,Afternoon,rappocini,TL,R3,R2,-5.1642548,119.4350915,#FC9A7C
-pettarani,15,10,Thursday,Afternoon,panakkukang,TL,R3,NOV,-5.1530178,119.4400985,#FC9A7C
-pettarani,15,10,Thursday,Afternoon,panakkukang,TL,TR,R2,-5.1530178,119.4400985,#FC9A7C
-pettarani,15,10,Friday,Afternoon,panakkukang,TL,R2,NOV,-5.1530178,119.4400985,#FC9A7C
-sultan alauddin,0,8,Saturday,Night,rappocini,OC,R2,NOV,-5.176566,119.4363938,#B04746
-sultan alauddin,0,8,Wednesday,Evening,rappocini,OC,R2,NOV,-5.176566,119.4363938,#B04746
-sultan alauddin,0,8,Thursday,Night,rappocini,OC,R2,NOV,-5.176566,119.4363938,#B04746
-sultan alauddin,0,8,Tuesday,Night,rappocini,TM,R2,NOV,-5.176566,119.4363938,#B04746
-sultan alauddin,0,8,Wednesday,Night,rappocini,TM,TR,NOV,-5.176566,119.4363938,#B04746
-sultan alauddin,0,8,Saturday,Night,tamalate,OC,R2,NOV,-5.1703517,119.4244619,#B04746
-sultan alauddin,0,8,Sunday,Night,rappocini,OC,R2,NOV,-5.176566,119.4363938,#B04746
-sultan alauddin,0,8,Monday,Evening,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#B04746
-sultan alauddin,1,7,Saturday,Afternoon,tamalate,TK,R4,R2,-5.1703517,119.4244619,#5D3C42
-sultan alauddin,1,7,Tuesday,Afternoon,tamalate,TK,R2,R4,-5.1703517,119.4244619,#5D3C42
-sultan alauddin,1,7,Saturday,Afternoon,rappocini,TK,R4,R2,-5.176566,119.4363938,#5D3C42
-sultan alauddin,1,7,Sunday,Afternoon,rappocini,TK,R4,R2,-5.176566,119.4363938,#5D3C42
-sultan alauddin,1,7,Wednesday,Afternoon,tamalate,TK,R4,R2,-5.1703517,119.4244619,#5D3C42
-sultan alauddin,1,7,Thursday,Afternoon,tamalate,TK,R4,R2,-5.1703517,119.4244619,#5D3C42
-sultan alauddin,1,7,Saturday,Afternoon,tamalate,TK,R2,R4,-5.1703517,119.4244619,#5D3C42
-sultan alauddin,3,9,Friday,Night,tamalate,TL,R2,R2,-5.1703517,119.4244619,#DAF2F9
-sultan alauddin,3,9,Tuesday,Evening,rappocini,TL,R2,NOV,-5.176566,119.4363938,#DAF2F9
-sultan alauddin,3,9,Friday,Night,rappocini,TL,R2,R2,-5.176566,119.4363938,#DAF2F9
-sultan alauddin,3,9,Monday,Evening,rappocini,TL,R2,R2,-5.176566,119.4363938,#DAF2F9
-sultan alauddin,3,9,Tuesday,Evening,tamalate,TL,R2,NOV,-5.1703517,119.4244619,#DAF2F9
-sultan alauddin,3,9,Thursday,Night,rappocini,TL,R3,R2,-5.176566,119.4363938,#DAF2F9
-sultan alauddin,3,9,Sunday,Night,rappocini,TL,R2,R2,-5.176566,119.4363938,#DAF2F9
-sultan alauddin,3,9,Sunday,Evening,tamalate,TL,R2,R2,-5.1703517,119.4244619,#DAF2F9
-sultan alauddin,3,9,Friday,Night,tamalate,TL,R2,R2,-5.1703517,119.4244619,#DAF2F9
-sultan alauddin,6,7,Saturday,Morning,tamalate,OC,R2,NOV,-5.1703517,119.4244619,#2C3231
-sultan alauddin,6,7,Saturday,Morning,rappocini,OC,R2,NOV,-5.176566,119.4363938,#2C3231
-sultan alauddin,6,7,Wednesday,Morning,rappocini,OC,R2,NOV,-5.176566,119.4363938,#2C3231
-sultan alauddin,6,7,Friday,Morning,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#2C3231
-sultan alauddin,6,7,Wednesday,Morning,rappocini,OC,R2,NOV,-5.176566,119.4363938,#2C3231
-sultan alauddin,6,7,Thursday,Morning,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#2C3231
-sultan alauddin,6,7,Friday,Morning,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#2C3231
-sultan alauddin,14,9,Friday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#442234
-sultan alauddin,14,9,Friday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#442234
-sultan alauddin,14,9,Tuesday,Morning,rappocini,TL,R2,R2,-5.176566,119.4363938,#442234
-sultan alauddin,14,9,Monday,Morning,tamalate,TL,R2,NOV,-5.1703517,119.4244619,#442234
-sultan alauddin,14,9,Saturday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#442234
-sultan alauddin,14,9,Sunday,Morning,rappocini,TL,TR,R2,-5.176566,119.4363938,#442234
-sultan alauddin,14,9,Monday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#442234
-sultan alauddin,14,9,Thursday,Morning,rappocini,TL,R3,R2,-5.176566,119.4363938,#442234
-sultan alauddin,14,9,Monday,Morning,rappocini,TL,R2,R2,-5.176566,119.4363938,#442234
-tamangapa raya,7,7,Wednesday,Morning,manggala,TK,R2,Rro,-5.1767373,119.4843844,#CAA478
-tamangapa raya,7,7,Thursday,Morning,manggala,TK,R2,TR,-5.1767373,119.4843844,#CAA478
-tamangapa raya,7,7,Tuesday,Morning,manggala,TK,R2,TR,-5.1767373,119.4843844,#CAA478
-tamangapa raya,7,7,Wednesday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CAA478
-tamangapa raya,7,7,Thursday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CAA478
-tamangapa raya,7,7,Monday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CAA478
-tamangapa raya,7,7,Sunday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CAA478
-urip sumuharjo,0,27,Monday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Friday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Night,makassar,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Wednesday,Night,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Thursday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Monday,Night,makassar,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Tuesday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Tuesday,Night,makassar,T,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Evening,makassar,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Friday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Friday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Night,makassar,T,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Saturday,Night,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Wednesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Friday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Night,makassar,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Sunday,Night,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Tuesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Tuesday,Evening,panakkukang,TB,R3,R3,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Thursday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Wednesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Tuesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Friday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,0,27,Saturday,Night,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#B04746
-urip sumuharjo,1,10,Friday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Monday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Wednesday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Tuesday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Sunday,Afternoon,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Sunday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Tuesday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Friday,Afternoon,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Tuesday,Afternoon,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,1,10,Saturday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#5D3C42
-urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Wednesday,Afternoon,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Tuesday,Afternoon,bontoala,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Wednesday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Friday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Friday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Saturday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Saturday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Monday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Thursday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Tuesday,Afternoon,makassar,TM,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Wednesday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Sunday,Afternoon,makassar,TM,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Saturday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Friday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Thursday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R3,NOV,-5.1348243,119.4316818,#72877E
-urip sumuharjo,3,22,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Monday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Thursday,Night,makassar,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Tuesday,Evening,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Saturday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Wednesday,Evening,makassar,TL,R2,NOV,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Saturday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Sunday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Wednesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Tuesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Tuesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Friday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Thursday,Night,bontoala,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Saturday,Night,panakkukang,TL,R3,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Wednesday,Evening,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Thursday,Night,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Saturday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Friday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,3,22,Wednesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#DAF2F9
-urip sumuharjo,5,27,Monday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Saturday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Saturday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Tuesday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Tuesday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Tuesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Evening,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Sunday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Saturday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Sunday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Thursday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Friday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Evening,panakkukang,TK,R2,Rro,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Saturday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Friday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Night,panakkukang,TK,R3,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Night,panakkukang,TK,R3,R3,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Sunday,Night,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Sunday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Wednesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,5,27,Monday,Evening,makassar,TK,R2,R4,-5.1348243,119.4316818,#3E751B
-urip sumuharjo,6,27,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Sunday,Morning,panakkukang,OC,B2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Friday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Friday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Friday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Tuesday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Friday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Saturday,Morning,makassar,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Saturday,Morning,panakkukang,TM,TR,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,makassar,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Saturday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Thursday,Morning,bontoala,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Wednesday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Tuesday,Morning,bontoala,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Thursday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Wednesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,TB,R2,R2,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Monday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,6,27,Wednesday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#2C3231
-urip sumuharjo,7,14,Thursday,Morning,bontoala,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Saturday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Sunday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Monday,Morning,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Saturday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Monday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Sunday,Morning,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Wednesday,Morning,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Thursday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Saturday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Monday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Tuesday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Sunday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,7,14,Tuesday,Morning,panakkukang,TK,R2,M,-5.1348243,119.4316818,#CAA478
-urip sumuharjo,8,10,Tuesday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Monday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Tuesday,Afternoon,bontoala,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Monday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Thursday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Friday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Thursday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Friday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Tuesday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,8,10,Sunday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#F2B1FF
-urip sumuharjo,9,10,Friday,Evening,panakkukang,TK,R4,R4,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Wednesday,Evening,panakkukang,TK,R4,R4,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Sunday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Saturday,Evening,panakkukang,TK,R4,R4,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Sunday,Night,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Tuesday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Saturday,Night,makassar,TK,R2,R4,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Sunday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Sunday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,9,10,Friday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#A4F34C
-urip sumuharjo,10,14,Friday,Afternoon,panakkukang,TK,R2,TR,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Sunday,Afternoon,makassar,TK,R2,B1,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Friday,Afternoon,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Sunday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Friday,Afternoon,bontoala,TK,R2,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Friday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Wednesday,Afternoon,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Saturday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Tuesday,Afternoon,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Friday,Afternoon,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Monday,Afternoon,panakkukang,TK,R2,M,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Monday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Sunday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,10,14,Tuesday,Afternoon,panakkukang,TK,R2,Rro,-5.1348243,119.4316818,#11E4FD
-urip sumuharjo,11,10,Monday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Monday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Saturday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Saturday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Saturday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Tuesday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Tuesday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Wednesday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Wednesday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#858166
-urip sumuharjo,11,10,Sunday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#858166
-urip sumuharjo,12,9,Tuesday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Tuesday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Sunday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Saturday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Friday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Sunday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Monday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Friday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,12,9,Tuesday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#129A63
-urip sumuharjo,14,16,Thursday,Morning,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Sunday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Wednesday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Wednesday,Morning,bontoala,TL,R3,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Thursday,Morning,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Monday,Morning,bontoala,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Sunday,Morning,bontoala,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Saturday,Morning,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Saturday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Thursday,Morning,panakkukang,TL,R3,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Friday,Morning,panakkukang,TL,TR,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Tuesday,Morning,panakkukang,TL,R3,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Tuesday,Morning,makassar,TL,R2,NOV,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Friday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Sunday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,14,16,Friday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#442234
-urip sumuharjo,15,15,Friday,Afternoon,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Tuesday,Afternoon,makassar,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Sunday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Sunday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Monday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Friday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Monday,Afternoon,panakkukang,TL,R3,R3,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Saturday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Saturday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Friday,Afternoon,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Friday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-urip sumuharjo,15,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#FC9A7C
-veteran selatan,0,7,Saturday,Night,makassar,OC,R2,NOV,-5.1584419,119.4229534,#B04746
-veteran selatan,0,7,Thursday,Night,mamajang,OC,R2,NOV,-5.1584419,119.4229534,#B04746
-veteran selatan,0,7,Thursday,Evening,mamajang,OC,R2,NOV,-5.1584419,119.4229534,#B04746
-veteran selatan,0,7,Friday,Evening,makassar,TM,R2,NOV,-5.1584419,119.4229534,#B04746
-veteran selatan,0,7,Wednesday,Evening,mamajang,TM,R2,NOV,-5.1584419,119.4229534,#B04746
-veteran selatan,0,7,Tuesday,Evening,makassar,TM,R2,NOV,-5.1584419,119.4229534,#B04746
-veteran selatan,0,7,Saturday,Evening,mamajang,TM,R2,NOV,-5.1584419,119.4229534,#B04746
-veteran selatan,5,9,Thursday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Saturday,Night,mamajang,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Wednesday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Wednesday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Tuesday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Monday,Night,mamajang,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Friday,Night,mamajang,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Saturday,Night,makassar,TK,R2,R2,-5.1584419,119.4229534,#3E751B
-veteran selatan,5,9,Tuesday,Night,mamajang,TK,R2,R3,-5.1584419,119.4229534,#3E751B
-veteran utara,3,12,Friday,Night,makassar,TL,R2,NOV,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Saturday,Evening,makassar,TL,R2,NOV,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Saturday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Wednesday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Saturday,Night,makassar,TL,R2,NOV,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Thursday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Thursday,Night,makassar,TL,R2,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Thursday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Wednesday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Thursday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Friday,Night,makassar,TL,R3,R2,-5.1407973,119.4239945,#DAF2F9
-veteran utara,3,12,Saturday,Night,bontoala,TL,R2,NOV,-5.1407973,119.4239945,#DAF2F9
-veteran utara,5,10,Tuesday,Evening,makassar,TK,R2,NOV,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Saturday,Evening,makassar,TK,R2,R2,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Saturday,Night,makassar,TK,R2,R2,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Friday,Evening,bontoala,TK,R2,TR,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Wednesday,Evening,bontoala,TK,R2,R2,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Sunday,Evening,makassar,TK,R2,R2,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Friday,Night,bontoala,TK,R2,R2,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Saturday,Evening,bontoala,TK,R2,R4,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Saturday,Evening,makassar,TK,R2,Rro,-5.1407973,119.4239945,#3E751B
-veteran utara,5,10,Friday,Night,makassar,TK,R2,R2,-5.1407973,119.4239945,#3E751B
-veteran utara,10,7,Sunday,Afternoon,makassar,TK,R2,R2,-5.1407973,119.4239945,#11E4FD
-veteran utara,10,7,Saturday,Afternoon,makassar,TK,R2,R2,-5.1407973,119.4239945,#11E4FD
-veteran utara,10,7,Sunday,Afternoon,bontoala,TK,B2,R2,-5.1407973,119.4239945,#11E4FD
-veteran utara,10,7,Tuesday,Afternoon,bontoala,TK,TR,R2,-5.1407973,119.4239945,#11E4FD
-veteran utara,10,7,Friday,Afternoon,makassar,TK,TR,R2,-5.1407973,119.4239945,#11E4FD
-veteran utara,10,7,Friday,Afternoon,bontoala,TK,R2,R2,-5.1407973,119.4239945,#11E4FD
-veteran utara,10,7,Wednesday,Afternoon,makassar,TK,R2,R2,-5.1407973,119.4239945,#11E4FD
+cendrawasih,0,10,Friday,Night,mamajang,OC,R2,NOV,-5.167086,119.4118044,#A83762
+cendrawasih,0,10,Saturday,Night,mamajang,OC,R2,NOV,-5.167086,119.4118044,#A83762
+cendrawasih,0,10,Wednesday,Evening,mariso,OC,R2,NOV,-5.155219,119.4137008,#A83762
+cendrawasih,0,10,Monday,Evening,mariso,OC,R2,NOV,-5.155219,119.4137008,#A83762
+cendrawasih,0,10,Tuesday,Night,mamajang,T,R2,NOV,-5.167086,119.4118044,#A83762
+cendrawasih,0,10,Wednesday,Evening,mamajang,TM,R2,NOV,-5.167086,119.4118044,#A83762
+cendrawasih,0,10,Tuesday,Night,mariso,OC,R2,NOV,-5.155219,119.4137008,#A83762
+cendrawasih,0,10,Wednesday,Night,mariso,OC,R2,NOV,-5.155219,119.4137008,#A83762
+cendrawasih,0,10,Sunday,Evening,mariso,OC,R2,NOV,-5.155219,119.4137008,#A83762
+cendrawasih,0,10,Thursday,Night,mariso,OC,R2,NOV,-5.155219,119.4137008,#A83762
+cendrawasih,2,8,Friday,Afternoon,mariso,OC,R2,NOV,-5.155219,119.4137008,#B67656
+cendrawasih,2,8,Sunday,Afternoon,mamajang,OC,R2,NOV,-5.167086,119.4118044,#B67656
+cendrawasih,2,8,Saturday,Afternoon,mariso,OC,R2,NOV,-5.155219,119.4137008,#B67656
+cendrawasih,2,8,Thursday,Afternoon,mamajang,TM,R2,NOV,-5.167086,119.4118044,#B67656
+cendrawasih,2,8,Friday,Afternoon,mariso,TM,R2,NOV,-5.155219,119.4137008,#B67656
+cendrawasih,2,8,Monday,Afternoon,mariso,TM,R2,NOV,-5.155219,119.4137008,#B67656
+cendrawasih,2,8,Tuesday,Afternoon,mamajang,OC,R2,NOV,-5.167086,119.4118044,#B67656
+cendrawasih,2,8,Saturday,Afternoon,mamajang,TM,R2,NOV,-5.167086,119.4118044,#B67656
+cendrawasih,6,7,Thursday,Night,mariso,TK,R2,R2,-5.155219,119.4137008,#26DED5
+cendrawasih,6,7,Friday,Night,mariso,TK,R2,R2,-5.155219,119.4137008,#26DED5
+cendrawasih,6,7,Sunday,Evening,mariso,TK,R2,R2,-5.155219,119.4137008,#26DED5
+cendrawasih,6,7,Sunday,Evening,mamajang,TK,R2,R2,-5.167086,119.4118044,#26DED5
+cendrawasih,6,7,Wednesday,Night,mariso,TK,R2,R2,-5.155219,119.4137008,#26DED5
+cendrawasih,6,7,Thursday,Night,mamajang,TK,R2,R2,-5.167086,119.4118044,#26DED5
+cendrawasih,6,7,Tuesday,Evening,mamajang,TK,R2,R2,-5.167086,119.4118044,#26DED5
+cendrawasih,9,12,Wednesday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Wednesday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Monday,Morning,mamajang,TK,R2,R3,-5.167086,119.4118044,#CB1825
+cendrawasih,9,12,Wednesday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Sunday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Tuesday,Morning,mamajang,TK,R2,R2,-5.167086,119.4118044,#CB1825
+cendrawasih,9,12,Sunday,Morning,mamajang,TK,R2,R2,-5.167086,119.4118044,#CB1825
+cendrawasih,9,12,Saturday,Morning,mariso,TK,R2,R2,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Monday,Morning,mariso,TK,R3,R2,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Sunday,Morning,mariso,TK,R2,R3,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Sunday,Morning,mariso,TK,R3,R2,-5.155219,119.4137008,#CB1825
+cendrawasih,9,12,Friday,Morning,mamajang,TK,R3,R2,-5.167086,119.4118044,#CB1825
+cendrawasih,12,7,Saturday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#37E9B3
+cendrawasih,12,7,Monday,Afternoon,mariso,TK,R2,R2,-5.155219,119.4137008,#37E9B3
+cendrawasih,12,7,Sunday,Afternoon,mariso,TK,R2,Rro,-5.155219,119.4137008,#37E9B3
+cendrawasih,12,7,Saturday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#37E9B3
+cendrawasih,12,7,Sunday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#37E9B3
+cendrawasih,12,7,Friday,Afternoon,mariso,TK,R2,R2,-5.155219,119.4137008,#37E9B3
+cendrawasih,12,7,Sunday,Afternoon,mamajang,TK,R2,R2,-5.167086,119.4118044,#37E9B3
+cendrawasih,17,7,Sunday,Afternoon,mariso,TL,R2,R2,-5.155219,119.4137008,#63CE1A
+cendrawasih,17,7,Thursday,Afternoon,mariso,TL,R2,R2,-5.155219,119.4137008,#63CE1A
+cendrawasih,17,7,Saturday,Afternoon,mamajang,TL,R2,NOV,-5.167086,119.4118044,#63CE1A
+cendrawasih,17,7,Sunday,Afternoon,mariso,TL,R2,R2,-5.155219,119.4137008,#63CE1A
+cendrawasih,17,7,Thursday,Afternoon,mariso,TL,R2,NOV,-5.155219,119.4137008,#63CE1A
+cendrawasih,17,7,Thursday,Afternoon,mamajang,TL,R2,NOV,-5.167086,119.4118044,#63CE1A
+cendrawasih,17,7,Wednesday,Afternoon,mamajang,TL,R2,NOV,-5.167086,119.4118044,#63CE1A
+gunung bawakaraeng,6,7,Sunday,Night,ujung pandang,TK,R2,R2,-5.1349865,119.425356,#26DED5
+gunung bawakaraeng,6,7,Tuesday,Night,bontoala,TK,R2,R2,-5.1349865,119.425356,#26DED5
+gunung bawakaraeng,6,7,Monday,Night,makassar,TK,R2,R2,-5.1349865,119.425356,#26DED5
+gunung bawakaraeng,6,7,Friday,Evening,makassar,TK,R3,R2,-5.1349865,119.425356,#26DED5
+gunung bawakaraeng,6,7,Saturday,Night,ujung pandang,TK,R2,R3,-5.1349865,119.425356,#26DED5
+gunung bawakaraeng,6,7,Wednesday,Night,bontoala,TK,R3,R2,-5.1349865,119.425356,#26DED5
+gunung bawakaraeng,6,7,Monday,Night,bontoala,TK,R2,R2,-5.1349865,119.425356,#26DED5
+insinyur sutami,0,11,Thursday,Evening,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Monday,Night,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Tuesday,Evening,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#A83762
+insinyur sutami,0,11,Wednesday,Evening,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Friday,Evening,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Wednesday,Night,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Thursday,Evening,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#A83762
+insinyur sutami,0,11,Saturday,Evening,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Thursday,Night,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Monday,Evening,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,0,11,Tuesday,Night,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#A83762
+insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Wednesday,Afternoon,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Tuesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Tuesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Thursday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Saturday,Afternoon,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Thursday,Afternoon,biringkanaya,TM,TR,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Monday,Afternoon,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Wednesday,Afternoon,biringkanaya,OC,R3,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#B67656
+insinyur sutami,2,18,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,2,18,Wednesday,Afternoon,tamalanrea,T,R3,NOV,-5.0777351,119.5094889,#B67656
+insinyur sutami,7,16,Thursday,Morning,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#D53963
+insinyur sutami,7,16,Monday,Morning,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#D53963
+insinyur sutami,7,16,Thursday,Morning,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#D53963
+insinyur sutami,7,16,Tuesday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#D53963
+insinyur sutami,7,16,Monday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#D53963
+insinyur sutami,7,16,Monday,Morning,biringkanaya,OC,R2,NOV,-5.0720497,119.5207207,#D53963
+insinyur sutami,7,16,Wednesday,Morning,tallo,OC,R2,NOV,-5.1150772,119.4212502,#D53963
+insinyur sutami,7,16,Tuesday,Morning,tamalanrea,OC,R2,R2,-5.0777351,119.5094889,#D53963
+insinyur sutami,7,16,Tuesday,Morning,biringkanaya,TB,TR,R2,-5.0720497,119.5207207,#D53963
+insinyur sutami,7,16,Sunday,Morning,tamalanrea,T,R2,NOV,-5.0777351,119.5094889,#D53963
+insinyur sutami,7,16,Friday,Morning,tallo,TM,R3,NOV,-5.1150772,119.4212502,#D53963
+insinyur sutami,7,16,Monday,Morning,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#D53963
+insinyur sutami,7,16,Tuesday,Morning,biringkanaya,T,R2,NOV,-5.0720497,119.5207207,#D53963
+insinyur sutami,7,16,Friday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#D53963
+insinyur sutami,7,16,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.0777351,119.5094889,#D53963
+insinyur sutami,7,16,Sunday,Morning,biringkanaya,TB,TR,R2,-5.0720497,119.5207207,#D53963
+insinyur sutami,9,12,Wednesday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Thursday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Tuesday,Morning,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Monday,Morning,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Friday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Sunday,Morning,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0720497,119.5207207,#CB1825
+insinyur sutami,9,12,Friday,Morning,biringkanaya,TK,TR,R2,-5.0720497,119.5207207,#CB1825
+insinyur sutami,9,12,Tuesday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Saturday,Morning,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#CB1825
+insinyur sutami,9,12,Monday,Morning,biringkanaya,TK,R2,R2,-5.0720497,119.5207207,#CB1825
+insinyur sutami,9,12,Friday,Morning,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#CB1825
+insinyur sutami,12,11,Sunday,Afternoon,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,12,11,Monday,Afternoon,tallo,TK,R2,R2,-5.1150772,119.4212502,#37E9B3
+insinyur sutami,12,11,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0720497,119.5207207,#37E9B3
+insinyur sutami,12,11,Thursday,Afternoon,tamalanrea,TK,R2,M,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,12,11,Monday,Afternoon,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,12,11,Wednesday,Afternoon,tamalanrea,TK,TR,R2,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,12,11,Wednesday,Afternoon,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,12,11,Monday,Afternoon,tamalanrea,TK,R3,R3,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,12,11,Thursday,Afternoon,tamalanrea,TK,R2,TR,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,12,11,Wednesday,Afternoon,biringkanaya,TK,R2,TR,-5.0720497,119.5207207,#37E9B3
+insinyur sutami,12,11,Monday,Afternoon,tamalanrea,TK,R2,R2,-5.0777351,119.5094889,#37E9B3
+insinyur sutami,15,8,Thursday,Afternoon,biringkanaya,TK,R4,TR,-5.0720497,119.5207207,#BDFB5D
+insinyur sutami,15,8,Thursday,Afternoon,tamalanrea,TK,TR,R4,-5.0777351,119.5094889,#BDFB5D
+insinyur sutami,15,8,Friday,Afternoon,tamalanrea,TK,TR,R4,-5.0777351,119.5094889,#BDFB5D
+insinyur sutami,15,8,Monday,Afternoon,tamalanrea,TK,R4,R4,-5.0777351,119.5094889,#BDFB5D
+insinyur sutami,15,8,Saturday,Afternoon,biringkanaya,TK,R4,M,-5.0720497,119.5207207,#BDFB5D
+insinyur sutami,15,8,Saturday,Afternoon,biringkanaya,TK,R4,R4,-5.0720497,119.5207207,#BDFB5D
+insinyur sutami,15,8,Monday,Afternoon,biringkanaya,TK,R4,R4,-5.0720497,119.5207207,#BDFB5D
+insinyur sutami,15,8,Wednesday,Afternoon,tamalanrea,TK,R4,R4,-5.0777351,119.5094889,#BDFB5D
+insinyur sutami,16,7,Wednesday,Morning,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#349B13
+insinyur sutami,16,7,Friday,Morning,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#349B13
+insinyur sutami,16,7,Sunday,Morning,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#349B13
+insinyur sutami,16,7,Friday,Morning,tallo,TL,R2,R2,-5.1150772,119.4212502,#349B13
+insinyur sutami,16,7,Wednesday,Morning,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#349B13
+insinyur sutami,16,7,Thursday,Morning,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#349B13
+insinyur sutami,16,7,Tuesday,Morning,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#349B13
+insinyur sutami,17,8,Sunday,Afternoon,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#63CE1A
+insinyur sutami,17,8,Monday,Afternoon,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#63CE1A
+insinyur sutami,17,8,Tuesday,Afternoon,tamalanrea,TL,R2,R2,-5.0777351,119.5094889,#63CE1A
+insinyur sutami,17,8,Sunday,Afternoon,biringkanaya,TL,R2,R2,-5.0720497,119.5207207,#63CE1A
+insinyur sutami,17,8,Wednesday,Afternoon,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#63CE1A
+insinyur sutami,17,8,Sunday,Afternoon,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#63CE1A
+insinyur sutami,17,8,Saturday,Afternoon,tamalanrea,TL,TR,R2,-5.0777351,119.5094889,#63CE1A
+insinyur sutami,17,8,Monday,Afternoon,tallo,TL,R3,R3,-5.1150772,119.4212502,#63CE1A
+letjen hertasning,16,8,Monday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#349B13
+letjen hertasning,16,8,Monday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#349B13
+letjen hertasning,16,8,Friday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#349B13
+letjen hertasning,16,8,Saturday,Morning,rappocini,TL,R2,R2,-5.1630661,119.4444202,#349B13
+letjen hertasning,16,8,Sunday,Morning,panakkukang,TL,R2,R2,-5.1625545,119.4430925,#349B13
+letjen hertasning,16,8,Wednesday,Morning,rappocini,TL,R3,R2,-5.1630661,119.4444202,#349B13
+letjen hertasning,16,8,Wednesday,Morning,panakkukang,TL,R2,R2,-5.1625545,119.4430925,#349B13
+letjen hertasning,16,8,Monday,Morning,rappocini,TL,R2,NOV,-5.1630661,119.4444202,#349B13
+metro tanjung bunga,0,22,Thursday,Night,tamalate,OC,TR,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Friday,Night,mariso,OC,R2,NOV,-5.1523252,119.4054678,#A83762
+metro tanjung bunga,0,22,Friday,Night,tamalate,T,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Wednesday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Sunday,Evening,tamalate,OC,B2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Tuesday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Thursday,Evening,mariso,OC,R2,NOV,-5.1523252,119.4054678,#A83762
+metro tanjung bunga,0,22,Wednesday,Night,tamalate,T,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Sunday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Wednesday,Evening,tamalate,T,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Tuesday,Evening,tamalate,TM,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Sunday,Night,tamalate,T,R3,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Sunday,Evening,tamalate,T,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Sunday,Night,mariso,T,R2,NOV,-5.1523252,119.4054678,#A83762
+metro tanjung bunga,0,22,Monday,Evening,tamalate,T,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Thursday,Night,mariso,OC,R2,NOV,-5.1523252,119.4054678,#A83762
+metro tanjung bunga,0,22,Tuesday,Evening,mariso,OC,R2,NOV,-5.1523252,119.4054678,#A83762
+metro tanjung bunga,0,22,Thursday,Night,tamalate,T,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Monday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Tuesday,Evening,mariso,TM,R2,NOV,-5.1523252,119.4054678,#A83762
+metro tanjung bunga,0,22,Monday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,0,22,Saturday,Evening,tamalate,OC,R2,NOV,-5.1661576,119.3917443,#A83762
+metro tanjung bunga,1,8,Friday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#B8C654
+metro tanjung bunga,1,8,Wednesday,Afternoon,tamalate,TK,R2,R4,-5.1661576,119.3917443,#B8C654
+metro tanjung bunga,1,8,Saturday,Afternoon,mariso,TK,R2,R4,-5.1523252,119.4054678,#B8C654
+metro tanjung bunga,1,8,Wednesday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#B8C654
+metro tanjung bunga,1,8,Saturday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#B8C654
+metro tanjung bunga,1,8,Wednesday,Afternoon,tamalate,TK,R4,R2,-5.1661576,119.3917443,#B8C654
+metro tanjung bunga,1,8,Monday,Afternoon,tamalate,TK,R2,R4,-5.1661576,119.3917443,#B8C654
+metro tanjung bunga,1,8,Friday,Afternoon,tamalate,TK,R2,R4,-5.1661576,119.3917443,#B8C654
+metro tanjung bunga,12,7,Monday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#37E9B3
+metro tanjung bunga,12,7,Friday,Afternoon,mariso,TK,R2,R2,-5.1523252,119.4054678,#37E9B3
+metro tanjung bunga,12,7,Friday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#37E9B3
+metro tanjung bunga,12,7,Thursday,Afternoon,tamalate,TK,R3,R3,-5.1661576,119.3917443,#37E9B3
+metro tanjung bunga,12,7,Monday,Afternoon,tamalate,TK,R2,R3,-5.1661576,119.3917443,#37E9B3
+metro tanjung bunga,12,7,Friday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#37E9B3
+metro tanjung bunga,12,7,Friday,Afternoon,tamalate,TK,R2,R2,-5.1661576,119.3917443,#37E9B3
+metro tanjung bunga,16,7,Wednesday,Morning,mariso,TL,R2,R2,-5.1523252,119.4054678,#349B13
+metro tanjung bunga,16,7,Wednesday,Morning,tamalate,TL,R2,R2,-5.1661576,119.3917443,#349B13
+metro tanjung bunga,16,7,Tuesday,Morning,mariso,TL,R2,R2,-5.1523252,119.4054678,#349B13
+metro tanjung bunga,16,7,Monday,Morning,tamalate,TL,R2,NOV,-5.1661576,119.3917443,#349B13
+metro tanjung bunga,16,7,Sunday,Morning,tamalate,TL,R2,R2,-5.1661576,119.3917443,#349B13
+metro tanjung bunga,16,7,Thursday,Morning,tamalate,TL,R2,NOV,-5.1661576,119.3917443,#349B13
+metro tanjung bunga,16,7,Tuesday,Morning,tamalate,TL,R2,Rro,-5.1661576,119.3917443,#349B13
+paccerakkang,0,8,Friday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#A83762
+paccerakkang,0,8,Sunday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#A83762
+paccerakkang,0,8,Saturday,Night,biringkanaya,T,R2,NOV,-5.1239434,119.5224673,#A83762
+paccerakkang,0,8,Wednesday,Night,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#A83762
+paccerakkang,0,8,Monday,Night,biringkanaya,T,R2,NOV,-5.1239434,119.5224673,#A83762
+paccerakkang,0,8,Saturday,Evening,biringkanaya,T,R2,NOV,-5.1239434,119.5224673,#A83762
+paccerakkang,0,8,Monday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#A83762
+paccerakkang,0,8,Sunday,Evening,biringkanaya,OC,R2,NOV,-5.1239434,119.5224673,#A83762
+pajaiang,2,7,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#B67656
+pajaiang,2,7,Friday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#B67656
+pajaiang,2,7,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#B67656
+pajaiang,2,7,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.1072138,119.5214542,#B67656
+pajaiang,2,7,Wednesday,Afternoon,biringkanaya,TM,R2,NOV,-5.1072138,119.5214542,#B67656
+pajaiang,2,7,Monday,Afternoon,biringkanaya,TM,R2,NOV,-5.1072138,119.5214542,#B67656
+pajaiang,2,7,Saturday,Afternoon,biringkanaya,T,R2,NOV,-5.1072138,119.5214542,#B67656
+perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Monday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Tuesday,Night,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Thursday,Night,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Monday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Sunday,Night,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Tuesday,Night,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Monday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,TB,R2,R2,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Wednesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Wednesday,Night,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,TB,R2,R2,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Wednesday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Monday,Night,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Tuesday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,TM,R3,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Sunday,Evening,biringkanaya,TM,R3,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Friday,Evening,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Saturday,Evening,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Saturday,Evening,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Monday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Tuesday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Sunday,Night,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Wednesday,Evening,panakkukang,TM,R2,NOV,-5.1451058,119.4735564,#A83762
+perintis kemerdekaan,0,44,Thursday,Evening,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Wednesday,Evening,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#A83762
+perintis kemerdekaan,0,44,Monday,Evening,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Sunday,Evening,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,0,44,Tuesday,Night,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#A83762
+perintis kemerdekaan,1,25,Sunday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Friday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Thursday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Saturday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Sunday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Friday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Friday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Monday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Sunday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Thursday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Friday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Saturday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Wednesday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Monday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Monday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Wednesday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Saturday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Tuesday,Afternoon,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Thursday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Saturday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Saturday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Sunday,Afternoon,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Monday,Afternoon,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#B8C654
+perintis kemerdekaan,1,25,Wednesday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,1,25,Sunday,Afternoon,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#B8C654
+perintis kemerdekaan,2,41,Friday,Afternoon,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Thursday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Tuesday,Afternoon,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Tuesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Tuesday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Wednesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Thursday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Thursday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Tuesday,Afternoon,tamalanrea,TB,R2,R2,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Tuesday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Wednesday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Thursday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Wednesday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Friday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Sunday,Afternoon,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Friday,Afternoon,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Tuesday,Afternoon,tamalanrea,TM,R3,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Sunday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Monday,Afternoon,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,2,41,Monday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Saturday,Afternoon,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#B67656
+perintis kemerdekaan,2,41,Wednesday,Afternoon,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#B67656
+perintis kemerdekaan,3,18,Friday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Saturday,Evening,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Monday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Monday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#CECCE8
+perintis kemerdekaan,3,18,Sunday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Wednesday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Thursday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Tuesday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#CECCE8
+perintis kemerdekaan,3,18,Tuesday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Wednesday,Evening,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Wednesday,Evening,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Saturday,Evening,biringkanaya,TL,R2,NOV,-5.0744673,119.5232631,#CECCE8
+perintis kemerdekaan,3,18,Wednesday,Evening,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Sunday,Evening,tamalanrea,TL,R3,R2,-5.1402715,119.48329437389705,#CECCE8
+perintis kemerdekaan,3,18,Thursday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#CECCE8
+perintis kemerdekaan,3,18,Tuesday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#CECCE8
+perintis kemerdekaan,3,18,Thursday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#CECCE8
+perintis kemerdekaan,3,18,Friday,Evening,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#CECCE8
+perintis kemerdekaan,4,9,Wednesday,Night,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#904C04
+perintis kemerdekaan,4,9,Sunday,Night,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#904C04
+perintis kemerdekaan,4,9,Tuesday,Night,tamalanrea,TL,TR,R2,-5.1402715,119.48329437389705,#904C04
+perintis kemerdekaan,4,9,Friday,Night,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#904C04
+perintis kemerdekaan,4,9,Saturday,Night,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#904C04
+perintis kemerdekaan,4,9,Monday,Night,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#904C04
+perintis kemerdekaan,4,9,Thursday,Night,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#904C04
+perintis kemerdekaan,4,9,Tuesday,Night,tamalanrea,TL,R3,R2,-5.1402715,119.48329437389705,#904C04
+perintis kemerdekaan,4,9,Thursday,Night,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#904C04
+perintis kemerdekaan,5,10,Thursday,Evening,biringkanaya,TL,R4,R4,-5.0744673,119.5232631,#50D493
+perintis kemerdekaan,5,10,Saturday,Evening,biringkanaya,TL,R4,R4,-5.0744673,119.5232631,#50D493
+perintis kemerdekaan,5,10,Saturday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#50D493
+perintis kemerdekaan,5,10,Friday,Evening,biringkanaya,TL,TR,R4,-5.0744673,119.5232631,#50D493
+perintis kemerdekaan,5,10,Sunday,Evening,tamalanrea,TL,R4,R4,-5.1402715,119.48329437389705,#50D493
+perintis kemerdekaan,5,10,Tuesday,Evening,biringkanaya,TL,R4,NOV,-5.0744673,119.5232631,#50D493
+perintis kemerdekaan,5,10,Sunday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#50D493
+perintis kemerdekaan,5,10,Friday,Evening,tamalanrea,TL,TR,R4,-5.1402715,119.48329437389705,#50D493
+perintis kemerdekaan,5,10,Monday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#50D493
+perintis kemerdekaan,5,10,Thursday,Night,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#50D493
+perintis kemerdekaan,6,50,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Friday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Friday,Evening,panakkukang,TK,R2,R2,-5.1451058,119.4735564,#26DED5
+perintis kemerdekaan,6,50,Friday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Tuesday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Thursday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Thursday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Wednesday,Evening,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Saturday,Evening,biringkanaya,TK,R2,TR,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Friday,Evening,tamalanrea,TK,TR,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Friday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Monday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Friday,Evening,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Tuesday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Friday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Friday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Monday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Thursday,Evening,biringkanaya,TK,R2,TR,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Monday,Evening,biringkanaya,TK,R2,TR,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Wednesday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Thursday,Night,tamalanrea,TK,TR,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Wednesday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Wednesday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Friday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Tuesday,Night,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Tuesday,Evening,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Thursday,Evening,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Tuesday,Evening,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Saturday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Wednesday,Evening,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Evening,tamalanrea,TK,R3,R2,-5.1402715,119.48329437389705,#26DED5
+perintis kemerdekaan,6,50,Friday,Evening,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Tuesday,Evening,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Friday,Evening,biringkanaya,TK,R2,M,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Saturday,Evening,biringkanaya,TK,R3,R3,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Monday,Evening,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Thursday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Sunday,Evening,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Wednesday,Evening,biringkanaya,TK,R2,TR,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,6,50,Sunday,Night,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#26DED5
+perintis kemerdekaan,7,43,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Wednesday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Thursday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Sunday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Wednesday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Monday,Morning,biringkanaya,TB,TR,R2,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Wednesday,Morning,biringkanaya,OC,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Wednesday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Tuesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Wednesday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Sunday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Thursday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Monday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Wednesday,Morning,tamalanrea,OC,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Sunday,Morning,tamalanrea,TM,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Thursday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Thursday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Tuesday,Morning,tamalanrea,TM,TR,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Sunday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Saturday,Morning,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Tuesday,Morning,tamalanrea,T,R3,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Monday,Morning,tamalanrea,T,R2,NOV,-5.1402715,119.48329437389705,#D53963
+perintis kemerdekaan,7,43,Friday,Morning,biringkanaya,T,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,7,43,Tuesday,Morning,biringkanaya,TM,R2,NOV,-5.0744673,119.5232631,#D53963
+perintis kemerdekaan,8,12,Saturday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#ED1712
+perintis kemerdekaan,8,12,Wednesday,Evening,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#ED1712
+perintis kemerdekaan,8,12,Saturday,Evening,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#ED1712
+perintis kemerdekaan,8,12,Friday,Evening,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#ED1712
+perintis kemerdekaan,8,12,Sunday,Evening,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#ED1712
+perintis kemerdekaan,8,12,Saturday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#ED1712
+perintis kemerdekaan,8,12,Tuesday,Evening,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#ED1712
+perintis kemerdekaan,8,12,Sunday,Evening,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#ED1712
+perintis kemerdekaan,8,12,Tuesday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#ED1712
+perintis kemerdekaan,8,12,Tuesday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#ED1712
+perintis kemerdekaan,8,12,Saturday,Evening,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#ED1712
+perintis kemerdekaan,8,12,Thursday,Evening,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#ED1712
+perintis kemerdekaan,9,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Tuesday,Morning,tamalanrea,TK,R2,M,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Saturday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Monday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Wednesday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Saturday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Tuesday,Morning,biringkanaya,TK,R2,M,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Wednesday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Tuesday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Thursday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Sunday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Sunday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Tuesday,Morning,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Thursday,Morning,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Tuesday,Morning,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Tuesday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Wednesday,Morning,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Wednesday,Morning,tamalanrea,TK,R3,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Saturday,Morning,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Monday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,tamalanrea,TK,Rro,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Monday,Morning,biringkanaya,TK,R2,Rro,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Wednesday,Morning,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#CB1825
+perintis kemerdekaan,9,36,Friday,Morning,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#CB1825
+perintis kemerdekaan,10,11,Friday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Monday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Sunday,Afternoon,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#15312E
+perintis kemerdekaan,10,11,Saturday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Monday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Friday,Afternoon,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#15312E
+perintis kemerdekaan,10,11,Wednesday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Friday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Tuesday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Wednesday,Afternoon,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#15312E
+perintis kemerdekaan,10,11,Sunday,Afternoon,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#15312E
+perintis kemerdekaan,11,18,Wednesday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Friday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Saturday,Evening,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Monday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Thursday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Tuesday,Night,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#9BCA2A
+perintis kemerdekaan,11,18,Friday,Night,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Sunday,Night,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#9BCA2A
+perintis kemerdekaan,11,18,Saturday,Night,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#9BCA2A
+perintis kemerdekaan,11,18,Thursday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Wednesday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#9BCA2A
+perintis kemerdekaan,11,18,Sunday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#9BCA2A
+perintis kemerdekaan,11,18,Tuesday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#9BCA2A
+perintis kemerdekaan,11,18,Friday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Monday,Night,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#9BCA2A
+perintis kemerdekaan,11,18,Friday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Friday,Night,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,11,18,Thursday,Evening,biringkanaya,TK,TR,R4,-5.0744673,119.5232631,#9BCA2A
+perintis kemerdekaan,12,32,Sunday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,tamalanrea,TK,R2,M,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,tamalanrea,TK,R2,M,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,biringkanaya,TK,R2,M,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Monday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Friday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Sunday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Thursday,Afternoon,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Tuesday,Afternoon,biringkanaya,TK,TR,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Friday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Monday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Thursday,Afternoon,tamalanrea,TK,R2,TR,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Monday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Monday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,tamalanrea,TK,R3,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Tuesday,Afternoon,tamalanrea,TK,R2,R3,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Tuesday,Afternoon,biringkanaya,TK,R3,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Wednesday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Monday,Afternoon,biringkanaya,TK,R2,R3,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Saturday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,12,32,Friday,Afternoon,tamalanrea,TK,R2,R2,-5.1402715,119.48329437389705,#37E9B3
+perintis kemerdekaan,12,32,Thursday,Afternoon,biringkanaya,TK,R2,R2,-5.0744673,119.5232631,#37E9B3
+perintis kemerdekaan,13,24,Friday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Friday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Thursday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Friday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Sunday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Friday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Sunday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Saturday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Thursday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Thursday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Friday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Wednesday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Friday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Saturday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Monday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Thursday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Friday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Wednesday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Wednesday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Sunday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Tuesday,Morning,tamalanrea,TK,R4,R2,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Wednesday,Morning,tamalanrea,TK,R2,R4,-5.1402715,119.48329437389705,#1CE835
+perintis kemerdekaan,13,24,Saturday,Morning,biringkanaya,TK,R4,R2,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,13,24,Sunday,Morning,biringkanaya,TK,R2,R4,-5.0744673,119.5232631,#1CE835
+perintis kemerdekaan,14,15,Thursday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#2EFB64
+perintis kemerdekaan,14,15,Tuesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Wednesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Saturday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Friday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#2EFB64
+perintis kemerdekaan,14,15,Thursday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#2EFB64
+perintis kemerdekaan,14,15,Sunday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#2EFB64
+perintis kemerdekaan,14,15,Monday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Sunday,Morning,biringkanaya,TL,R4,R2,-5.0744673,119.5232631,#2EFB64
+perintis kemerdekaan,14,15,Sunday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Wednesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Monday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Wednesday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Sunday,Morning,tamalanrea,TL,R4,R2,-5.1402715,119.48329437389705,#2EFB64
+perintis kemerdekaan,14,15,Sunday,Morning,panakkukang,TL,R4,R2,-5.1451058,119.4735564,#2EFB64
+perintis kemerdekaan,15,8,Friday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#BDFB5D
+perintis kemerdekaan,15,8,Thursday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#BDFB5D
+perintis kemerdekaan,15,8,Tuesday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#BDFB5D
+perintis kemerdekaan,15,8,Thursday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#BDFB5D
+perintis kemerdekaan,15,8,Sunday,Afternoon,tamalanrea,TK,R4,R4,-5.1402715,119.48329437389705,#BDFB5D
+perintis kemerdekaan,15,8,Wednesday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#BDFB5D
+perintis kemerdekaan,15,8,Thursday,Afternoon,tamalanrea,TK,TR,R4,-5.1402715,119.48329437389705,#BDFB5D
+perintis kemerdekaan,15,8,Thursday,Afternoon,biringkanaya,TK,R4,R4,-5.0744673,119.5232631,#BDFB5D
+perintis kemerdekaan,16,16,Friday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Monday,Morning,tamalanrea,TL,R2,TR,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Thursday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Friday,Morning,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#349B13
+perintis kemerdekaan,16,16,Tuesday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Thursday,Morning,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Wednesday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Friday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Thursday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Thursday,Morning,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#349B13
+perintis kemerdekaan,16,16,Friday,Morning,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,16,16,Tuesday,Morning,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#349B13
+perintis kemerdekaan,16,16,Sunday,Morning,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#349B13
+perintis kemerdekaan,17,25,Sunday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Saturday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Monday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Tuesday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Tuesday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Saturday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Sunday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Wednesday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Thursday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Saturday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Friday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Thursday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Saturday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Sunday,Afternoon,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#63CE1A
+perintis kemerdekaan,17,25,Monday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Wednesday,Afternoon,biringkanaya,TL,R2,NOV,-5.0744673,119.5232631,#63CE1A
+perintis kemerdekaan,17,25,Monday,Afternoon,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#63CE1A
+perintis kemerdekaan,17,25,Friday,Afternoon,biringkanaya,TL,R2,R2,-5.0744673,119.5232631,#63CE1A
+perintis kemerdekaan,17,25,Monday,Afternoon,tamalanrea,TL,R2,NOV,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Wednesday,Afternoon,tamalanrea,TL,R3,R3,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Wednesday,Afternoon,tamalanrea,TL,R2,R2,-5.1402715,119.48329437389705,#63CE1A
+perintis kemerdekaan,17,25,Sunday,Afternoon,panakkukang,TL,R2,R2,-5.1451058,119.4735564,#63CE1A
+pettarani,0,10,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#A83762
+pettarani,0,10,Wednesday,Evening,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#A83762
+pettarani,0,10,Monday,Evening,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#A83762
+pettarani,0,10,Thursday,Evening,panakkukang,T,R2,NOV,-5.1530178,119.4400985,#A83762
+pettarani,0,10,Thursday,Night,panakkukang,TM,B,NOV,-5.1530178,119.4400985,#A83762
+pettarani,0,10,Wednesday,Night,tamalate,T,R2,NOV,-5.1738401,119.4313806,#A83762
+pettarani,0,10,Friday,Evening,rappocini,T,R2,NOV,-5.1642548,119.4350915,#A83762
+pettarani,0,10,Thursday,Night,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#A83762
+pettarani,0,10,Sunday,Night,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#A83762
+pettarani,0,10,Thursday,Evening,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#A83762
+pettarani,2,7,Wednesday,Afternoon,rappocini,T,R2,NOV,-5.1642548,119.4350915,#B67656
+pettarani,2,7,Wednesday,Afternoon,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#B67656
+pettarani,2,7,Monday,Afternoon,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#B67656
+pettarani,2,7,Thursday,Afternoon,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#B67656
+pettarani,2,7,Thursday,Afternoon,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#B67656
+pettarani,2,7,Thursday,Afternoon,rappocini,TM,R2,NOV,-5.1642548,119.4350915,#B67656
+pettarani,2,7,Monday,Afternoon,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#B67656
+pettarani,3,7,Saturday,Evening,rappocini,TL,R2,R2,-5.1642548,119.4350915,#CECCE8
+pettarani,3,7,Saturday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#CECCE8
+pettarani,3,7,Wednesday,Evening,rappocini,TL,B2,R2,-5.1642548,119.4350915,#CECCE8
+pettarani,3,7,Friday,Evening,tamalate,TL,R3,R2,-5.1738401,119.4313806,#CECCE8
+pettarani,3,7,Thursday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#CECCE8
+pettarani,3,7,Sunday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#CECCE8
+pettarani,3,7,Saturday,Evening,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#CECCE8
+pettarani,6,7,Friday,Evening,rappocini,TK,R2,R2,-5.1642548,119.4350915,#26DED5
+pettarani,6,7,Monday,Night,rappocini,TK,B2,R2,-5.1642548,119.4350915,#26DED5
+pettarani,6,7,Wednesday,Evening,rappocini,TK,R2,R2,-5.1642548,119.4350915,#26DED5
+pettarani,6,7,Monday,Night,rappocini,TK,TR,R2,-5.1642548,119.4350915,#26DED5
+pettarani,6,7,Friday,Night,rappocini,TK,R2,R2,-5.1642548,119.4350915,#26DED5
+pettarani,6,7,Wednesday,Night,panakkukang,TK,R2,R2,-5.1530178,119.4400985,#26DED5
+pettarani,6,7,Friday,Evening,panakkukang,TK,TR,R2,-5.1530178,119.4400985,#26DED5
+pettarani,7,11,Friday,Morning,rappocini,OC,TR,NOV,-5.1642548,119.4350915,#D53963
+pettarani,7,11,Wednesday,Morning,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#D53963
+pettarani,7,11,Tuesday,Morning,panakkukang,TM,R2,NOV,-5.1530178,119.4400985,#D53963
+pettarani,7,11,Sunday,Morning,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#D53963
+pettarani,7,11,Wednesday,Morning,rappocini,TM,R2,NOV,-5.1642548,119.4350915,#D53963
+pettarani,7,11,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#D53963
+pettarani,7,11,Tuesday,Morning,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#D53963
+pettarani,7,11,Wednesday,Morning,rappocini,LL,R2,NOV,-5.1642548,119.4350915,#D53963
+pettarani,7,11,Saturday,Morning,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#D53963
+pettarani,7,11,Friday,Morning,panakkukang,OC,R2,NOV,-5.1530178,119.4400985,#D53963
+pettarani,7,11,Friday,Morning,rappocini,OC,R2,NOV,-5.1642548,119.4350915,#D53963
+pettarani,11,7,Saturday,Night,rappocini,TK,R2,R4,-5.1642548,119.4350915,#9BCA2A
+pettarani,11,7,Friday,Night,panakkukang,TK,R2,R4,-5.1530178,119.4400985,#9BCA2A
+pettarani,11,7,Sunday,Night,panakkukang,TK,R2,R4,-5.1530178,119.4400985,#9BCA2A
+pettarani,11,7,Saturday,Evening,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#9BCA2A
+pettarani,11,7,Friday,Night,panakkukang,TK,R4,R2,-5.1530178,119.4400985,#9BCA2A
+pettarani,11,7,Tuesday,Evening,panakkukang,TK,TR,R4,-5.1530178,119.4400985,#9BCA2A
+pettarani,11,7,Thursday,Evening,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#9BCA2A
+pettarani,12,8,Wednesday,Afternoon,rappocini,TK,TR,R2,-5.1642548,119.4350915,#37E9B3
+pettarani,12,8,Thursday,Afternoon,panakkukang,TK,TR,R2,-5.1530178,119.4400985,#37E9B3
+pettarani,12,8,Saturday,Afternoon,panakkukang,TK,R2,Rro,-5.1530178,119.4400985,#37E9B3
+pettarani,12,8,Sunday,Afternoon,rappocini,TK,R2,R2,-5.1642548,119.4350915,#37E9B3
+pettarani,12,8,Monday,Afternoon,rappocini,TK,R2,R2,-5.1642548,119.4350915,#37E9B3
+pettarani,12,8,Wednesday,Afternoon,panakkukang,TK,R2,R2,-5.1530178,119.4400985,#37E9B3
+pettarani,12,8,Tuesday,Afternoon,panakkukang,TK,R2,TR,-5.1530178,119.4400985,#37E9B3
+pettarani,12,8,Friday,Afternoon,tamalate,TK,R3,R2,-5.1738401,119.4313806,#37E9B3
+pettarani,15,7,Saturday,Afternoon,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#BDFB5D
+pettarani,15,7,Tuesday,Afternoon,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#BDFB5D
+pettarani,15,7,Friday,Afternoon,rappocini,TK,R4,R4,-5.1642548,119.4350915,#BDFB5D
+pettarani,15,7,Monday,Afternoon,panakkukang,TK,R4,R4,-5.1530178,119.4400985,#BDFB5D
+pettarani,15,7,Tuesday,Afternoon,panakkukang,TK,TR,R4,-5.1530178,119.4400985,#BDFB5D
+pettarani,15,7,Saturday,Afternoon,rappocini,TK,R4,R4,-5.1642548,119.4350915,#BDFB5D
+pettarani,15,7,Saturday,Afternoon,rappocini,TK,R4,R4,-5.1642548,119.4350915,#BDFB5D
+pettarani,16,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Saturday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Friday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Sunday,Morning,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#349B13
+pettarani,16,12,Sunday,Morning,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#349B13
+pettarani,16,12,Monday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Thursday,Morning,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#349B13
+pettarani,16,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Wednesday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Sunday,Morning,rappocini,TL,R2,R2,-5.1642548,119.4350915,#349B13
+pettarani,16,12,Sunday,Morning,panakkukang,TL,R3,R2,-5.1530178,119.4400985,#349B13
+pettarani,17,10,Thursday,Afternoon,rappocini,TL,R2,R2,-5.1642548,119.4350915,#63CE1A
+pettarani,17,10,Monday,Afternoon,panakkukang,TL,R2,R2,-5.1530178,119.4400985,#63CE1A
+pettarani,17,10,Sunday,Afternoon,rappocini,TL,TR,R2,-5.1642548,119.4350915,#63CE1A
+pettarani,17,10,Saturday,Afternoon,panakkukang,TL,R2,NOV,-5.1530178,119.4400985,#63CE1A
+pettarani,17,10,Wednesday,Afternoon,tamalate,TL,R2,R2,-5.1738401,119.4313806,#63CE1A
+pettarani,17,10,Monday,Afternoon,rappocini,TL,R2,R2,-5.1642548,119.4350915,#63CE1A
+pettarani,17,10,Wednesday,Afternoon,rappocini,TL,R3,R2,-5.1642548,119.4350915,#63CE1A
+pettarani,17,10,Thursday,Afternoon,panakkukang,TL,R3,NOV,-5.1530178,119.4400985,#63CE1A
+pettarani,17,10,Thursday,Afternoon,panakkukang,TL,TR,R2,-5.1530178,119.4400985,#63CE1A
+pettarani,17,10,Friday,Afternoon,panakkukang,TL,R2,NOV,-5.1530178,119.4400985,#63CE1A
+sultan alauddin,0,8,Saturday,Night,rappocini,OC,R2,NOV,-5.176566,119.4363938,#A83762
+sultan alauddin,0,8,Wednesday,Evening,rappocini,OC,R2,NOV,-5.176566,119.4363938,#A83762
+sultan alauddin,0,8,Thursday,Night,rappocini,OC,R2,NOV,-5.176566,119.4363938,#A83762
+sultan alauddin,0,8,Tuesday,Night,rappocini,TM,R2,NOV,-5.176566,119.4363938,#A83762
+sultan alauddin,0,8,Wednesday,Night,rappocini,TM,TR,NOV,-5.176566,119.4363938,#A83762
+sultan alauddin,0,8,Saturday,Night,tamalate,OC,R2,NOV,-5.1703517,119.4244619,#A83762
+sultan alauddin,0,8,Sunday,Night,rappocini,OC,R2,NOV,-5.176566,119.4363938,#A83762
+sultan alauddin,0,8,Monday,Evening,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#A83762
+sultan alauddin,1,7,Saturday,Afternoon,tamalate,TK,R4,R2,-5.1703517,119.4244619,#B8C654
+sultan alauddin,1,7,Tuesday,Afternoon,tamalate,TK,R2,R4,-5.1703517,119.4244619,#B8C654
+sultan alauddin,1,7,Saturday,Afternoon,rappocini,TK,R4,R2,-5.176566,119.4363938,#B8C654
+sultan alauddin,1,7,Sunday,Afternoon,rappocini,TK,R4,R2,-5.176566,119.4363938,#B8C654
+sultan alauddin,1,7,Wednesday,Afternoon,tamalate,TK,R4,R2,-5.1703517,119.4244619,#B8C654
+sultan alauddin,1,7,Thursday,Afternoon,tamalate,TK,R4,R2,-5.1703517,119.4244619,#B8C654
+sultan alauddin,1,7,Saturday,Afternoon,tamalate,TK,R2,R4,-5.1703517,119.4244619,#B8C654
+sultan alauddin,7,7,Saturday,Morning,tamalate,OC,R2,NOV,-5.1703517,119.4244619,#D53963
+sultan alauddin,7,7,Saturday,Morning,rappocini,OC,R2,NOV,-5.176566,119.4363938,#D53963
+sultan alauddin,7,7,Wednesday,Morning,rappocini,OC,R2,NOV,-5.176566,119.4363938,#D53963
+sultan alauddin,7,7,Friday,Morning,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#D53963
+sultan alauddin,7,7,Wednesday,Morning,rappocini,OC,R2,NOV,-5.176566,119.4363938,#D53963
+sultan alauddin,7,7,Thursday,Morning,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#D53963
+sultan alauddin,7,7,Friday,Morning,tamalate,TM,R2,NOV,-5.1703517,119.4244619,#D53963
+sultan alauddin,16,9,Friday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#349B13
+sultan alauddin,16,9,Friday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#349B13
+sultan alauddin,16,9,Tuesday,Morning,rappocini,TL,R2,R2,-5.176566,119.4363938,#349B13
+sultan alauddin,16,9,Monday,Morning,tamalate,TL,R2,NOV,-5.1703517,119.4244619,#349B13
+sultan alauddin,16,9,Saturday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#349B13
+sultan alauddin,16,9,Sunday,Morning,rappocini,TL,TR,R2,-5.176566,119.4363938,#349B13
+sultan alauddin,16,9,Monday,Morning,tamalate,TL,R2,R2,-5.1703517,119.4244619,#349B13
+sultan alauddin,16,9,Thursday,Morning,rappocini,TL,R3,R2,-5.176566,119.4363938,#349B13
+sultan alauddin,16,9,Monday,Morning,rappocini,TL,R2,R2,-5.176566,119.4363938,#349B13
+tamangapa raya,9,7,Wednesday,Morning,manggala,TK,R2,Rro,-5.1767373,119.4843844,#CB1825
+tamangapa raya,9,7,Thursday,Morning,manggala,TK,R2,TR,-5.1767373,119.4843844,#CB1825
+tamangapa raya,9,7,Tuesday,Morning,manggala,TK,R2,TR,-5.1767373,119.4843844,#CB1825
+tamangapa raya,9,7,Wednesday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CB1825
+tamangapa raya,9,7,Thursday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CB1825
+tamangapa raya,9,7,Monday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CB1825
+tamangapa raya,9,7,Sunday,Morning,manggala,TK,R2,R2,-5.1767373,119.4843844,#CB1825
+urip sumuharjo,0,27,Monday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Friday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Night,makassar,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Wednesday,Night,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Thursday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Monday,Night,makassar,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Tuesday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Tuesday,Night,makassar,T,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Evening,makassar,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Friday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Friday,Night,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Night,makassar,T,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Saturday,Night,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Wednesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Friday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Night,makassar,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Sunday,Night,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Tuesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Tuesday,Evening,panakkukang,TB,R3,R3,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Thursday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Wednesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Tuesday,Evening,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Friday,Evening,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,0,27,Saturday,Night,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#A83762
+urip sumuharjo,1,10,Friday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Monday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Wednesday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Tuesday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Sunday,Afternoon,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Sunday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Tuesday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Friday,Afternoon,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Tuesday,Afternoon,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,1,10,Saturday,Afternoon,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#B8C654
+urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Wednesday,Afternoon,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Tuesday,Afternoon,bontoala,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Wednesday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Friday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Friday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Saturday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Saturday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Monday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Thursday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Tuesday,Afternoon,makassar,TM,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Wednesday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Sunday,Afternoon,makassar,TM,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Saturday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Friday,Afternoon,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Thursday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,2,19,Sunday,Afternoon,panakkukang,OC,R3,NOV,-5.1348243,119.4316818,#B67656
+urip sumuharjo,3,14,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Monday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Tuesday,Evening,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Saturday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Wednesday,Evening,makassar,TL,R2,NOV,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Wednesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Tuesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Tuesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Wednesday,Evening,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Sunday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Friday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,3,14,Wednesday,Evening,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#CECCE8
+urip sumuharjo,4,8,Thursday,Night,makassar,TL,R2,R2,-5.1348243,119.4316818,#904C04
+urip sumuharjo,4,8,Saturday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#904C04
+urip sumuharjo,4,8,Sunday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#904C04
+urip sumuharjo,4,8,Friday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#904C04
+urip sumuharjo,4,8,Thursday,Night,bontoala,TL,R2,R2,-5.1348243,119.4316818,#904C04
+urip sumuharjo,4,8,Saturday,Night,panakkukang,TL,R3,R2,-5.1348243,119.4316818,#904C04
+urip sumuharjo,4,8,Thursday,Night,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#904C04
+urip sumuharjo,4,8,Saturday,Night,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#904C04
+urip sumuharjo,6,17,Monday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Saturday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Saturday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Tuesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Evening,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Sunday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Saturday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Friday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Evening,panakkukang,TK,R2,Rro,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Saturday,Night,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Night,panakkukang,TK,R3,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Sunday,Night,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,6,17,Wednesday,Evening,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#26DED5
+urip sumuharjo,7,27,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Sunday,Morning,panakkukang,OC,B2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Friday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Friday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Friday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Tuesday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Friday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Saturday,Morning,makassar,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Saturday,Morning,panakkukang,TM,TR,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,makassar,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Saturday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Thursday,Morning,bontoala,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Wednesday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Tuesday,Morning,bontoala,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Thursday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Wednesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,TM,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,TB,R2,R2,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Tuesday,Morning,panakkukang,OC,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Monday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,7,27,Wednesday,Morning,panakkukang,T,R2,NOV,-5.1348243,119.4316818,#D53963
+urip sumuharjo,8,10,Tuesday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Tuesday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Wednesday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Wednesday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Sunday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Thursday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Friday,Evening,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Wednesday,Night,panakkukang,TK,R3,R3,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Sunday,Evening,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,8,10,Monday,Evening,makassar,TK,R2,R4,-5.1348243,119.4316818,#ED1712
+urip sumuharjo,9,14,Thursday,Morning,bontoala,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Saturday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Sunday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Monday,Morning,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Saturday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Monday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Sunday,Morning,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Wednesday,Morning,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Thursday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Saturday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Monday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Tuesday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Sunday,Morning,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,9,14,Tuesday,Morning,panakkukang,TK,R2,M,-5.1348243,119.4316818,#CB1825
+urip sumuharjo,10,10,Tuesday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Monday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Tuesday,Afternoon,bontoala,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Monday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Thursday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Friday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Thursday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Friday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Tuesday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,10,10,Sunday,Afternoon,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#15312E
+urip sumuharjo,11,10,Friday,Evening,panakkukang,TK,R4,R4,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Wednesday,Evening,panakkukang,TK,R4,R4,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Sunday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Saturday,Evening,panakkukang,TK,R4,R4,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Sunday,Night,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Tuesday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Saturday,Night,makassar,TK,R2,R4,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Sunday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Sunday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,11,10,Friday,Night,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#9BCA2A
+urip sumuharjo,12,14,Friday,Afternoon,panakkukang,TK,R2,TR,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Sunday,Afternoon,makassar,TK,R2,B1,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Friday,Afternoon,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Sunday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Friday,Afternoon,bontoala,TK,R2,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Friday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Wednesday,Afternoon,panakkukang,TK,TR,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Saturday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Tuesday,Afternoon,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Friday,Afternoon,panakkukang,TK,R2,R3,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Monday,Afternoon,panakkukang,TK,R2,M,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Monday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Sunday,Afternoon,panakkukang,TK,R2,R2,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,12,14,Tuesday,Afternoon,panakkukang,TK,R2,Rro,-5.1348243,119.4316818,#37E9B3
+urip sumuharjo,13,10,Monday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Monday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Saturday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Saturday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Saturday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Tuesday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Tuesday,Morning,panakkukang,TK,R2,R4,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Wednesday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Wednesday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,13,10,Sunday,Morning,panakkukang,TK,R4,R2,-5.1348243,119.4316818,#1CE835
+urip sumuharjo,14,9,Tuesday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Tuesday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Sunday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Saturday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Friday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Sunday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Monday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Friday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,14,9,Tuesday,Morning,panakkukang,TL,R4,R2,-5.1348243,119.4316818,#2EFB64
+urip sumuharjo,16,16,Thursday,Morning,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Sunday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Wednesday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Wednesday,Morning,bontoala,TL,R3,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Thursday,Morning,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Monday,Morning,bontoala,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Sunday,Morning,bontoala,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Saturday,Morning,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Saturday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Thursday,Morning,panakkukang,TL,R3,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Friday,Morning,panakkukang,TL,TR,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Tuesday,Morning,panakkukang,TL,R3,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Tuesday,Morning,makassar,TL,R2,NOV,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Friday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Sunday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,16,16,Friday,Morning,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#349B13
+urip sumuharjo,17,15,Friday,Afternoon,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Tuesday,Afternoon,makassar,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Sunday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Sunday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Monday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Friday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Monday,Afternoon,panakkukang,TL,R3,R3,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Saturday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Saturday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Friday,Afternoon,panakkukang,TL,R2,NOV,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Friday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+urip sumuharjo,17,15,Thursday,Afternoon,panakkukang,TL,R2,R2,-5.1348243,119.4316818,#63CE1A
+veteran selatan,0,7,Saturday,Night,makassar,OC,R2,NOV,-5.1584419,119.4229534,#A83762
+veteran selatan,0,7,Thursday,Night,mamajang,OC,R2,NOV,-5.1584419,119.4229534,#A83762
+veteran selatan,0,7,Thursday,Evening,mamajang,OC,R2,NOV,-5.1584419,119.4229534,#A83762
+veteran selatan,0,7,Friday,Evening,makassar,TM,R2,NOV,-5.1584419,119.4229534,#A83762
+veteran selatan,0,7,Wednesday,Evening,mamajang,TM,R2,NOV,-5.1584419,119.4229534,#A83762
+veteran selatan,0,7,Tuesday,Evening,makassar,TM,R2,NOV,-5.1584419,119.4229534,#A83762
+veteran selatan,0,7,Saturday,Evening,mamajang,TM,R2,NOV,-5.1584419,119.4229534,#A83762
+veteran selatan,6,9,Thursday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Saturday,Night,mamajang,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Wednesday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Wednesday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Tuesday,Evening,mamajang,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Monday,Night,mamajang,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Friday,Night,mamajang,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Saturday,Night,makassar,TK,R2,R2,-5.1584419,119.4229534,#26DED5
+veteran selatan,6,9,Tuesday,Night,mamajang,TK,R2,R3,-5.1584419,119.4229534,#26DED5
+veteran utara,3,7,Saturday,Evening,makassar,TL,R2,NOV,-5.1407973,119.4239945,#CECCE8
+veteran utara,3,7,Saturday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#CECCE8
+veteran utara,3,7,Wednesday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#CECCE8
+veteran utara,3,7,Thursday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#CECCE8
+veteran utara,3,7,Thursday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#CECCE8
+veteran utara,3,7,Wednesday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#CECCE8
+veteran utara,3,7,Thursday,Evening,makassar,TL,R2,R2,-5.1407973,119.4239945,#CECCE8
+veteran utara,6,9,Tuesday,Evening,makassar,TK,R2,NOV,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Saturday,Evening,makassar,TK,R2,R2,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Saturday,Night,makassar,TK,R2,R2,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Friday,Evening,bontoala,TK,R2,TR,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Wednesday,Evening,bontoala,TK,R2,R2,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Sunday,Evening,makassar,TK,R2,R2,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Friday,Night,bontoala,TK,R2,R2,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Saturday,Evening,makassar,TK,R2,Rro,-5.1407973,119.4239945,#26DED5
+veteran utara,6,9,Friday,Night,makassar,TK,R2,R2,-5.1407973,119.4239945,#26DED5
+veteran utara,12,7,Sunday,Afternoon,makassar,TK,R2,R2,-5.1407973,119.4239945,#37E9B3
+veteran utara,12,7,Saturday,Afternoon,makassar,TK,R2,R2,-5.1407973,119.4239945,#37E9B3
+veteran utara,12,7,Sunday,Afternoon,bontoala,TK,B2,R2,-5.1407973,119.4239945,#37E9B3
+veteran utara,12,7,Tuesday,Afternoon,bontoala,TK,TR,R2,-5.1407973,119.4239945,#37E9B3
+veteran utara,12,7,Friday,Afternoon,makassar,TK,TR,R2,-5.1407973,119.4239945,#37E9B3
+veteran utara,12,7,Friday,Afternoon,bontoala,TK,R2,R2,-5.1407973,119.4239945,#37E9B3
+veteran utara,12,7,Wednesday,Afternoon,makassar,TK,R2,R2,-5.1407973,119.4239945,#37E9B3
