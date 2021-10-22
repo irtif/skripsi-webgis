@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import LoadingOverlay from "react-loading-overlay-ts";
-import { Modal} from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import {
   MapContainer,
   TileLayer,
@@ -385,7 +385,7 @@ function Result2(props) {
                     <td>: Lain-lain</td>
                   </tr>
                 </table>
-              </div>  
+              </div>
             </div>
           </div>
         </Modal.Body>
@@ -434,7 +434,10 @@ function Result2(props) {
                       className="btn-group btn-group-toggle float-right"
                       data-toggle="buttons"
                     >
-                      <label className="btn btn-sm btn-primary btn-simple" id="0">
+                      <label
+                        className="btn btn-sm btn-primary btn-simple"
+                        id="0"
+                      >
                         <input type="radio" name="options" checked />
                         <span
                           className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
@@ -446,7 +449,10 @@ function Result2(props) {
                           <i className="tim-icons icon-single-02"></i>
                         </span>
                       </label>
-                      <label className="btn btn-sm btn-primary btn-simple" id="0">
+                      <label
+                        className="btn btn-sm btn-primary btn-simple"
+                        id="0"
+                      >
                         <input type="radio" name="options" checked />
                         <span
                           className="d-none d-sm-block d-md-block d-lg-block d-xl-block"
@@ -458,7 +464,10 @@ function Result2(props) {
                           <i className="tim-icons icon-single-02"></i>
                         </span>
                       </label>
-                      <label className="btn btn-sm btn-primary btn-simple" id="1">
+                      <label
+                        className="btn btn-sm btn-primary btn-simple"
+                        id="1"
+                      >
                         <input
                           type="radio"
                           className="d-none d-sm-none"
@@ -503,10 +512,17 @@ function Result2(props) {
                               </p>
                               <table className="mt-2">
                                 <tr>
-                                  <td>Lokasi</td>
+                                  <td>Jalan</td>
+                                  <td>: {el.address.toUpperCase()}, </td>
+                                </tr>
+                                <tr>
+                                  <td>Kecamatan</td>
+                                  <td>: {el.district.toUpperCase()}</td>
+                                </tr>
+                                <tr>
+                                  <td>Koordinat</td>
                                   <td>
-                                    : {el.address.toUpperCase()},{" "}
-                                    {el.district.toUpperCase()}
+                                    : {el.lat}, {el.long}
                                   </td>
                                 </tr>
                                 <tr>
