@@ -78,7 +78,7 @@ def processing():
     # transform physical address to coodinate
     location_df['lat'] = ''
     location_df['long'] = ''
-    locator = Nominatim(user_agent="skripsi_app")
+    locator = Nominatim(user_agent="my_app3")
     count = 0
 
     for i in range(len(location_df)):
@@ -100,7 +100,7 @@ def processing():
         except GeocoderTimedOut as e:
             print("Error: geocode failed on input %s with message %s" %
                   (address, e.message))
-
+    print('finish')
     location_merged = df.merge(location_df, how='left', left_on=['address', 'district'], right_on=['address', 'district'])
     location_merged = location_merged.dropna()
 
@@ -263,10 +263,12 @@ def dbscan_clustering(min_samples, df, pca_df):
 
   group_df = df.copy()
   group_df['Count'] = 1
-  group_df = group_df.groupby(['address', 'Cluster']).Count.count().reset_index()
-  group_df = group_df.loc[group_df['Count'] >=7 ]
- 
-  new_df = pd.merge(group_df, df, on=['address', 'Cluster'])
+  group_df = group_df.groupby(['address', 'district', 'lat', 'long', 'Cluster']).Count.count().reset_index()
+  group_df = group_df.loc[group_df['Count'] >=6 ]
+
+  new_df = pd.merge(group_df, df, on=['address', 'district', 'lat', 'long', 'Cluster'])
+  new_df = new_df.drop_duplicates(subset=['address', 'district', 'lat', 'long', 'Cluster'])
+  new_df.reset_index(drop=True, inplace=True)
   no_clusters = np.unique(labels)
   print(no_clusters)
   colors = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)])
@@ -305,8 +307,8 @@ def dbscan_clustering(min_samples, df, pca_df):
     json.dump(str(result), my_file)
   
   execute_stop = datetime.now().strftime("%H:%M:%S")
-  # print("execute_start: ", execute_start)
-  # print("execute_stop: ", execute_stop) 
+  print("execute_start: ", execute_start)
+  print("execute_stop: ", execute_stop) 
 
   return {
     "start": execute_start,

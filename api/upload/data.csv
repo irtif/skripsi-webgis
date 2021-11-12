@@ -34,7 +34,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 33,Friday,2018-01-05,12:30,Kijang,Makassar,TK,29,54,R2,R2,-,-,2,"700,000"
 34,Monday,2018-01-01,20:00, Andi Mappaodang,Tamalate,OC,37,6,R2,-,-,-,1,"250,000"
 35,Friday,2018-01-05,23:00,Pajaiang,Biringkanaya,OC,26,29,R2,-,-,-,2,"100,000"
-36,Thursday,2018-01-04,4:00, Dr. Leimena,Manggala,OC,20,-,R4,-,-,-,2,"4,000,000"
+36,Thursday,2018-01-04,4:00,Dokter Leimena,Panakkukang,OC,20,-,R4,-,-,-,2,"4,000,000"
 37,Wednesday,2018-01-03,22:30, Malengkeri,Tamalate,TL,-,31,R2,R2,-,-,1,-
 38,Thursday,2018-01-04,18:00, Perintis Kemerdekaan,Tamalanrea,OC,45,-,R2,-,-,-,1,"150,000"
 39,Friday,2018-01-05,17:00,Pintu Bandar Udara Internasional Sultan Hasanuddin,Biringkanaya,TK,39,51,R4,R2,-,-,1,-
@@ -79,7 +79,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 78,Saturday,2018-01-13,20:30, Dangko,Tamalate,TL,-,18,R2,R2,-,-,1,"400,000"
 79,Wednesday,2018-01-17,7:30, Pettarani,Panakkukang,TK,14,31,R2,R4,-,-,2,"1,000,000"
 80,Wednesday,2018-01-17,14:00, Serigala,Mamajang,TK,54,27,R4,R4,-,-,1,"2,500,000"
-81,Tuesday,2018-01-16,17:30, Dr. Leimena,Manggala,OC,31,-,R2,-,-,-,1,"100,000"
+81,Tuesday,2018-01-16,17:30,Dokter Leimena,Panakkukang,OC,31,-,R2,-,-,-,1,"100,000"
 82,Thursday,2018-01-18,13:00, Daeng Tata Raya,Tamalate,OC,23,46,R2,-,1,-,1,-
 83,Sunday,2018-01-14,9:00, Jenderal Ahmad Yani,Ujung Pandang,TL,-,59,R4,R2,-,-,1,"100,000"
 84,Tuesday,2018-01-16,15:30, Bandang,Bontoala,OC,16,16,R2,-,-,-,1,"300,000"
@@ -99,7 +99,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 98,Saturday,2018-01-20,22:30, Perintis Kemerdekaan,Biringkanaya,TL,-,35,R4,R4,-,-,-,"300,000"
 99,Sunday,2018-01-21,21:30,Poros Perumnas Sudiang,Biringkanaya,OC,22,-,R2,-,-,-,1,"200,000"
 100,Sunday,2018-01-21,12:30,Urip Sumuharjo,Panakkukang,OC,22,-,R2,-,-,-,1,"200,000"
-101,Saturday,2017-11-25,15:05, Rutan,Rappocini,TL,-,11,R2,-,-,-,1,-
+101,Saturday,2017-11-25,15:05, Monumen Emmy Saelan,Rappocini,TL,-,11,R2,-,-,-,1,-
 102,Friday,2018-01-19,15:00, Cendrawasih,Mariso,OC,15,15,R2,-,-,-,1,-
 103,Friday,2018-01-19,22:30,Urip Sumuharjo,Panakkukang,OC,33,-,R2,-,-,-,1,"500,000"
 104,Saturday,2017-10-07,16:00,Pajukukang,Tamalate,OC,15,-,R2,-,-,-,1,"100,000"
@@ -204,7 +204,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 203,Thursday,2018-02-15,7:30, Telegraph Utama,Biringkanaya,TK,13,39,R2,R4,-,-,1,"5,000,000"
 204,Friday,2018-02-16,2:00, Perintis Kemerdekaan,Biringkanaya,TK,48,-,R2,R4,-,-,1,"500,000"
 205,Thursday,2018-02-15,16:00,Insinyur Sutami,Biringkanaya,TK,40,-,R4,R6,-,-,-,"7,500,000"
-206,Sunday,2018-02-18,2:30, Gn. Latimojong,Makassar,TK,47,24,R2,R4,-,-,2,"5,000,000"
+206,Sunday,2018-02-18,2:30, Gunung Latimojong,Makassar,TK,47,24,R2,R4,-,-,2,"5,000,000"
 207,Friday,2018-02-16,13:30, Amanagapa,Ujung Pandang,TK,50,44,R4,R2,-,-,1,"1,500,000"
 208,Saturday,2018-02-10,13:30, Metro Tanjung Bunga,Tamalate,TL,-,31,R4,R2,-,-,1,"150,000"
 209,Sunday,2018-02-18,15:00, Cendrawasih,Mamajang,OC,36,21,R2,-,-,-,2,-
@@ -274,7 +274,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 273,Monday,2018-03-05,0:05, Pettarani,Rappocini,TK,-,25,B2,R2,-,-,3,"200,000"
 274,Sunday,2018-03-04,21:30, Andi Tonro,Tamalate,TL,-,36,R4,R4,-,-,-,"1,000,000"
 275,Saturday,2018-03-03,17:30, Sultan Alauddin,Tamalate,TK,35,20,R4,R2,-,-,2,-
-276,Saturday,2018-03-03,6:00, DR. Leimena,Manggala,TK,60,32,R4,R2,-,-,1,"1,000,000"
+276,Saturday,2018-03-03,6:00,Dokter Leimena,Panakkukang,TK,60,32,R4,R2,-,-,1,"1,000,000"
 277,Saturday,2018-03-03,10:30, Nipa Nipa,Manggala,TK,25,17,R4,R2,-,-,1,"500,000"
 278,Friday,2018-03-02,19:30, Abdullah Daeng Sirua,Panakkukang,TL,-,37,R2,R2,-,-,1,"100,000"
 279,Saturday,2018-03-03,20:30, Sunu,Tallo,OC,48,-,R2,-,-,-,1,"200,000"
@@ -304,7 +304,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 303,Tuesday,2018-03-13,3:30, Sungai Walanae,Makassar,TK,35,27,R2,R4,1,-,1,"4,000,000"
 304,Friday,2018-03-09,18:00, Parumpa,Biringkanaya,TL,-,7,R2,-,-,-,1,-
 305,Sunday,2018-03-11,9:30, Pettarani,Rappocini,TL,-,20,R2,R2,-,-,1,"300,000"
-306,Tuesday,2018-03-13,17:00, Waduk Tunggu Pampang,Manggala,TL,-,28,R2,R2,-,-,2,"200,000"
+306,Tuesday,2018-03-13,17:00, Inspeksi Kanal,Manggala,TL,-,28,R2,R2,-,-,2,"200,000"
 307,Tuesday,2018-03-13,19:30, Jenderal Sudirman,Ujung Pandang,TL,-,40,R2,R2,-,-,1,"100,000"
 308,Tuesday,2018-03-13,17:00, Andi Mappanyukki,Mariso,TL,-,60,R2,-,1,-,-,-
 309,Tuesday,2018-03-06,4:30, Perintis Kemerdekaan,Tamalanrea,T,23,20,R2,-,-,-,1,-
@@ -394,7 +394,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 393,Thursday,2018-03-29,7:00, Insinyur Sutami,Biringkanaya,OC,34,-,R2,-,-,-,1,"500,000"
 394,Thursday,2018-03-29,22:30, Perintis Kemerdekaan,Tamalanrea,OC,20,-,R2,-,-,-,1,-
 395,Friday,2018-03-30,9:00, Perintis Kemerdekaan,Tamalanrea,TK,53,50,R2,R4,-,-,1,"500,000"
-396,Sunday,2018-04-01,22:00, Gn. Latimojong,Makassar,TL,-,34,R2,R2,-,-,-,"150,000"
+396,Sunday,2018-04-01,22:00, Gunung Latimojong,Makassar,TL,-,34,R2,R2,-,-,-,"150,000"
 397,Sunday,2018-04-01,16:00, Veteran Selatan,Makassar,OC,15,-,R2,-,-,-,1,"100,000"
 398,Monday,2018-04-02,20:15, Jenderal Sudirman,Ujung Pandang,TK,25,-,R2,R4,-,-,1,"1,000,000"
 399,Monday,2018-04-02,15:30, Pettarani,Panakkukang,TL,-,36,R2,R2,-,-,2,-
@@ -427,8 +427,8 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 426,Saturday,2018-04-07,17:15, Metro Tanjung Bunga,Mariso,OC,54,48,R2,-,-,-,1,-
 427,Sunday,2018-04-08,0:05, Inspeksi Kanal,Manggala,TK,-,28,R2,R2,-,-,1,"300,000"
 428,Friday,2018-04-06,14:45, Haji Bau,Ujung Pandang,TK,27,20,R2,R4,-,-,1,"150,000"
-429,Saturday,2018-04-07,23:30, Gn. Latimojong,Makassar,TK,43,28,R4,R2,-,-,1,"1,500,000"
-430,Sunday,2018-04-08,22:00, Waduk Tunggu Pampang,Manggala,OC,35,38,R2,-,-,-,1,"50,000"
+429,Saturday,2018-04-07,23:30, Gunung Latimojong,Makassar,TK,43,28,R4,R2,-,-,1,"1,500,000"
+430,Sunday,2018-04-08,22:00, Inspeksi Kanal,Manggala,OC,35,38,R2,-,-,-,1,"50,000"
 431,Monday,2018-04-09,6:30, Insinyur Sutami,Tamalanrea,OC,20,-,R2,-,-,-,1,"100,000"
 432,Monday,2018-04-02,17:15, Pettarani,Panakkukang,OC,34,72,R2,-,-,-,1,-
 433,Friday,2018-03-30,19:30, Metro Tanjung Bunga,Tamalate,TK,36,-,R2,R4,-,-,1,"200,000"
@@ -450,7 +450,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 449,Tuesday,2018-04-10,12:00, Kw. Pergudangan dan Industri Parangloe,Tamalanrea,OC,49,-,R2,-,-,-,1,"100,000"
 450,Saturday,2018-04-14,17:15, Perintis Kemerdekaan ,Tamalanrea,TK,18,19,R2,R4,-,-,1,"300,000"
 451,Sunday,2018-04-15,18:00, Taman Makam Pahlawan,Panakkukang,T,41,-,R2,-,-,-,1,"300,000"
-452,Sunday,2018-04-15,16:00,Dr. Leimena,Panakkukang,TL,-,39,R6,R2,-,1,1,"100,000"
+452,Sunday,2018-04-15,16:00,Dokter Leimena,Panakkukang,TL,-,39,R6,R2,-,1,1,"100,000"
 453,Sunday,2018-04-15,21:00, Muhammad Yamin,Makassar,TL,-,14,R2,R2,-,-,1,-
 454,Tuesday,2018-04-10,7:30, Daeng Tata Raya,Tamalate,TL,-,56,R2,R2,-,-,1,-
 455,Monday,2018-04-16,14:30, Toddopuli XII,Panakkukang,TK,-,17,R2,R2,-,-,1,-
@@ -514,7 +514,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 513,Saturday,2018-04-28,13:00, Nipa Nipa,Manggala,TK,22,43,R2,R4,-,-,2,"400,000"
 514,Sunday,2018-04-29,12:20, Lembo,Tallo,TK,27,12,R2,R2,-,-,2,"1,500,000"
 515,Sunday,2018-04-29,14:30, Kelapa III,Panakkukang,OC,20,-,R2,-,-,-,1,"300,000"
-516,Saturday,2018-04-28,18:00, Waduk Tunggu Pampang,Manggala,TL,-,17,R2,R2,-,-,1,"200,000"
+516,Saturday,2018-04-28,18:00, Inspeksi Kanal,Manggala,TL,-,17,R2,R2,-,-,1,"200,000"
 517,Sunday,2018-04-29,19:00,Urip Sumuharjo,Panakkukang,OC,17,17,R2,-,-,-,2,"300,000"
 518,Sunday,2018-04-29,19:00, Tol Reformasi,Tallo,TM,51,20,R4,-,-,-,1,"7,000,000"
 519,Sunday,2018-04-22,11:50, Perintis Kemerdekaan,Biringkanaya,TK,32,22,R4,R2,-,-,2,"700,000"
@@ -533,7 +533,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 532,Monday,2018-04-30,21:20, Gunung Merapi,Ujung Pandang,TL,-,31,R2,R2,-,-,1,"100,000"
 533,Monday,2018-04-30,18:00, Perintis Kemerdekaan,Tamalanrea,OC,24,11,R2,-,-,-,2,"200,000"
 534,Monday,2018-04-30,2:45, Perintis Kemerdekaan,Biringkanaya,TK,20,36,R2,R4,-,-,2,"5,000,000"
-535,Tuesday,2018-05-01,14:00, Waduk Tunggu Pampang,Manggala,OC,37,5,R4,-,-,-,1,"25,000,000"
+535,Tuesday,2018-05-01,14:00, Inspeksi Kanal,Manggala,OC,37,5,R4,-,-,-,1,"25,000,000"
 536,Tuesday,2018-05-01,14:30, Insinyur Sutami,Biringkanaya,OC,53,-,R2,-,-,-,1,"1,000,000"
 537,Monday,2018-04-30,11:00, Perintis Kemerdekaan,Tamalanrea,OC,18,15,R2,-,-,-,1,-
 538,Wednesday,2018-05-02,8:30, Sanrangan,Biringkanaya,OC,35,-,R2,-,-,-,1,-
@@ -560,8 +560,8 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 559,Saturday,2018-05-05,17:30, Poros Hartaco Indah,Tamalate,TK,22,14,R2,R2,-,-,3,"500,000"
 560,Friday,2018-05-04,23:45, Teuku Umar Raya,Tallo,TK,22,35,R2,R2,-,-,2,"3,500,000"
 561,Monday,2018-05-07,20:30, Adyaksa,Panakkukang,OC,24,-,R2,-,-,-,1,"400,000"
-562,Saturday,2018-05-05,16:30, Dr. Leimena,Panakkukang,TL,-,28,R2,R2,-,-,1,"300,000"
-563,Sunday,2018-05-06,15:40, Dr. Leimena,Panakkukang,TK,45,15,R4,R4,-,-,1,"3,000,000"
+562,Saturday,2018-05-05,16:30, Dokter Leimena,Panakkukang,TL,-,28,R2,R2,-,-,1,"300,000"
+563,Sunday,2018-05-06,15:40, Dokter Leimena,Panakkukang,TK,45,15,R4,R4,-,-,1,"3,000,000"
 564,Thursday,2018-05-03,14:00,Urip Sumuharjo,Panakkukang,TL,-,40,R2,R2,-,-,1,"100,000"
 565,Sunday,2018-05-06,16:30,Urip Sumuharjo,Panakkukang,OC,68,-,R2,-,-,-,1,"100,000"
 566,Friday,2018-05-04,14:00,Urip Sumuharjo,Panakkukang,OC,21,20,R2,-,-,-,2,"50,000"
@@ -583,10 +583,10 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 582,Saturday,2018-05-05,11:00, Perintis Kemerdekaan,Tamalanrea,OC,51,55,R2,-,-,-,1,-
 583,Sunday,2018-05-06,19:00, Paccerakkang,Biringkanaya,OC,22,-,R2,-,-,-,1,-
 584,Monday,2018-05-07,17:00, Perintis Kemerdekaan,Tamalanrea,OC,22,-,R2,-,-,-,1,-
-585,Thursday,2018-05-10,19:00, Gn. Latimojong,Makassar,TL,-,17,R2,R2,-,-,2,"1,500,000"
+585,Thursday,2018-05-10,19:00, Gunung Latimojong,Makassar,TL,-,17,R2,R2,-,-,2,"1,500,000"
 586,Tuesday,2018-05-08,23:00, Pendidikan,Rappocini,T,19,-,R2,-,-,-,1,"200,000"
 587,Friday,2018-05-11,12:30, Yusuf Dg. Ngawing,Rappocini,TL,-,44,R6,R4,-,-,-,"1,700,000"
-588,Thursday,2018-05-10,23:45, Gn. Latimojong,Makassar,TM,42,29,R2,-,-,-,1,"100,000"
+588,Thursday,2018-05-10,23:45, Gunung Latimojong,Makassar,TM,42,29,R2,-,-,-,1,"100,000"
 589,Tuesday,2018-04-24,13:00, Manuruki II,Tamalate,OC,12,-,R2,-,-,-,1,"200,000"
 590,Thursday,2018-05-10,17:00, Perintis Kemerdekaan,Biringkanaya,TK,41,35,R4,R4,-,-,-,"3,000,000"
 591,Thursday,2018-04-12,20:00, Perintis Kemerdekaan,Tamalanrea,OC,37,-,R2,-,-,-,1,-
@@ -614,7 +614,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 613,Thursday,2018-05-17,17:30, Aroepala,Rappocini,OC,39,-,R2,-,-,-,1,"50,000"
 614,Wednesday,2018-05-16,18:30, Barawaja,Panakkukang,TK,54,12,R2,R2,-,-,4,"300,000"
 615,Thursday,2018-05-17,16:30, Cendrawasih,Mariso,TL,-,54,R2,R2,-,-,1,-
-616,Wednesday,2018-05-16,20:30, Waduk Tunggu Pampang,Manggala,TK,20,31,R4,R4,-,-,-,"7,000,000"
+616,Wednesday,2018-05-16,20:30, Inspeksi Kanal,Manggala,TK,20,31,R4,R4,-,-,-,"7,000,000"
 617,Wednesday,2018-05-16,14:00, Perintis Kemerdekaan,Tamalanrea,TK,19,21,R2,R2,-,-,2,"1,000,000"
 618,Thursday,2018-05-17,10:00, Paccerakkang,Biringkanaya,OC,35,-,R2,-,-,-,1,-
 619,Friday,2018-05-18,14:00, Metro Tanjung Bunga,Tamalate,TK,48,15,R4,R2,-,-,1,"2,500,000"
@@ -632,7 +632,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 631,Tuesday,2018-05-22,10:10, Nipa Nipa,Manggala,TK,68,29,R2,R6,1,-,-,-
 632,Monday,2018-05-21,17:00, Paccerakkang,Tamalanrea,OC,41,57,R2,-,-,-,2,"75,000"
 633,Monday,2018-05-21,21:30, Pettarani,Panakkukang,OC,34,61,R2,-,-,-,1,-
-634,Wednesday,2018-05-23,18:00, Gn. Latimojong,Makassar,TK,41,39,R4,R2,-,-,1,"1,000,000"
+634,Wednesday,2018-05-23,18:00, Gunung Latimojong,Makassar,TK,41,39,R4,R2,-,-,1,"1,000,000"
 635,Wednesday,2018-05-23,19:30, Pongtiku,Bontoala,TM,20,51,R2,-,-,-,1,"500,000"
 636,Wednesday,2018-05-23,22:30, Metro Tanjung Bunga,Tamalate,OC,33,-,R2,-,-,-,1,"50,000"
 637,Wednesday,2018-05-23,14:00, Toddopuli Raya,Panakkukang,TL,-,53,R2,-,-,-,1,-
@@ -689,7 +689,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 688,Saturday,2018-06-02,7:30,Urip Sumuharjo,Panakkukang,TK,20,-,R2,R4,-,-,1,"500,000"
 689,Thursday,2018-05-31,21:00, Veteran Utara ,Makassar,TM,17,50,R2,-,-,-,3,"100,000"
 690,Saturday,2018-06-02,18:30, Andi Tonro,Tamalate,OC,16,-,R2,-,-,-,1,"300,000"
-691,Monday,2018-06-04,23:00, Dr. Leimena,Panakkukang,OC,43,24,R2,-,1,-,1,"1,000,000"
+691,Monday,2018-06-04,23:00, Dokter Leimena,Panakkukang,OC,43,24,R2,-,1,-,1,"1,000,000"
 692,Monday,2018-06-04,1:00,Urip Sumuharjo,Makassar,TL,-,26,R4,R2,-,-,1,"200,000"
 693,Saturday,2018-06-02,6:00, Tanjung Alang,Mamajang,TL,-,28,R4,B2,-,-,1,-
 694,Sunday,2018-06-03,17:45, Pettarani,Rappocini,TL,-,17,R6,R2,-,-,1,"500,000"
@@ -708,7 +708,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 707,Wednesday,2018-06-06,22:00, Tamalanrea Raya,Tamalanrea,TL,-,21,R4,R4,-,-,-,"1,000,000"
 708,Wednesday,2018-06-06,17:15, Perintis Kemerdekaan,Tamalanrea,TK,42,-,R2,R2,-,-,1,"150,000"
 709,Monday,2018-06-04,19:00, Perintis Kemerdekaan,Biringkanaya,TL,-,33,R2,R2,-,-,2,-
-710,Thursday,2018-06-07,20:00, Dr. Sutomo,Ujung Pandang,OC,16,15,R2,-,-,-,1,-
+710,Thursday,2018-06-07,20:00, Dokter Sutomo,Ujung Pandang,OC,16,15,R2,-,-,-,1,-
 711,Friday,2018-06-08,13:00, Perintis Kemerdekaan,Tamalanrea,OC,22,50,R2,-,-,-,1,-
 712,Friday,2018-06-08,15:45, Perintis Kemerdekaan,Biringkanaya,TK,36,31,R4,R2,-,-,1,"10,000,000"
 713,Saturday,2018-06-09,6:00, Perintis Kemerdekaan IV,Tamalanrea,OC,41,23,R4,-,-,-,4,"15,000,000"
@@ -826,7 +826,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 825,Wednesday,2018-07-11,11:30, Gontang Raya,Tamalate,TK,20,20,R2,R2,-,-,2,"1,000,000"
 826,Thursday,2018-07-12,15:00, Borong Jambu Raya,Manggala,TK,22,42,R6,R2,1,-,-,"200,000"
 827,Monday,2018-07-09,6:00, Sultan Alauddin,Tamalate,TL,-,62,R2,-,-,-,1,-
-828,Tuesday,2018-07-10,10:00, Dokter Leimena,Panakkukang,T,25,21,R2,-,-,-,2,"150,000"
+828,Tuesday,2018-07-10,10:00,Dokter Leimena,Panakkukang,T,25,21,R2,-,-,-,2,"150,000"
 829,Wednesday,2018-07-11,17:30, Berua Raya,Biringkanaya,T,27,10,R2,-,-,-,2,"100,000"
 830,Friday,2018-07-13,13:00,Tamalanrea Raya,Tamalanrea,TK,32,27,R2,R4,-,-,1,"3,000,000"
 831,Saturday,2018-07-14,19:30, Perintis Kemerdekaan,Biringkanaya,TK,26,50,R2,R4,-,-,2,"1,000,000"
@@ -1003,7 +1003,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1002,Friday,2018-08-17,2:30, Sam Ratulangi ,Ujung Pandang,OC,15,16,R2,-,-,-,2,"500,000"
 1003,Saturday,2018-08-18,10:30, Toddopuli Raya ,Panakkukang,TK,37,26,R4,R4,-,-,-,"1,000,000"
 1004,Sunday,2018-08-19,10:00,Urip Sumuharjo,Panakkukang,TL,-,34,R4,R2,-,-,1,"1,000,000"
-1005,Saturday,2018-08-18,22:30, Dokter Leimena,Panakkukang,OC,52,-,R2,-,-,-,1,"200,000"
+1005,Saturday,2018-08-18,22:30,Dokter Leimena,Panakkukang,OC,52,-,R2,-,-,-,1,"200,000"
 1006,Saturday,2018-08-18,6:00, Perintis Kemerdekaan,Tamalanrea,OC,45,-,R2,-,-,-,1,"100,000"
 1007,Saturday,2018-08-18,23:30, Metro Tanjung Bunga,Mariso,TL,-,18,R4,R2,-,-,1,"500,000"
 1008,Thursday,2018-08-16,6:45, Kapasa Raya ,Biringkanaya,TL,30,24,R2,R2,-,-,1,"300,000"
@@ -1055,7 +1055,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1054,Saturday,2018-08-25,8:00,Urip Sumuharjo,Panakkukang,TK,15,29,R2,R2,-,-,2,"1,000,000"
 1055,Tuesday,2018-08-28,3:00, Sultan Alauddin,Rappocini,TM,29,27,R2,-,1,-,1,"300,000"
 1056,Tuesday,2018-08-28,7:30, Pengayoman ,Panakkukang,TK,23,24,R2,R2,-,-,1,"500,000"
-1057,Tuesday,2018-08-28,20:15, Ks. Tubun,Mariso,TK,44,33,R2,R2,-,-,2,"500,000"
+1057,Tuesday,2018-08-28,20:15, K.S. Tubun,Mariso,TK,44,33,R2,R2,-,-,2,"500,000"
 1058,Wednesday,2018-08-29,15:30, Perintis Kemerdekaan,Biringkanaya,TK,18,25,R2,R2,-,-,2,"500,000"
 1059,Wednesday,2018-08-29,13:30, Pengayoman ,Panakkukang,TK,54,28,R2,R4,-,-,1,"500,000"
 1060,Monday,2018-08-27,17:00, Profesor Abdurrahman Basalamah II,Panakkukang,TM,39,1,R4,-,-,-,1,-
@@ -1306,7 +1306,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1305,Sunday,2018-11-04,9:00, Pettarani,Panakkukang,TL,-,65,R2,R2,-,-,1,"300,000"
 1306,Sunday,2018-11-04,20:00, Pengayoman,Panakkukang,TK,40,31,R4,R4,-,-,-,"3,000,000"
 1307,Sunday,2018-11-04,19:15,Tamalate I,Rappocini,TK,18,20,R2,R4,-,-,2,"3,000,000"
-1308,Sunday,2018-11-04,23:30, DR. Leimena,Panakkukang,TK,21,20,R2,R4,-,-,3,"1,000,000"
+1308,Sunday,2018-11-04,23:30, Dokter Leimena,Panakkukang,TK,21,20,R2,R4,-,-,3,"1,000,000"
 1309,Thursday,2018-11-01,7:15, Andi Djemma,Rappocini,TK,18,58,R4,R2,-,-,1,"300,000"
 1310,Monday,2018-11-05,13:00, Toddopuli Raya Timur,Panakkukang,TL,-,29,R2,R2,-,-,2,"500,000"
 1311,Tuesday,2018-11-06,18:50, Karunrung,Ujung Pandang,TK,50,23,R2,R4,-,-,1,"200,000"
@@ -1347,12 +1347,12 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1346,Tuesday,2018-11-13,14:30, Metro Tanjung Bunga,Tamalate,TK,25,34,R4,R4,-,-,-,"3,000,000"
 1347,Wednesday,2018-11-14,22:15, Boulevard,Panakkukang,TK,55,-,R4,R4,-,-,-,"3,000,000"
 1348,Tuesday,2018-11-13,22:30, Perintis Kemerdekaan,Tamalanrea,TL,-,20,R2,R2,-,-,1,"150,000"
-1349,Sunday,2018-11-11,2:00, DR. Sutomo,Ujung Pandang,OC,17,17,R2,-,-,-,2,"500,000"
+1349,Sunday,2018-11-11,2:00, Dokter Sutomo,Ujung Pandang,OC,17,17,R2,-,-,-,2,"500,000"
 1350,Thursday,2018-11-15,18:00, Mappaodang,Tamalate,TM,23,48,R2,-,1,-,1,"300,000"
 1351,Monday,2018-11-12,16:00, Insinyur Sutami,Tallo,TK,43,31,R2,R2,-,-,1,"500,000"
 1352,Friday,2018-11-16,1:30, Perintis Kemerdekaan,Tamalanrea,TM,33,17,R4,-,-,-,1,-
 1353,Thursday,2018-11-15,12:00,Insinyur Sutami,Biringkanaya,TM,31,26,R6,-,-,-,1,-
-1354,Friday,2018-11-16,3:30, DR. Sutomo,Ujung Pandang,OC,18,18,R2,-,1,1,-,"300,000"
+1354,Friday,2018-11-16,3:30, Dokter Sutomo,Ujung Pandang,OC,18,18,R2,-,1,1,-,"300,000"
 1355,Thursday,2018-11-15,15:45, Perumnas Antang,Manggala,TK,27,13,R4,R2,-,-,3,"500,000"
 1356,Thursday,2018-11-15,12:30, Cendrawasih,Mariso,TL,-,17,R2,-,-,-,1,-
 1357,Friday,2018-11-16,2:30, Gunung Bawakaraeng,Bontoala,TL,-,16,R2,-,-,-,2,-
@@ -1460,7 +1460,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1459,Thursday,2018-12-13,15:00, Taman Makam Pahlawan,Panakkukang,TK,63,-,R4,R6,-,-,-,"500,000"
 1460,Sunday,2018-12-16,6:30, Sam Ratulangi,Mamajang,TK,42,33,R2,R4,-,-,1,"500,000"
 1461,Saturday,2018-12-15,20:00, Perintis Kemerdekaan,Tamalanrea,TM,18,25,R2,-,-,-,1,"100,000"
-1462,Friday,2018-12-14,17:20, Rusunawa,Mariso,TL,-,6,R2,-,-,-,1,-
+1462,Friday,2018-12-14,17:20, Rajawali,Mariso,TL,-,6,R2,-,-,-,1,-
 1463,Friday,2018-12-14,8:00, Langgau,Tallo,TK,28,13,R4,R2,-,-,1,-
 1464,Friday,2018-12-14,13:00,Urip Sumuharjo,Bontoala,TK,49,14,R2,R2,-,-,3,"200,000"
 1465,Saturday,2018-12-15,11:35, Andalas,Bontoala,TL,-,31,R4,R2,-,-,1,"100,000"
@@ -1517,7 +1517,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1516,Tuesday,2018-12-25,15:30, Mesjid Raya,Bontoala,TL,-,20,R4,R2,-,-,-,-
 1517,Thursday,2018-12-27,15:00, Sultan Alauddin,Tamalate,TL,-,66,R2,-,-,-,1,-
 1518,Thursday,2018-12-27,8:15, Kima Raya,Biringkanaya,TK,29,31,R2,R2,-,-,1,"300,000"
-1519,Friday,2018-12-28,16:00, Professor Matulada,Tamalanrea,OC,34,-,R2,-,-,-,1,"100,000"
+1519,Friday,2018-12-28,16:00, Profesor Dokter Mattulada,Tamalanrea,OC,34,-,R2,-,-,-,1,"100,000"
 1520,Thursday,2018-12-27,13:15, Insinyur Sutami,Tamalanrea,TK,17,35,R2,M,-,-,1,"1,500,000"
 1521,Friday,2018-12-28,19:00, Veteran Utara,Makassar,OC,23,43,R2,-,1,-,-,-
 1522,Tuesday,2018-12-25,15:00, Gunung Latimojong,Makassar,TK,69,55,R2,R4,-,-,1,"500,000"
@@ -1666,7 +1666,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1665,Saturday,2019-02-09,13:40,Insinyur Sutami,Biringkanaya,TK,44,53,R4,R4,-,-,-,"50,000,000"
 1666,Saturday,2019-02-09,2:00, Perintis Kemerdekaan,Tamalanrea,TK,24,58,R4,R2,-,-,1,"500,000"
 1667,Saturday,2019-02-09,6:30, Daeng Tata Raya,Tamalate,TK,28,58,R2,R4,-,-,1,"500,000"
-1668,Saturday,2019-02-02,7:00, DR. Leimena,Manggala,OC,42,-,R2,-,-,-,1,"200,000"
+1668,Saturday,2019-02-02,7:00,Dokter Leimena,Panakkukang,OC,42,-,R2,-,-,-,1,"200,000"
 1669,Saturday,2019-02-09,23:00, Perintis Kemerdekaan,Biringkanaya,TL,-,22,R2,R2,-,-,1,"200,000"
 1670,Monday,2019-02-11,22:30, Perintis Kemerdekaan,Biringkanaya,TL,-,25,R4,R2,-,-,1,"500,000"
 1671,Wednesday,2019-02-13,19:30, Batara Bira,Biringkanaya,TL,-,44,R2,R2,1,-,-,"250,000"
@@ -1694,7 +1694,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1693,Wednesday,2019-02-20,8:30, Metro Tanjung Bunga,Tamalate,TK,14,36,R2,R2,-,-,3,"500,000"
 1694,Wednesday,2019-02-20,1:15, Cendrawasih,Mariso,TK,49,20,R2,R2,-,-,1,"500,000"
 1695,Monday,2018-02-19,7:00, Andi Mappanyukki,Mariso,TK,60,46,R4,R2,-,-,2,"500,000"
-1696,Friday,2019-02-22,2:00, DR. Leimena,Panakkukang,TL,-,34,R2,R2,1,-,-,"500,000"
+1696,Friday,2019-02-22,2:00, Dokter Leimena,Panakkukang,TL,-,34,R2,R2,1,-,-,"500,000"
 1697,Thursday,2019-02-21,6:30, Pettarani,Panakkukang,TL,-,19,R2,R2,-,-,3,"200,000"
 1698,Wednesday,2019-02-20,13:30, Toddopuli Raya,Panakkukang,TL,-,78,R2,R2,-,-,1,"300,000"
 1699,Monday,2018-02-19,12:00, Perintis Kemerdekaan,Biringkanaya,TK,24,61,R2,R2,-,-,1,"500,000"
@@ -1744,7 +1744,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1743,Wednesday,2019-03-06,14:00, Barawaja,Panakkukang,TK,29,22,R2,R2,-,-,2,"700,000"
 1744,Friday,2019-03-08,8:30, Insinyur Sutami,Tamalanrea,TK,14,33,R2,R10,2,-,1,"500,000"
 1745,Friday,2019-03-08,15:30, Mangerangi,Tamalate,TK,50,54,R2,R4,-,-,1,"1,000,000"
-1746,Saturday,2019-03-09,15:30, Baddoka,Biringkanaya,TM,21,17,R2,-,-,-,2,"250,000"
+1746,Saturday,2019-03-09,15:30, Batara Bira,Biringkanaya,TM,21,17,R2,-,-,-,2,"250,000"
 1747,Saturday,2019-03-09,7:00, KIMA II,Biringkanaya,TK,52,19,R2,R2,-,-,1,"250,000"
 1748,Saturday,2019-03-09,9:30, Gunung Latimojong,Bontoala,TK,53,30,R2,R2,-,-,2,"1,000,000"
 1749,Saturday,2019-03-09,7:15,  Andi Mangerangi,Tamalate,TL,-,56,R2,-,-,-,1,-
@@ -1824,7 +1824,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1823,Friday,2019-03-29,16:00, Kotipa Raya,Biringkanaya,T,18,-,R2,-,-,-,1,"100,000"
 1824,Saturday,2019-03-30,12:30, Perintis Kemerdekaan,Tamalanrea,TL,-,25,R2,-,-,-,1,-
 1825,Saturday,2019-03-30,20:30, Daeng Ramang,Biringkanaya,TM,27,36,R2,-,-,-,1,-
-1826,Sunday,2019-03-31,14:30, Dr. Leimena,Manggala,TK,27,49,R4,R4,-,-,-,"15,000,000"
+1826,Sunday,2019-03-31,14:30,Dokter Leimena,Panakkukang,TK,27,49,R4,R4,-,-,-,"15,000,000"
 1827,Saturday,2019-03-30,6:15, Mutiara Boulevard,Biringkanaya,OC,45,42,R2,-,-,-,2,"100,000"
 1828,Monday,2019-04-01,12:00, Mutiara Boulevard,Biringkanaya,OC,28,3,R2,-,-,-,2,-
 1829,Monday,2019-04-01,12:00, Dg. Hayo,Manggala,OC,36,6,R2,-,-,-,1,-
@@ -1885,7 +1885,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1884,Saturday,2019-04-13,10:30,Barawaja,Panakkukang,TK,60,28.5,R2,R4,-,-,2,"300,000"
 1885,Sunday,2019-04-14,16:15, Borong Raya,Manggala,TK,19,6,R6,-,1,-,-,-
 1886,Monday,2019-04-15,8:00, Pettarani,Rappocini,TL,-,47,R6,R4,-,-,-,"300,000"
-1887,Sunday,2019-04-14,14:45, Dr. Leimena,Manggala,TL,-,13,R2,-,-,-,1,-
+1887,Sunday,2019-04-14,14:45,Dokter Leimena,Panakkukang,TL,-,13,R2,-,-,-,1,-
 1888,Tuesday,2019-04-16,4:15, Letjen Hertasning,Panakkukang,OC,23,-,R2,-,1,-,-,"500,000"
 1889,Thursday,2019-03-21,22:30, Sam Ratulangi,Mamajang,T,62,58,R2,-,1,-,-,-
 1890,Wednesday,2019-04-17,18:00, Veteran Selatan,Mamajang,TK,44,17,R2,R2,-,-,2,"100,000"
@@ -1900,7 +1900,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1899,Saturday,2019-04-20,0:30, Sultan Alauddin,Tamalate,TL,-,18,R4,R2,-,-,2,"300,000"
 1900,Sunday,2019-04-21,1:30, Sudirman,Ujung Pandang,TK,26,23.5,R4,R2,-,-,3,"15,000,000"
 1901,Thursday,2019-04-18,15:00, Malengkeri,Tamalate,TM,41,61,R2,-,-,-,1,"25,000"
-1902,Friday,2019-04-19,23:30, Dr. Leimena,Manggala,TK,65,-,R2,R4,-,-,1,"100,000"
+1902,Friday,2019-04-19,23:30,Dokter Leimena,Panakkukang,TK,65,-,R2,R4,-,-,1,"100,000"
 1903,Wednesday,2019-04-17,7:00, Nipa II,Manggala,TL,-,12.5,R4,R2,-,-,2,"50,000"
 1904,Wednesday,2019-04-17,6:15, Pettarani,Rappocini,LL,19,33.5,R2,-,-,-,3,"2,000,000"
 1905,Wednesday,2019-04-17,17:30, Poros Nusa Harapan Permai,Tamalanrea,TL,-,3,R2,-,-,-,1,-
@@ -1934,7 +1934,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 1933,Sunday,2019-04-28,10:00, Perintis Kemerdekaan,Biringkanaya,TL,-,51.5,R4,R2,-,-,2,"100,000"
 1934,Monday,2019-04-29,15:30, Letjen Hertasning,Panakkukang,TK,19,21,R2,R2,-,-,2,"400,000"
 1935,Monday,2019-04-29,17:30, Cendrawasih,Mariso,TM,30.5,49,R2,-,-,-,1,-
-1936,Tuesday,2019-04-30,18:00, Dr. Leimena,Panakkukang,TB,25,30.4,R6,R4,-,-,3,"15,000,000"
+1936,Tuesday,2019-04-30,18:00, Dokter Leimena,Panakkukang,TB,25,30.4,R6,R4,-,-,3,"15,000,000"
 1937,Tuesday,2019-04-30,11:00, Gunung Rinjani,Tamalate,TK,23,20,R4,R2,-,-,1,"2,000,000"
 1938,Tuesday,2019-04-30,21:30, Singa,Mamajang,TL,-,8,R2,-,-,-,1,-
 1939,Sunday,2019-04-28,22:30,Urip Sumuharjo,Panakkukang,TL,-,18.7,R4,R2,-,-,3,"300,000"
@@ -2107,7 +2107,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2106,Friday,2019-06-14,16:30, Perintis Kemerdekaan,Tamalanrea,TL,-,25,R2,R2,-,-,1,-
 2107,Saturday,2019-06-15,7:45, Maccini Sawah,Makassar,TK,50,62,R2,R2,-,-,2,"500,000"
 2108,Saturday,2019-06-15,22:45, Lamadukelleng,Ujung Pandang,TM,20,13,R2,-,-,-,2,"200,000"
-2109,Saturday,2019-06-15,16:30, Flyover,Panakkukang,TL,-,55.5,R2,R2,-,-,1,-
+2109,Saturday,2019-06-15,16:30, Urip Sumuharjo,Panakkukang,TL,-,55.5,R2,R2,-,-,1,-
 2110,Friday,2019-06-14,8:40,Urip Sumuharjo,Panakkukang,TL,-,29,R4,R2,-,-,1,"500,000"
 2111,Monday,2019-06-17,9:42,Urip Sumuharjo,Panakkukang,TM,30,35,R2,-,-,-,3,"100,000"
 2112,Friday,2019-06-14,11:30, Perintis Kemerdekaan,Tamalanrea,TL,-,41,R2,R2,-,-,1,"100,000"
@@ -2147,7 +2147,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2146,Wednesday,2019-06-26,9:30,Poros Tamalanrea Indah,Tamalanrea,TK,18,51,R2,R2,-,-,2,"500,000"
 2147,Wednesday,2019-06-26,13:15, Gontang Raya,Tamalate,TK,20,27,R2,R2,-,-,2,"1,000,000"
 2148,Wednesday,2019-06-26,10:15, Sudirman,Ujung Pandang,TK,40,50,R2,R4,-,-,1,"500,000"
-2149,Thursday,2019-06-27,5:30, Dr. Leimena,Manggala,TL,-,68,R4,-,-,-,1,-
+2149,Thursday,2019-06-27,5:30,Dokter Leimena,Panakkukang,TL,-,68,R4,-,-,-,1,-
 2150,Thursday,2019-06-27,9:00, Insinyur Sutami,Biringkanaya,TL,-,32,R2,R2,-,-,1,"1,500,000"
 2151,Monday,2019-06-24,13:00, Kumala II,Tamalate,TM,49,13,R2,-,-,-,1,-
 2152,Thursday,2019-06-27,16:20, Perintis Kemerdekaan,Biringkanaya,TK,23,23,R4,R2,-,-,1,"4,500,000"
@@ -2179,7 +2179,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2178,Saturday,2019-07-06,4:30, Tinumbu,Bontoala,TL,-,60.5,R2,R2,-,-,1,"100,000"
 2179,Sunday,2019-07-07,11:30, Perintis Kemerdekaan,Tamalanrea,TM,17,21,R2,-,-,-,1,"200,000"
 2180,Thursday,2019-07-04,8:30, Tamalate I,Rappocini,TL,-,25.5,R2,R2,-,-,1,"200,000"
-2181,Friday,2019-07-05,2:48, Dr. Leimena,Manggala,TL,-,23,R4,R2,-,-,1,"500,000"
+2181,Friday,2019-07-05,2:48,Dokter Leimena,Panakkukang,TL,-,23,R4,R2,-,-,1,"500,000"
 2182,Sunday,2019-07-07,16:00, Sunu,Tallo,TL,-,16,R2,R2,-,-,1,"250,000"
 2183,Monday,2019-07-08,16:00, Sudirman,Ujung Pandang,TM,20,65,R2,-,-,-,1,-
 2184,Monday,2019-07-08,18:30, Metro Tanjung Bunga,Mariso,TL,-,19,R2,R2,-,-,1,"250,000"
@@ -2188,7 +2188,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2187,Monday,2019-07-08,7:30,Puri Kencana Sari,Tamalanrea,TL,-,43,R4,R4,-,-,-,"500,000"
 2188,Tuesday,2019-07-09,23:30, Antang Raya,Manggala,TK,22,27.5,R2,R2,-,-,2,"1,000,000"
 2189,Tuesday,2019-07-09,3:00, Perintis Kemerdekaan,Tamalanrea,TK,-,44,R2,R4,-,-,1,"5,000,000"
-2190,Wednesday,2019-07-10,14:00, Waduk Tunggu Pampang,Manggala,TL,-,19,R2,R2,-,-,1,"50,000"
+2190,Wednesday,2019-07-10,14:00, Inspeksi Kanal,Manggala,TL,-,19,R2,R2,-,-,1,"50,000"
 2191,Wednesday,2019-07-10,22:30, Inspeksi PAM,Manggala,TL,-,30,R2,R2,-,-,1,"200,000"
 2192,Wednesday,2019-07-10,13:15, Kima Raya II,Biringkanaya,TK,49,50,R2,R4,-,-,1,"1,500,000"
 2193,Friday,2019-07-12,1:30,Perintis Kemerdekaan,Biringkanaya,TK,59,41,R2,R4,-,-,1,"2,000,000"
@@ -2241,7 +2241,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2240,Saturday,2019-07-20,13:15, Perintis Kemerdekaan,Biringkanaya,TK,50,-,R2,R4,-,-,1,"3,000,000"
 2241,Saturday,2019-07-20,15:45, Insinyur Sutami,Tamalanrea,TK,40,27,R4,R2,-,-,2,"3,000,000"
 2242,Thursday,2019-07-25,12:30, Sultan Alauddin,Tamalate,TL,-,17,R4,R2,-,-,1,"200,000"
-2243,Wednesday,2019-07-24,19:00, Dr. Leimena,Panakkukang,T,14,17,R2,-,-,-,2,"100,000"
+2243,Wednesday,2019-07-24,19:00, Dokter Leimena,Panakkukang,T,14,17,R2,-,-,-,2,"100,000"
 2244,Thursday,2019-07-25,20:40, Perintis Kemerdekaan,Biringkanaya,TK,16,32,R2,R6,-,-,1,"2,500,000"
 2245,Friday,2019-07-26,6:45, Perintis Kemerdekaan,Tamalanrea,TK,47,45.5,R2,R2,-,-,2,"500,000"
 2246,Friday,2019-07-26,23:30, Gunung Latimojong,Makassar,TK,14,17.5,R2,R4,-,-,2,"5,000,000"
@@ -2332,10 +2332,10 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2331,Monday,2019-08-12,7:25, Berua 4,Biringkanaya,TM,34,13,R4,-,1,-,-,-
 2332,Wednesday,2019-08-14,3:00, Insinyur Sutami,Tamalanrea,OC,20,-,R2,-,1,-,-,"500,000"
 2333,Tuesday,2019-08-13,18:20,Kapasa Raya,Biringkanaya,TM,20,8,R6,-,1,-,-,-
-2334,Tuesday,2019-08-13,8:00, Dr. Leimena,Manggala,TK,15,71,R2,R2,-,-,3,"500,000"
+2334,Tuesday,2019-08-13,8:00,Dokter Leimena,Panakkukang,TK,15,71,R2,R2,-,-,3,"500,000"
 2335,Tuesday,2019-08-13,21:30, Pettarani,Panakkukang,TK,-,36,R6,R4,-,-,-,"300,000"
 2336,Tuesday,2019-08-13,17:45, Andi Mappanyukki,Mariso,TL,-,34,R2,R2,-,-,1,-
-2337,Saturday,2019-08-10,18:15, Aeng Towa ,Tamalate,TL,-,35,R2,R2,-,-,1,"100,000"
+2337,Saturday,2019-08-10,18:15, Karaeng Bonto Marannu ,Tamalate,TL,-,35,R2,R2,-,-,1,"100,000"
 2338,Wednesday,2019-08-07,13:30, Insinyur Sutami,Tamalanrea,TL,-,19,R6,R2,-,-,1,"3,000,000"
 2339,Wednesday,2019-08-14,16:30, Tamalanrea Raya,Tamalanrea,TK,41,26,R4,R4,-,-,1,"100,000"
 2340,Thursday,2019-08-15,7:00, Perintis Kemerdekaan,Biringkanaya,TM,33,69,R2,-,-,-,1,"200,000"
@@ -2370,7 +2370,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2369,Sunday,2019-08-25,13:30, Landak,Mamajang,TK,55,20,R2,R2,-,-,1,"200,000"
 2370,Sunday,2019-08-25,12:30, Tol Reformasi,Tallo,T,14,14,R4,-,-,1,4,"30,000,000"
 2371,Friday,2019-08-23,20:00, Bungaejaya,Bontoala,TM,22,4,R2,-,-,-,1,-
-2372,Saturday,2019-08-24,11:30, Dr. Leimena,Panakkukang,TL,-,65,R2,R2,-,-,2,"200,000"
+2372,Saturday,2019-08-24,11:30, Dokter Leimena,Panakkukang,TL,-,65,R2,R2,-,-,2,"200,000"
 2373,Saturday,2019-08-17,13:00, Sultan Alauddin,Rappocini,TK,21,29,R4,R2,-,-,2,"100,000"
 2374,Sunday,2019-08-25,10:30, Rappocini Raya,Rappocini,TL,-,27,R2,R2,-,-,1,"300,000"
 2375,Friday,2019-08-23,2:00, Veteran Selatan,Mamajang,TK,17,23,R2,R2,-,-,2,"3,000,000"
@@ -2405,7 +2405,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2404,Friday,2019-09-06,12:00, Daeng Tata Raya I,Tamalate,TK,13,25,R2,R2,-,-,2,"500,000"
 2405,Thursday,2019-09-05,17:30, Landak Baru VII,Rappocini,TM,40,5,R4,-,-,-,1,"1,000,000"
 2406,Thursday,2019-09-05,15:00, Skarda N1,Rappocini,TL,-,40,R2,R2,-,-,1,"50,000"
-2407,Friday,2019-09-06,12:00, Dr. Leimena,Panakkukang,TK,33,21,R4,R2,-,-,1,"1,500,000"
+2407,Friday,2019-09-06,12:00, Dokter Leimena,Panakkukang,TK,33,21,R4,R2,-,-,1,"1,500,000"
 2408,Thursday,2019-09-05,14:00, Perumahan Dosen Unhas,Tamalanrea,TK,28,21,R4,R2,-,-,1,"1,500,000"
 2409,Friday,2019-09-06,21:15, Cambaya,Tallo,TK,36,36,R6,R4,-,-,1,"15,000,000"
 2410,Wednesday,2019-09-04,18:45, Veteran Selatan,Mamajang,TL,-,35,R2,-,-,-,2,-
@@ -2425,7 +2425,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2424,Tuesday,2019-09-10,16:30, Tamangapa Raya,Manggala,TK,23,30,R6,R2,1,-,-,"200,000"
 2425,Tuesday,2019-09-10,13:30, Gunung Lokon,Ujung Pandang,TL,-,65,R4,R2,-,-,1,-
 2426,Monday,2019-09-09,14:30, Kumala II Selatan,Tamalate,TK,30,23,R2,R4,-,-,1,"500,000"
-2427,Tuesday,2019-09-10,12:30, Pendidikan,Tamalanrea,TK,19,19,R2,R2,-,-,2,"500,000"
+2427,Tuesday,2019-09-10,12:30, Pendidikan,Rappocini,TK,19,19,R2,R2,-,-,2,"500,000"
 2428,Tuesday,2019-09-10,6:45, Insinyur Sutami,Tamalanrea,TL,16,16,R2,R2,-,-,2,"300,000"
 2429,Wednesday,2019-09-11,7:30, Dg. Ramang,Biringkanaya,TK,36,15,R2,R2,-,-,2,"300,000"
 2430,Wednesday,2019-09-11,9:00,Urip Sumuharjo,Panakkukang,TK,26,45,R4,R2,-,-,2,"200,000"
@@ -2686,7 +2686,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2685,Wednesday,2019-11-13,13:30, Sultan Alauddin,Tamalate,TK,33,20,R4,R2,-,-,2,"200,000"
 2686,Wednesday,2019-11-13,18:30, M. Yamin,Makassar,TL,-,61,R2,R2,-,-,1,-
 2687,Thursday,2019-11-14,13:10, Sultan Alauddin,Tamalate,TK,30,25,R4,R2,-,-,1,"500,000"
-2688,Wednesday,2019-11-13,14:20, Balaikota,Ujung Pandang,TK,60,52,R4,R4,-,-,-,"15,000,000"
+2688,Wednesday,2019-11-13,14:20, Balai Kota,Ujung Pandang,TK,60,52,R4,R4,-,-,-,"15,000,000"
 2689,Tuesday,2019-09-24,7:30, Metro Tanjung Bunga,Tamalate,TK,30,27,R2,R2,-,-,2,"750,000"
 2690,Friday,2019-11-15,5:40, Insinyur Sutami,Tamalanrea,TK,22,33,R4,R6,-,-,2,"15,000,000"
 2691,Thursday,2019-11-14,19:30, Metro Tanjung Bunga,Mariso,TK,19,31,R4,R4,-,-,1,"15,000,000"
@@ -2702,7 +2702,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2701,Tuesday,2019-11-12,11:30, Kerukunan Raya,Tamalanrea,TL,-,59,R2,R2,-,-,1,"300,000"
 2702,Friday,2019-11-15,8:30, Perumahan Dosen Unhas,Tamalanrea,TL,-,58,R2,R2,-,-,1,"400,000"
 2703,Sunday,2019-11-17,23:17,Urip Sumuharjo,Panakkukang,TM,17,21,R2,-,-,-,2,"200,000"
-2704,Monday,2019-11-18,9:00, Sungai Saddang Lama,Makassar,TL,-,53,R2,R2,-,-,1,"200,000"
+2704,Monday,2019-11-18,9:00, S. Saddang Lama,Makassar,TL,-,53,R2,R2,-,-,1,"200,000"
 2705,Monday,2019-11-18,16:00, Letjen Hertasning,Rappocini,TL,-,55,R4,-,-,-,1,-
 2706,Monday,2019-11-18,14:20, Kajoalalido,Ujung Pandang,TM,24,12,R2,-,-,-,1,"250,000"
 2707,Tuesday,2019-11-19,9:45, Gunung Bawakaraeng,Makassar,TL,-,63,R2,R2,-,-,1,"1,250,000"
@@ -2729,7 +2729,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2728,Thursday,2019-11-28,6:40, Manuruki Raya,Tamalate,TK,26,53,R2,R2,-,-,1,"500,000"
 2729,Thursday,2019-11-28,22:30, Veteran Utara,Makassar,TL,-,21,R2,R2,-,-,2,"500,000"
 2730,Wednesday,2019-11-27,8:30, Veteran Utara,Makassar,TK,22,29,R2,R2,-,-,3,"5,000,000"
-2731,Sunday,2019-11-24,14:00, Sungai Saddang Lama,Makassar,TK,22,30,R2,R4,-,-,1,"1,000,000"
+2731,Sunday,2019-11-24,14:00, S. Saddang Lama,Makassar,TK,22,30,R2,R4,-,-,1,"1,000,000"
 2732,Saturday,2019-11-30,16:00, Toddopuli X,Manggala,TL,-,15,R2,R2,-,-,2,"100,000"
 2733,Sunday,2019-12-01,12:00, Daeng Tata Raya,Tamalate,TK,21,21,R2,R2,-,-,2,"2,000,000"
 2734,Sunday,2019-12-01,9:20, Pettarani,Rappocini,TL,-,13,R2,R2,-,-,1,"100,000"
@@ -2753,7 +2753,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2752,Saturday,2019-12-07,21:00, Perintis Kemerdekaan,Biringkanaya,TL,-,23,R4,R2,-,-,1,"200,000"
 2753,Saturday,2019-12-07,15:00, Hartaco Indah,Tamalate,TK,17,12,R2,Rro,-,-,3,"100,000"
 2754,Friday,2019-12-06,23:00, Sultan Alauddin,Tamalate,TK,29,52,R4,R2,-,-,2,"500,000"
-2755,Saturday,2019-12-07,15:30, Dr. Leimena,Manggala,TK,26,20,R2,R4,1,-,1,"10,000,000"
+2755,Saturday,2019-12-07,15:30,Dokter Leimena,Panakkukang,TK,26,20,R2,R4,1,-,1,"10,000,000"
 2756,Tuesday,2019-12-03,18:30, Sultan Alauddin,Tamalate,TL,-,24,R2,-,-,-,1,-
 2757,Sunday,2019-12-08,15:00, Maccini Tengah,Makassar,TK,47,20,R2,R2,1,-,1,"500,000"
 2758,Monday,2019-12-09,5:30, Veteran Selatan,Mamajang,TK,40,29,R2,R4,-,-,1,"300,000"
@@ -2775,7 +2775,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2774,Thursday,2019-12-12,2:15, Perintis Kemerdekaan,Biringkanaya,OC,37,22,R4,-,-,-,5,"20,000,000"
 2775,Sunday,2019-12-15,10:30, Perintis Kemerdekaan,Biringkanaya,TM,19,45,R2,-,-,-,1,"500,000"
 2776,Friday,2019-12-13,18:10, Dangko,Tamalate,TK,19,29,R2,R4,-,-,1,"1,000,000"
-2777,Sunday,2019-12-15,2:00, Sungai Saddang Lama,Makassar,TL,-,26,R2,R2,-,-,2,"800,000"
+2777,Sunday,2019-12-15,2:00, S. Saddang Lama,Makassar,TL,-,26,R2,R2,-,-,2,"800,000"
 2778,Friday,2019-12-13,13:30,Urip Sumuharjo,Panakkukang,TL,-,51,R2,R2,-,-,2,"300,000"
 2779,Monday,2019-12-16,14:30, Antang Raya,Manggala,TK,19,21,R2,R2,-,-,2,"300,000"
 2780,Monday,2019-12-16,13:00, Paccerakkang,Biringkanaya,TK,34,57,R2,R2,-,-,1,"50,000"
@@ -2803,7 +2803,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2802,Monday,2019-12-23,11:40, Ali Malaka,Ujung Pandang,TK,53,22,R3,R2,-,-,2,"1,000,000"
 2803,Wednesday,2019-12-04,6:30, Pettarani,Panakkukang,TK,60,19,R3,R3,-,-,-,"1,000,000"
 2804,Monday,2019-12-09,20:30, Daeng Tata Raya,Tamalate,TL,-,15,R2,R2,1,-,-,"1,000,000"
-2805,Tuesday,2019-12-24,5:30, DR. Leimena,Panakkukang,TL,-,51,R2,R2,-,-,1,"200,000"
+2805,Tuesday,2019-12-24,5:30, Dokter Leimena,Panakkukang,TL,-,51,R2,R2,-,-,1,"200,000"
 2806,Wednesday,2019-12-25,7:00, Aroepala,Rappocini,TK,48,37,R3,R2,-,-,2,"200,000"
 2807,Wednesday,2019-12-25,14:00, Toddopuli Raya Timur,Manggala,TK,30,37,R2,R2,-,-,2,"300,000"
 2808,Tuesday,2019-12-24,22:15, Perintis Kemerdekaan,Tamalanrea,TK,62,18,R2,R2,-,-,2,"500,000"
@@ -2825,7 +2825,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2824,Tuesday,2019-12-31,14:15, Manyikkoaya,Biringkanaya,TL,-,55,R2,R2,-,-,2,-
 2825,Friday,2020-01-03,15:15, Pelita Raya,Rappocini,TK,43,30,R3,R3,-,-,-,"1,000,000"
 2826,Thursday,2020-01-02,17:20, Andi Mappanyukki,Mariso,TK,40,29,R3,R2,-,-,1,"200,000"
-2827,Friday,2020-01-03,9:30, Waduk Tunggu Pampang,Manggala,TL,-,55,R3,R2,-,-,1,"100,000"
+2827,Friday,2020-01-03,9:30, Inspeksi Kanal,Manggala,TL,-,55,R3,R2,-,-,1,"100,000"
 2828,Friday,2020-01-03,14:30, Tamangapa Raya,Manggala,TL,-,25,R2,R2,-,-,1,"500,000"
 2829,Friday,2020-01-03,2:15, Jenderal Sudirman,Ujung Pandang,TK,41,29,R3,R3,-,-,2,"25,000,000"
 2830,Saturday,2020-01-04,2:10, Ujung Pandang Baru,Tallo,TK,29,36,R2,R2,-,-,1,"1,000,000"
@@ -2973,7 +2973,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 2972,Thursday,2020-02-20,7:00, Veteran Selatan,Mamajang,TL,-,32,R2,R2,-,-,2,"100,000"
 2973,Wednesday,2020-02-19,18:10, Pengayoman,Panakkukang,TK,26,30,R2,R3,-,-,-,"5,000,000"
 2974,Friday,2020-02-21,11:25, Insinyur Sutami,Tallo,TM,33,13,R3,-,1,-,1,"10,000,000"
-2975,Wednesday,2020-02-19,21:15, Gn. Salahutu,Makassar,TL,-,56,R2,R2,-,-,2,"100,000"
+2975,Wednesday,2020-02-19,21:15, Gunung Salahutu,Makassar,TL,-,56,R2,R2,-,-,2,"100,000"
 2976,Saturday,2020-02-22,5:20, Rajawali,Mariso,TL,-,29,R3,R2,1,-,-,"7,000,000"
 2977,Friday,2020-02-21,7:00, Perintis Kemerdekaan,Tamalanrea,TL,-,52,R3,R3,-,-,-,"500,000"
 2978,Saturday,2020-02-22,13:15, Maccini Gusung,Makassar,TM,28,7,R3,-,-,-,1,-
@@ -3141,7 +3141,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 3140,Tuesday,2020-04-21,18:15, Paccerakkang,Biringkanaya,TK,47,29,R2,R2,-,-,1,-
 3141,Friday,2020-04-24,7:00, Letjen Hertasning,Rappocini,TK,62,16,R2,R2,1,-,1,"500,000"
 3142,Thursday,2020-04-23,6:45, Sungai Saddang,Ujung Pandang,TK,61,34,R2,R2,-,-,2,"1,000,000"
-3143,Thursday,2020-04-23,2:00, Dr. Leimena,Panakkukang,T,25,-,R2,-,1,-,-,"1,500,000"
+3143,Thursday,2020-04-23,2:00, Dokter Leimena,Panakkukang,T,25,-,R2,-,1,-,-,"1,500,000"
 3144,Saturday,2020-04-25,10:30, Gunung Latimojong,Makassar,TL,-,57,R2,-,-,-,1,-
 3145,Thursday,2020-04-23,19:30, Abu Bakar Lambogo,Makassar,TL,-,26,R2,R2,-,-,1,-
 3146,Saturday,2020-04-25,14:00, Pajaiang,Biringkanaya,T,45,-,R2,-,-,-,1,"300,000"
@@ -3172,7 +3172,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 3171,Wednesday,2020-05-06,14:00, Perintis Kemerdekaan,Tamalanrea,TL,-,46,R2,R2,-,-,1,"1,000,000"
 3172,Saturday,2020-05-09,18:30, Daeng Regge,Tallo,TM,48,59,R2,-,1,-,1,"500,000"
 3173,Sunday,2020-05-10,0:30, Abu Bakar Lambogo,Makassar,TK,29,19,R2,R3,1,-,1,"2,000,000"
-3174,Sunday,2020-05-10,5:45, Waduk Tunggu Pampang,Manggala,TM,17,27,R2,-,-,-,3,"500,000"
+3174,Sunday,2020-05-10,5:45, Inspeksi Kanal,Manggala,TM,17,27,R2,-,-,-,3,"500,000"
 3175,Wednesday,2020-03-04,17:05, Pengayoman,Panakkukang,T,57,-,R2,-,-,-,1,-
 3176,Saturday,2020-05-09,23:00, Perintis Kemerdekaan,Biringkanaya,TK,42,28,R2,R2,-,-,2,"500,000"
 3177,Monday,2020-05-11,18:00, Korban 40.000 Jiwa,Tallo,T,15,-,R2,-,-,-,1,"200,000"
@@ -3200,7 +3200,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 3199,Thursday,2020-05-21,2:00, Borong Raya,Manggala,TK,18,-,R2,R3,1,-,-,"500,000"
 3200,Wednesday,2020-05-20,18:30, Pajukukang,Tamalate,TK,24,51,R2,R2,-,-,1,"1,000,000"
 3201,Thursday,2020-05-21,13:35, Aroepala,Rappocini,TK,50,23;55,R3,R2,-,-,1,"500,000"
-3202,Thursday,2020-05-21,17:15, Waduk Tunggu Pampang,Manggala,T,65,-,R2,-,-,-,1,"250,000"
+3202,Thursday,2020-05-21,17:15, Inspeksi Kanal,Manggala,T,65,-,R2,-,-,-,1,"250,000"
 3203,Wednesday,2020-05-20,14:10, Insinyur Sutami,Tamalanrea,T,32,-,R3,-,-,-,1,"20,000,000"
 3204,Friday,2020-05-22,20:30, Bandang,Bontoala,TK,34,35,R2,R2,-,-,3,"500,000"
 3205,Friday,2020-05-22,8:00, Perintis Kemerdekaan,Biringkanaya,T,40,-,R2,-,-,-,1,"300,000"
@@ -3295,7 +3295,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 3294,Thursday,2020-07-02,22:20, Tamalate I,Rappocini,TL,-,57,R2,-,-,-,1,-
 3295,Wednesday,2020-07-01,1:30, Boulevard,Panakkukang,TK,35,29,R4,R4,-,-,-,"10,000,000"
 3296,Thursday,2020-07-02,14:00, Barawaja,Panakkukang,OC,38,-,R2,-,-,-,1,"500,000"
-3297,Saturday,2020-07-04,21:00, Dr. Leimena,Panakkukang,OC,21,14,R2,-,-,-,2,"200,000"
+3297,Saturday,2020-07-04,21:00, Dokter Leimena,Panakkukang,OC,21,14,R2,-,-,-,2,"200,000"
 3298,Sunday,2020-07-05,11:00, Kerung-Kerung,Makassar,TL,-,25,R2,R2,-,-,3,"500,000"
 3299,Sunday,2020-07-05,2:00, Haji Bau,Ujung Pandang,TK,18,20,R4,R2,-,-,3,"10,000,000"
 3300,Friday,2020-06-12,17:00, Veteran Utara,Makassar,TK,26,65,R6,R2,-,-,1,"500,000"
@@ -3370,7 +3370,7 @@ no,day,date,time,address,district,accident_types,suspect_age,victim_age,suspect_
 3369,Friday,2020-08-07,18:30,Poros Perumnas Sudiang,Biringkanaya,TL,-,65,R2,-,-,-,1,-
 3370,Friday,2020-08-07,21:00,Urip Sumuharjo,Panakkukang,TL,-,18,R2,R2,-,-,1,"100,000"
 3371,Monday,2020-08-10,7:00, Perintis Kemerdekaan,Biringkanaya,TK,36,21,R2,Rro,-,-,1,"250,000"
-3372,Tuesday,2020-08-11,15:30, Waduk Tunggu Pampang,Manggala,OC,16,16,R2,-,-,-,1,"100,000"
+3372,Tuesday,2020-08-11,15:30, Inspeksi Kanal,Manggala,OC,16,16,R2,-,-,-,1,"100,000"
 3373,Tuesday,2020-08-11,22:45, Sanrangan,Biringkanaya,TK,26,52,R2,R2,-,-,2,"300,000"
 3374,Wednesday,2020-08-12,22:46, Perintis Kemerdekaan,Biringkanaya,TK,22,20,R2,R6,1,-,-,"150,000"
 3375,Thursday,2020-08-13,15:30, Pajaiang,Biringkanaya,TL,-,53,R2,R2,-,-,1,"500,000"
