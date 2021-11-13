@@ -14,8 +14,10 @@ from geopy.exc import GeocoderTimedOut
 from sklearn import metrics
 from sklearn.cluster import DBSCAN as dbscan
 
-DATASET_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
-RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
+#DATASET_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
+#RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
+DATASET_DIR = "./upload"
+RESULT_DIR = "./result"
 
 now = datetime.now()
 first_time = now.strftime("%H:%M:%S")

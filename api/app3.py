@@ -19,8 +19,10 @@ from sklearn_pandas import DataFrameMapper
 
 
 
-DATASET_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
-RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
+#DATASET_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
+#RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
+DATASET_DIR = "./upload"
+RESULT_DIR = "./result"
 
 execute_start = datetime.now().strftime("%H:%M:%S")
 
