@@ -5,9 +5,32 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Data from "./Pages/Data/Data";
 import InputData from "./Pages/AccidentAnalysis/InputData";
 // import Maps from './Pages/AccidentAnalysis/Maps'
-import Maps2 from './Pages/AccidentAnalysis/Maps2'
+import Maps2 from "./Pages/AccidentAnalysis/Maps2";
 import ViewData from "./Pages/AccidentAnalysis/ViewData";
-function App() {
+
+function App(props) {
+  let token = localStorage.getItem("satlatic_token");
+  let path = window.location.pathname;
+
+  if (!token && path !== "/login") {
+    window.location.href = "/login";
+  }
+
+  if (token) {
+    let base64UrlToken = token.split(".")[1];
+    let decodedValueToken = JSON.parse(window.atob(base64UrlToken));
+    if (
+      decodedValueToken.exp < new Date().getTime() / 1000 ||
+      localStorage.getItem("satlatic_token") === null
+    ) {
+      console.log("token expired");
+      localStorage.clear();
+      window.location.reload();
+    } else {
+      console.log("token not expired");
+    }
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
