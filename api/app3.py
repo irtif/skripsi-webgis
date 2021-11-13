@@ -307,8 +307,8 @@ def dbscan_clustering(min_samples, df, pca_df):
     json.dump(str(result), my_file)
   
   execute_stop = datetime.now().strftime("%H:%M:%S")
-  print("execute_start: ", execute_start)
-  print("execute_stop: ", execute_stop) 
+  # print("execute_start: ", execute_start)
+  # print("execute_stop: ", execute_stop) 
 
   return {
     "start": execute_start,

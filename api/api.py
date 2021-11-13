@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 
 app = Flask(__name__)
+
 UPLOAD_DIR = "E:/_PROJECT/flask_reactjs/api/upload"
 RESULT_DIR = "E:/_PROJECT/flask_reactjs/api/result"
 ALLOWED_EXTENSIONS = {'csv'}
